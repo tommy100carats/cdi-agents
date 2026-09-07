@@ -1,133 +1,138 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Offre sourcée (ligne Inbox)",
-  "type": "object",
-  "properties": {
-    "titre": {
-      "type": "string",
-      "minLength": 3
-    },
-    "entreprise": {
-      "type": "string",
-      "minLength": 1
-    },
-    "cle": {
-      "type": "string",
-      "minLength": 3
-    },
-    "lien_direct": {
-      "type": [
-        "string",
-        "null"
-      ],
-      "pattern": "^https?://"
-    },
-    "source": {
-      "type": "string",
-      "enum": [
-        "LinkedIn",
-        "Welcome to the Jungle",
-        "Indeed",
-        "Cooptation",
-        "Site entreprise",
-        "Cabinet de recrutement",
-        "Autre"
-      ]
-    },
-    "date_publication": {
-      "type": [
-        "string",
-        "null"
-      ],
-      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
-    },
-    "localisation": {
-      "type": [
-        "string",
-        "null"
-      ]
-    },
-    "teletravail": {
-      "type": [
-        "string",
-        "null"
-      ],
-      "enum": [
-        "Sur site",
-        "Hybride",
-        "Full remote",
-        null
-      ]
-    },
-    "famille": {
-      "type": "string",
-      "enum": [
-        "AI & Ops Automation",
-        "RevOps",
-        "Sales Ops",
-        "Commercial (SDR/AE)",
-        "Autre"
-      ]
-    },
-    "experience_texte": {
-      "type": [
-        "string",
-        "null"
-      ]
-    },
-    "experience_bande": {
-      "type": "string",
-      "enum": [
-        "coeur",
-        "stretch",
-        "hors",
-        "inconnu"
-      ]
-    },
-    "actif": {
-      "type": [
-        "boolean",
-        "null"
-      ]
-    },
-    "actif_preuve": {
-      "type": "string"
-    },
-    "texte_annonce": {
-      "type": "string",
-      "minLength": 200
-    },
-    "decision_sourcing": {
-      "type": "string",
-      "enum": [
-        "a_noter",
-        "ecartee",
-        "a_verifier"
-      ]
-    },
-    "raison": {
-      "type": "string"
-    },
-    "run": {
-      "type": "string",
-      "minLength": 10
-    }
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Offre sourcée (ligne Inbox)",
+ "type": "object",
+ "properties": {
+  "titre": {
+   "type": "string",
+   "minLength": 3
   },
-  "required": [
-    "titre",
-    "entreprise",
-    "cle",
-    "lien_direct",
-    "source",
-    "date_publication",
-    "famille",
-    "experience_bande",
-    "actif",
-    "actif_preuve",
-    "texte_annonce",
-    "decision_sourcing",
-    "raison",
-    "run"
-  ],
-  "additionalProperties": false
+  "entreprise": {
+   "type": "string",
+   "minLength": 1
+  },
+  "cle": {
+   "type": "string",
+   "minLength": 3
+  },
+  "lien_direct": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "pattern": "^https?://"
+  },
+  "source": {
+   "type": "string",
+   "enum": [
+    "LinkedIn",
+    "Welcome to the Jungle",
+    "Indeed",
+    "Cooptation",
+    "Site entreprise",
+    "Cabinet de recrutement",
+    "Autre"
+   ]
+  },
+  "date_publication": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+  },
+  "localisation": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "teletravail": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "enum": [
+    "Sur site",
+    "Hybride",
+    "Full remote",
+    null
+   ]
+  },
+  "famille": {
+   "type": "string",
+   "enum": [
+    "AI & Ops Automation",
+    "RevOps",
+    "Sales Ops",
+    "Commercial (SDR/AE)",
+    "Autre"
+   ]
+  },
+  "experience_texte": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "experience_bande": {
+   "type": "string",
+   "enum": [
+    "coeur",
+    "stretch",
+    "hors",
+    "inconnu"
+   ]
+  },
+  "actif": {
+   "type": [
+    "boolean",
+    "null"
+   ]
+  },
+  "actif_preuve": {
+   "type": "string"
+  },
+  "texte_annonce": {
+   "type": "string",
+   "minLength": 40,
+   "description": "Texte intégral de l'annonce ; si la page n'est pas lisible par le code (LinkedIn, WTTJ), le texte disponible (alerte) précédé de « [texte partiel : …] » et texte_partiel = true (règle du 07/09/2026)"
+  },
+  "decision_sourcing": {
+   "type": "string",
+   "enum": [
+    "a_noter",
+    "ecartee",
+    "a_verifier"
+   ]
+  },
+  "raison": {
+   "type": "string"
+  },
+  "run": {
+   "type": "string",
+   "minLength": 10
+  },
+  "texte_partiel": {
+   "type": "boolean",
+   "description": "true quand texte_annonce n'est pas l'annonce intégrale"
+  }
+ },
+ "required": [
+  "titre",
+  "entreprise",
+  "cle",
+  "lien_direct",
+  "source",
+  "date_publication",
+  "famille",
+  "experience_bande",
+  "actif",
+  "actif_preuve",
+  "texte_annonce",
+  "decision_sourcing",
+  "raison",
+  "run"
+ ],
+ "additionalProperties": false
 }

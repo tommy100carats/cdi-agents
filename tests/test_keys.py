@@ -30,3 +30,13 @@ def test_split_opportunite_and_doublon_prefix():
 def test_empty_parts_give_empty_key():
     assert business_key("", "RevOps") == ""
     assert key_from_opportunite("Titre sans entreprise") == ""
+
+
+def test_title_location_suffixes_are_ignored():
+    # Incident du 07/09/2026 : variantes de titre avec lieu ou sous-titre
+    assert business_key("Figma", "Customer Enablement Manager (Paris, France)") == business_key("Figma", "Customer Enablement Manager")
+    assert business_key("Mirakl", "Revenue Operations Analyst, Paris") == business_key("Mirakl", "Revenue Operations Analyst")
+    assert business_key("ElevenLabs", "Chief of Staff GTM - France") == business_key("ElevenLabs", "Chief of Staff GTM")
+    assert business_key("Doctolib", "Sales Operations Lead (x/f/m)") == business_key("Doctolib", "Sales Operations Lead")
+    # mais un vrai qualificatif reste distinct
+    assert business_key("Brevo", "Senior Sales Operations Manager") != business_key("Brevo", "Sales Operations Manager")

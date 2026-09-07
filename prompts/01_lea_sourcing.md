@@ -21,7 +21,7 @@ Pour chaque offre repérée : récupère le texte intégral de l'annonce (WebFet
 
 ÉTAPE 3, FILTRES DÉTERMINISTES, par du code, pour chaque candidate :
 - Clé : `python3 -m pipeline.cli key "<titre>" "<entreprise>"`. Clé vide = candidate « Erreur ».
-- Séniorité : écris le texte de l'annonce dans un fichier et lance `python3 -m pipeline.cli seniority <fichier>`. Bande « hors » = Écartée (raison « > 5 ans demandés »). « stretch » et « inconnu » passent, signalés.
+- Séniorité : écris le texte de l'annonce dans un fichier et lance `python3 -m pipeline.cli seniority <fichier> --titre "<titre>"` (les années écrites priment ; à défaut, un mot de niveau dans le titre ; jamais dans le corps). Bande « hors » = Écartée (raison « > 5 ans demandés »). « stretch » et « inconnu » passent, signalés.
 - Périmètre (rules/criteres.md § 1) : CDI, géographie, familles, exclusions fermes. Toute exclusion = Écartée avec la raison exacte citée de l'annonce.
 - Activité : écris la liste des liens directs dans un JSON et lance `python3 -m pipeline.cli links <fichier>`. active = true → « Actif vérifié : Oui » ; false → Écartée (raison « offre fermée, preuve : … ») ; null → « Actif vérifié : Non vérifiable » et l'offre passe quand même en « À noter », signalée dans Raison (« lien non lisible par le code : LinkedIn / WTTJ / Indeed »). Non vérifiable n'est pas un motif d'écart ; seul false écarte.
 - Doublons : écris les candidates dans un JSON et lance `python3 -m pipeline.cli dedup candidates.json data/crm.json data/inbox.json`. decision = doublon_* → Étape « Doublon », Raison = lien de l'original. lignes_employeur > 0 → Raison commence par « ⚠️ Nb lignes existantes pour cet employeur : X ».

@@ -10,9 +10,9 @@ Non vérifiable » et un texte partiel signalé. Non vérifiable n'est jamais un
 
 | ATS | URL | Slugs connus (à enrichir) |
 |---|---|---|
-| Ashby | `https://api.ashbyhq.com/posting-api/job-board/<slug>` | dust, pennylane, alan, joko, photoroom, mistral.ai, doctolib, qonto, elevenlabs, notion, swile, payfit, spendesk, lemlist, pigment, fleet, jimmy, defacto |
-| Greenhouse | `https://boards-api.greenhouse.io/v1/boards/<slug>/jobs?content=true` | gympass (Wellhub), contentsquare, aircall, backmarket, ledger, deezer, mirakl, algolia, sorare, ankorstore, agicap, yousign, skello, partoo |
-| Lever | `https://api.lever.co/v0/postings/<slug>?mode=json` | brevo, malt, didomi, pigment, veepee, 360learning, ornikar, lydia, october, shine, swan |
+| Ashby | `https://api.ashbyhq.com/posting-api/job-board/<slug>` | vérifiés le 07/09 : dust, pennylane, alan, joko, photoroom, mistral.ai, doctolib, qonto, elevenlabs, notion, lemlist, illuin, ledger, backmarket, sorare, ankorstore, swan (en 404 : swile, payfit, pigment, fleet, jimmy, defacto, spendesk vide) |
+| Greenhouse | `https://boards-api.greenhouse.io/v1/boards/<slug>/jobs?content=true` (ou `boards-api.eu.greenhouse.io`) | vérifiés le 07/09 : gympass (Wellhub), mirakl, algolia, thefork, figma, alma31 (Alma, EU), datadog, ibanfirst (en 404 : contentsquare, aircall, backmarket, ledger, deezer, sorare, ankorstore, agicap, yousign, skello, partoo) |
+| Lever | `https://api.lever.co/v0/postings/<slug>?mode=json` | vérifiés le 07/09 : brevo, malt, didomi, pigment, veepee, 360learning, qonto, agicap, contentsquare, aircall, swile, doctrine (en 404 : ornikar, lydia, october, shine, swan) |
 | Teamtailor | page carrière `<entreprise>.teamtailor.com/jobs` (HTML lisible) | kolecto, sunday, edflex, markentive |
 | Welcome to the Jungle | non vérifiable par code (rendu JavaScript) | repérage seulement |
 | Recruitee, Workable, SmartRecruiters, Taleez, WeRecruit | pages HTML lisibles | ouvrir la page directe |

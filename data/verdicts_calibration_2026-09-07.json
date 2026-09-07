@@ -1,0 +1,1994 @@
+[
+ {
+  "cle": "pennylane|strategy and operations analyst",
+  "entreprise": "Pennylane",
+  "poste": "Strategy & Operations Analyst",
+  "famille": "Sales Ops",
+  "dossier_deja_ouvert": false,
+  "couverture": [
+   {
+    "exigence": "5 ans et plus d'experience en Strategy & Operations, avec un historique de mise a l'echelle d'operations",
+    "preuve": "« oct. 2023 - mai 2026 (2 ans 8 mois en operations) »",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Traduire des initiatives strategiques en plans operationnels executables, avec impact mesurable",
+    "preuve": "« process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Concevoir et etablir des cadres operationnels scalables, roadmaps operationnelles avec le leadership produit",
+    "preuve": "« Cycle de vente construit sans playbook » et « CRM (Digiforma) deploye de bout en bout »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Analyses quantitatives et qualitatives pour identifier opportunites de marche et inefficacites operationnelles",
+    "preuve": "« Reporting 20 M EUR de CA (Carrefour, Cora) sous Power BI et SAP ; 200+ SKU »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Maitrise de SQL (ou volonte d'apprendre) et des outils modernes d'analyse de donnees",
+    "preuve": "« SQL : Kaggle Intro et Advanced SQL ; base Postgres (Supabase) en production sur Mentalizi ; requetes generees par l'IA puis lues et validees. Jamais SQL avance »",
+    "etat": "partiel",
+    "centrale": false
+   },
+   {
+    "exigence": "Piloter des projets transverses complexes avec de multiples parties prenantes et priorites concurrentes",
+    "preuve": "« coordination de 5 personnes sans lien hierarchique »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Etre le point d'orchestration entre la track et les equipes horizontales (care, sales, autres equipes produit)",
+    "preuve": "« coordination de 5 personnes sans lien hierarchique » et « 20 entreprises clientes, 40 % converties sur une offre additionnelle »",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Posseder le processus OKR de la track et les mecanismes de suivi de la performance",
+    "preuve": "« Reporting 20 M EUR de CA (Carrefour, Cora) sous Power BI et SAP » ; aucun processus OKR dans rules/profil.md",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Communication et influence : articuler des concepts complexes et convaincre des interlocuteurs varies",
+    "preuve": "« Consultant & Formateur (freelance) | PME | mai 2021 - sept. 2022 | ... formation d'adultes »",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Etre courant en francais et en anglais",
+    "preuve": "« Francais natif, anglais courant (910 TOEIC) »",
+    "etat": "couvert",
+    "centrale": false
+   }
+  ],
+  "score_couverture_10": 8.5,
+  "score_conditions_3": 2,
+  "score_entreprise_4": 4,
+  "score_differenciateurs_3": 0,
+  "note_20": 14,
+  "verdict": "veille",
+  "raison_principale": "Ecosysteme et entreprise au maximum (4/4) et couverture des missions tres bonne, mais l'annonce demande 5 ans et plus en Strategy & Operations quand Tom en a 2 ans 8 mois, et ne demande aucun des trois differenciateurs de la grille.",
+  "exigences_sans_preuve": [
+   "5 ans et plus d'experience en Strategy & Operations : preuve partielle seulement, 2 ans 8 mois en operations",
+   "Processus OKR possede de bout en bout : preuve partielle seulement, aucun OKR dans rules/profil.md",
+   "Maitrise de SQL et outils modernes d'analyse : preuve partielle seulement, jamais SQL avance"
+  ],
+  "deductions": "Deductions, sans preuve ecrite dans l'annonce : le poste est rattache au General Manager d'une track produit et non a une direction Sales, ce qui oriente le quotidien vers le pilotage de programme plus que vers l'outillage commercial ; le processus de recrutement en quatre etapes dont un business case a preparer laisse deduire un niveau d'exigence analytique eleve ; la mention « This role is Paris-based only » laisse deduire une presence sur site frequente malgre la culture remote-friendly affichee.",
+  "detail": "Bande seniorite : stretch (5 ans minimum ecrits dans l'annonce, 2 ans demandes selon la fiche de sourcing). Sans effet sur la note (R8).\n\nCouverture des exigences ecrites (exigence | preuve | etat | centrale) :\n- 5 ans et plus d'experience en Strategy & Operations, avec un historique de mise a l'echelle d'operations | « oct. 2023 - mai 2026 (2 ans 8 mois en operations) » | partiel | centrale : oui\n- Traduire des initiatives strategiques en plans operationnels executables, avec impact mesurable | « process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique » | couvert | centrale : oui\n- Concevoir et etablir des cadres operationnels scalables, roadmaps operationnelles avec le leadership produit | « Cycle de vente construit sans playbook » et « CRM (Digiforma) deploye de bout en bout » | couvert | centrale : oui\n- Analyses quantitatives et qualitatives pour identifier opportunites de marche et inefficacites operationnelles | « Reporting 20 M EUR de CA (Carrefour, Cora) sous Power BI et SAP ; 200+ SKU » | couvert | centrale : oui\n- Maitrise de SQL (ou volonte d'apprendre) et des outils modernes d'analyse de donnees | « SQL : Kaggle Intro et Advanced SQL ; base Postgres (Supabase) en production sur Mentalizi ; requetes generees par l'IA puis lues et validees. Jamais SQL avance » | partiel | centrale : non\n- Piloter des projets transverses complexes avec de multiples parties prenantes et priorites concurrentes | « coordination de 5 personnes sans lien hierarchique » | couvert | centrale : oui\n- Etre le point d'orchestration entre la track et les equipes horizontales (care, sales, autres equipes produit) | « coordination de 5 personnes sans lien hierarchique » et « 20 entreprises clientes, 40 % converties sur une offre additionnelle » | couvert | centrale : non\n- Posseder le processus OKR de la track et les mecanismes de suivi de la performance | « Reporting 20 M EUR de CA (Carrefour, Cora) sous Power BI et SAP » ; aucun processus OKR dans rules/profil.md | partiel | centrale : oui\n- Communication et influence : articuler des concepts complexes et convaincre des interlocuteurs varies | « Consultant & Formateur (freelance) | PME | mai 2021 - sept. 2022 | ... formation d'adultes » | couvert | centrale : non\n- Etre courant en francais et en anglais | « Francais natif, anglais courant (910 TOEIC) » | couvert | centrale : non\n\nSous-scores :\nA couverture 8.5/10 : 10 exigences ecrites, 7 couvertes, 3 partielles, 0 absentes, soit 8.5 point(s) sur 10, ramenes sur 10 et arrondis a 0,5.\nB conditions 2/3 : +1 CDI et lieu compatibles (« This role is Paris-based only ») ; +1 hybride et Paris intra-muros ; 0 salaire, aucun montant affiche (« You'll have a competitive compensation package »), aucune estimation (R3).\nC entreprise 4/4 : +1 effectif public (« Grow from 7 cofounders to 1200 happy Pennylaners ») ; +1 entreprise ambitieuse (« Raise a total of 400 millions EUR, including from Sequoia », « one of the fastest growing Fintechs in France ») ; +1 reputation employeur (« a 4.6/5 rating on Glassdoor ») ; +1 ecosysteme (« groundbreaking accounting and financial software for small businesses and their accountants », « 1,250,000 SMEs and over 6000 accounting firms ») (R9).\nD differenciateurs 0/3 : 0 agents IA ou automatisation : l'annonce ne demande ni agents IA ni outil d'automatisation ; 0 formation ou enablement d'adultes : non demandes ; 0 outil nomme pratique par Tom : seul SQL est nomme, hors liste de la grille.\n\nNote : 8.5 + 2 + 4 + 0 = 14.5, entier arrondi vers le bas = 14 sur 20 (hesitation = note basse).\nVerdict : veille. Ecosysteme et entreprise au maximum (4/4) et couverture des missions tres bonne, mais l'annonce demande 5 ans et plus en Strategy & Operations quand Tom en a 2 ans 8 mois, et ne demande aucun des trois differenciateurs de la grille.",
+  "regles_appliquees": [
+   "R2",
+   "R3",
+   "R7",
+   "R8",
+   "R9"
+  ],
+  "run": "2026-09-07 14:00"
+ },
+ {
+  "cle": "alan|compliance ops builder",
+  "entreprise": "Alan",
+  "poste": "Compliance Ops Builder",
+  "famille": "Sales Ops",
+  "dossier_deja_ouvert": true,
+  "couverture": [
+   {
+    "exigence": "Avoir transforme du travail manuel et repetitif en solutions automatisees ou self-serve avec des outils no-code, low-code et IA",
+    "preuve": "« workflows n8n et Process Street (relances, declencheurs, scoring, webhooks et API vers le CRM, gestion d'erreurs) »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Avoir construit des choses que les gens ont continue d'utiliser",
+    "preuve": "« CRM (Digiforma) deploye de bout en bout »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Reconstruire des processus de bout en bout, rester dessus apres le lancement et les ameliorer jusqu'a l'adoption",
+    "preuve": "« process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Posseder au moins un process du probleme jusqu'a une solution automatisee, vivante et reellement utilisee",
+    "preuve": "« workflows n8n et Process Street (relances, declencheurs, scoring, webhooks et API vers le CRM, gestion d'erreurs) »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Mesurer ce qui est livre : fixer des objectifs clairs et les verifier",
+    "preuve": "« 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique »",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Appetence pour le travail regule et jugement sur les exigences legales, privacy, securite et conformite",
+    "preuve": "« forte reduction des erreurs, conformite systematique » ; aucune experience juridique, privacy ou securite dans rules/profil.md",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Pilotage de projet de bout en bout, de la recherche utilisateur et de la planification jusqu'a la livraison et l'adoption",
+    "preuve": "« Cycle de vente construit sans playbook » et « coordination de 5 personnes sans lien hierarchique »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Communication claire et proactive avec les parties prenantes",
+    "preuve": "« Consultant & Formateur (freelance) | PME | mai 2021 - sept. 2022 | ... formation d'adultes »",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Builder mindset : avancer vite et en autonomie, prioriser, tester en avancant, livrer plutot que polir",
+    "preuve": "« President-Fondateur | Hack'Coeur (association) | 2020 | Creee a partir de rien, partenariats et benevoles ; incubee a l'INSEAD »",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Francais et anglais de niveau professionnel",
+    "preuve": "« Francais natif, anglais courant (910 TOEIC) »",
+    "etat": "couvert",
+    "centrale": false
+   }
+  ],
+  "score_couverture_10": 9.5,
+  "score_conditions_3": 2,
+  "score_entreprise_4": 2,
+  "score_differenciateurs_3": 1,
+  "note_20": 14,
+  "verdict": "dossier_ouvert",
+  "raison_principale": "Le coeur du poste, construire et automatiser des process de bout en bout avec des outils no-code et IA, est exactement ce que Tom a fait chez CITYZ'Formation ; l'entreprise ne rapporte que 2 des 4 points (secteur sante hors ecosystemes de la grille, aucune note Glassdoor citee) et un dossier est deja ouvert chez Alan.",
+  "exigences_sans_preuve": [
+   "Appetence et experience du travail regule (legal, privacy, gouvernance, risque, conformite, securite) : preuve partielle seulement, la conformite systematique chez CITYZ'Formation ne couvre pas ce perimetre"
+  ],
+  "deductions": "Deductions, sans preuve ecrite dans l'annonce : le poste est nouvellement cree au sein d'une equipe Corporate (legal, privacy, gouvernance, risque, conformite, securite), ce qui laisse deduire un perimetre a defricher et des interlocuteurs experts plutot que commerciaux ; la bande B1-C0 laisse deduire un niveau d'entree ou de debut de seniorite ; « we value in-person collaboration » laisse deduire des regroupements physiques reguliers malgre la flexibilite remote.",
+  "detail": "Attention : un dossier est deja ouvert chez cet employeur (Ops & Product Builder, Candidature envoyee). La note est calculee, le verdict est dossier_ouvert.\nBande seniorite : inconnu (aucune duree ecrite, seule une bande interne B1-C0 est mentionnee). Sans effet sur la note (R8).\n\nCouverture des exigences ecrites (exigence | preuve | etat | centrale) :\n- Avoir transforme du travail manuel et repetitif en solutions automatisees ou self-serve avec des outils no-code, low-code et IA | « workflows n8n et Process Street (relances, declencheurs, scoring, webhooks et API vers le CRM, gestion d'erreurs) » | couvert | centrale : oui\n- Avoir construit des choses que les gens ont continue d'utiliser | « CRM (Digiforma) deploye de bout en bout » | couvert | centrale : oui\n- Reconstruire des processus de bout en bout, rester dessus apres le lancement et les ameliorer jusqu'a l'adoption | « process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier » | couvert | centrale : oui\n- Posseder au moins un process du probleme jusqu'a une solution automatisee, vivante et reellement utilisee | « workflows n8n et Process Street (relances, declencheurs, scoring, webhooks et API vers le CRM, gestion d'erreurs) » | couvert | centrale : oui\n- Mesurer ce qui est livre : fixer des objectifs clairs et les verifier | « 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique » | couvert | centrale : non\n- Appetence pour le travail regule et jugement sur les exigences legales, privacy, securite et conformite | « forte reduction des erreurs, conformite systematique » ; aucune experience juridique, privacy ou securite dans rules/profil.md | partiel | centrale : oui\n- Pilotage de projet de bout en bout, de la recherche utilisateur et de la planification jusqu'a la livraison et l'adoption | « Cycle de vente construit sans playbook » et « coordination de 5 personnes sans lien hierarchique » | couvert | centrale : oui\n- Communication claire et proactive avec les parties prenantes | « Consultant & Formateur (freelance) | PME | mai 2021 - sept. 2022 | ... formation d'adultes » | couvert | centrale : non\n- Builder mindset : avancer vite et en autonomie, prioriser, tester en avancant, livrer plutot que polir | « President-Fondateur | Hack'Coeur (association) | 2020 | Creee a partir de rien, partenariats et benevoles ; incubee a l'INSEAD » | couvert | centrale : non\n- Francais et anglais de niveau professionnel | « Francais natif, anglais courant (910 TOEIC) » | couvert | centrale : non\n\nSous-scores :\nA couverture 9.5/10 : 10 exigences ecrites, 9 couvertes, 1 partielles, 0 absentes, soit 9.5 point(s) sur 10, ramenes sur 10 et arrondis a 0,5.\nB conditions 2/3 : +1 CDI et lieu compatibles (« Location: You must be legally eligible to work from France, Belgium or Spain », Paris cite en premier) ; +1 remote (« Remote work: We offer remote work flexibility ») ; 0 salaire, aucun montant affiche (« we are looking to hire within the B1-C0 level range »), aucune estimation (R3).\nC entreprise 2/4 : +1 effectif public (« That's what we're building with our team of 800+ people ») ; +1 entreprise ambitieuse (« 40K+ companies of all sizes, serving more than 1M+ members, and have reached 800M+ EUR in ARR », « Alan wants to be in 10 countries within five years ») ; 0 reputation employeur : la page Glassdoor est citee mais aucune note ne l'est (R3, R9) ; 0 ecosysteme : assurance sante et prevention, hors des ecosystemes listes par la grille.\nD differenciateurs 1/3 : +1 automatisation en operations demandee explicitement (« turned manual, repetitive work into automated or self-serve solutions with no-code, low-code and AI tools ») et pratiquee par Tom (n8n, Process Street) ; 0 formation ou enablement d'adultes : non demandes ; 0 outil nomme : l'annonce ne cite aucun outil de la liste.\n\nNote : 9.5 + 2 + 2 + 1 = 14.5, entier arrondi vers le bas = 14 sur 20 (hesitation = note basse).\nVerdict : dossier_ouvert. Le coeur du poste, construire et automatiser des process de bout en bout avec des outils no-code et IA, est exactement ce que Tom a fait chez CITYZ'Formation ; l'entreprise ne rapporte que 2 des 4 points (secteur sante hors ecosystemes de la grille, aucune note Glassdoor citee) et un dossier est deja ouvert chez Alan.",
+  "regles_appliquees": [
+   "R3",
+   "R7",
+   "R8",
+   "R9"
+  ],
+  "run": "2026-09-07 14:00"
+ },
+ {
+  "cle": "mistral ai|enablement lead programs",
+  "entreprise": "Mistral AI",
+  "poste": "Enablement Lead, Programs",
+  "famille": "Sales Ops",
+  "dossier_deja_ouvert": true,
+  "couverture": [
+   {
+    "exigence": "5 a 8 ans et plus en enablement, revenue programs, pre-sales ou sales operations",
+    "preuve": "« oct. 2023 - mai 2026 (2 ans 8 mois en operations) »",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Builder prouve : avoir concu des systemes d'enablement scalables et pas seulement les avoir executes",
+    "preuve": "« process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Posseder l'architecture de curriculum, les cadres de certification et les programmes terrain pour Account Executives et Deployment Strategists",
+    "preuve": "« Consultant & Formateur (freelance) | PME | mai 2021 - sept. 2022 | ... formation d'adultes » ; aucun curriculum ni cadre de certification commercial dans rules/profil.md",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Fluidite GTM : comprehension profonde des cycles de vente entreprise, des systemes CRM et des stage gates",
+    "preuve": "« Ingenieur d'affaires | 5 Degres (ESN) | 360 k EUR de CA, 120 % des objectifs, 180 k EUR par compte ouvert (2 comptes), SNCF Connect & Tech ; pipeline sur BoondManager »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Piloter le moteur operationnel : cadence terrain bi-hebdomadaire avec Produit et Marketing, propriete du SKO",
+    "preuve": "« coordination de 5 personnes sans lien hierarchique » ; aucun SKO ni cadence terrain dans rules/profil.md",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Fixer la barre de qualite : des evaluations qui prouvent la competence et pas la presence",
+    "preuve": "« Consultant & Formateur (freelance) | PME | mai 2021 - sept. 2022 | ... formation d'adultes »",
+    "etat": "partiel",
+    "centrale": false
+   },
+   {
+    "exigence": "Pensee architecturale : transformer une expertise ambigue en programmes structures et repetables",
+    "preuve": "« process en 23 etapes, 143 dossiers »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Excellence operationnelle : piloter des chantiers complexes et interdependants sans rien laisser tomber",
+    "preuve": "« coordination de 5 personnes sans lien hierarchique »",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Communicant clair : ecrire et presenter avec l'autorite necessaire pour influencer une audience terrain",
+    "preuve": "« Consultant & Formateur (freelance) | PME | mai 2021 - sept. 2022 | ... formation d'adultes »",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Experience IA/ML ou B2B complexe (preferee)",
+    "preuve": "« Ingenieur d'affaires | 5 Degres (ESN) | 360 k EUR de CA, 120 % des objectifs » et « Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous »",
+    "etat": "couvert",
+    "centrale": false
+   }
+  ],
+  "score_couverture_10": 8.0,
+  "score_conditions_3": 2,
+  "score_entreprise_4": 2,
+  "score_differenciateurs_3": 1,
+  "note_20": 13,
+  "verdict": "dossier_ouvert",
+  "raison_principale": "L'enablement d'adultes et l'architecture de programmes repetables collent bien au parcours, mais l'annonce demande 5 a 8 ans et plus dans le metier, un curriculum et des cadres de certification commerciaux que Tom n'a pas, et l'entreprise ne rapporte que 2 des 4 points faute d'effectif public et de note employeur ; un dossier est deja ouvert chez Mistral.",
+  "exigences_sans_preuve": [
+   "5 a 8 ans et plus en enablement, revenue programs, pre-sales ou sales operations : preuve partielle seulement, 2 ans 8 mois en operations",
+   "Architecture de curriculum et cadres de certification pour des commerciaux : preuve partielle seulement, aucune trace dans rules/profil.md",
+   "Cadence terrain bi-hebdomadaire avec Produit et Marketing, propriete du SKO : preuve partielle seulement",
+   "Evaluations qui prouvent la competence : preuve partielle seulement"
+  ],
+  "deductions": "Deductions, sans preuve ecrite dans l'annonce : le titre « Lead » et la fourchette 5 a 8 ans et plus laissent deduire un poste attendu comme autonome de bout en bout, sans encadrement rapproche ; l'absence d'effectif publie et la mention d'equipes reparties entre Europe, Amerique du Nord, Asie et Moyen-Orient laissent deduire une organisation en construction rapide ; la fiche de sourcing signale un dossier Mistral « Enablement Lead, GTM Programs » deja refuse, ce qui laisse deduire que ce poste est proche ou identique.",
+  "detail": "Attention : un dossier est deja ouvert chez cet employeur (Solution Operations Manager, Revenue Growth, Candidature envoyee). La note est calculee, le verdict est dossier_ouvert.\nBande seniorite : stretch (5 ans minimum ecrits (« 5-8+ years in enablement, revenue programs, pre-sales, or sales operations »)). Sans effet sur la note (R8).\n\nCouverture des exigences ecrites (exigence | preuve | etat | centrale) :\n- 5 a 8 ans et plus en enablement, revenue programs, pre-sales ou sales operations | « oct. 2023 - mai 2026 (2 ans 8 mois en operations) » | partiel | centrale : oui\n- Builder prouve : avoir concu des systemes d'enablement scalables et pas seulement les avoir executes | « process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier » | couvert | centrale : oui\n- Posseder l'architecture de curriculum, les cadres de certification et les programmes terrain pour Account Executives et Deployment Strategists | « Consultant & Formateur (freelance) | PME | mai 2021 - sept. 2022 | ... formation d'adultes » ; aucun curriculum ni cadre de certification commercial dans rules/profil.md | partiel | centrale : oui\n- Fluidite GTM : comprehension profonde des cycles de vente entreprise, des systemes CRM et des stage gates | « Ingenieur d'affaires | 5 Degres (ESN) | 360 k EUR de CA, 120 % des objectifs, 180 k EUR par compte ouvert (2 comptes), SNCF Connect & Tech ; pipeline sur BoondManager » | couvert | centrale : oui\n- Piloter le moteur operationnel : cadence terrain bi-hebdomadaire avec Produit et Marketing, propriete du SKO | « coordination de 5 personnes sans lien hierarchique » ; aucun SKO ni cadence terrain dans rules/profil.md | partiel | centrale : oui\n- Fixer la barre de qualite : des evaluations qui prouvent la competence et pas la presence | « Consultant & Formateur (freelance) | PME | mai 2021 - sept. 2022 | ... formation d'adultes » | partiel | centrale : non\n- Pensee architecturale : transformer une expertise ambigue en programmes structures et repetables | « process en 23 etapes, 143 dossiers » | couvert | centrale : oui\n- Excellence operationnelle : piloter des chantiers complexes et interdependants sans rien laisser tomber | « coordination de 5 personnes sans lien hierarchique » | couvert | centrale : non\n- Communicant clair : ecrire et presenter avec l'autorite necessaire pour influencer une audience terrain | « Consultant & Formateur (freelance) | PME | mai 2021 - sept. 2022 | ... formation d'adultes » | couvert | centrale : non\n- Experience IA/ML ou B2B complexe (preferee) | « Ingenieur d'affaires | 5 Degres (ESN) | 360 k EUR de CA, 120 % des objectifs » et « Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous » | couvert | centrale : non\n\nSous-scores :\nA couverture 8/10 : 10 exigences ecrites, 6 couvertes, 4 partielles, 0 absentes, soit 8 point(s) sur 10, ramenes sur 10 et arrondis a 0,5.\nB conditions 2/3 : +1 CDI et lieu compatibles (Paris) ; +1 hybride et Paris intra-muros ; 0 salaire, aucun montant affiche (« benefits vary by country »), aucune estimation (R3).\nC entreprise 2/4 : 0 effectif : aucun chiffre d'effectif public dans l'annonce, aucune estimation (R3, R9) ; +1 entreprise ambitieuse et IA-native (« Mistral provides full-stack AI solutions: from frontier models to developer tools, applications, and compute ») ; 0 reputation employeur : aucune note ni label cites ; +1 ecosysteme B2B logiciel (« We partner with enterprises tackling the hardest problems, across high-stakes industries like finance, manufacturing, defense, healthcare, and the public sector »).\nD differenciateurs 1/3 : 0 agents IA ou automatisation en operations : l'annonce demande de l'enablement, pas la construction d'agents ni d'automatisations ; +1 formation et enablement d'adultes demandes explicitement (« curriculum architecture, certification frameworks, and field programs ») et couverts (« formation d'adultes ») ; 0 outil nomme : « CRM systems » reste generique, aucun outil de la liste n'est cite.\n\nNote : 8 + 2 + 2 + 1 = 13, entier arrondi vers le bas = 13 sur 20 (hesitation = note basse).\nVerdict : dossier_ouvert. L'enablement d'adultes et l'architecture de programmes repetables collent bien au parcours, mais l'annonce demande 5 a 8 ans et plus dans le metier, un curriculum et des cadres de certification commerciaux que Tom n'a pas, et l'entreprise ne rapporte que 2 des 4 points faute d'effectif public et de note employeur ; un dossier est deja ouvert chez Mistral.",
+  "regles_appliquees": [
+   "R2",
+   "R3",
+   "R7",
+   "R8",
+   "R9"
+  ],
+  "run": "2026-09-07 14:00"
+ },
+ {
+  "cle": "illuin technology|rev ops",
+  "entreprise": "ILLUIN Technology",
+  "poste": "Rev Ops (F/H)",
+  "famille": "RevOps",
+  "dossier_deja_ouvert": false,
+  "couverture": [
+   {
+    "exigence": "Bac +5 d'une grande ecole de commerce, d'ingenieur ou grande universite (specialisation finance, business ou commercial)",
+    "preuve": "« Bac+5 emlyon business school (Programme Grande Ecole, 2016-2019) »",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Premiere experience d'au moins 5 ans en Sales ou Revenue Operations",
+    "preuve": "« oct. 2023 - mai 2026 (2 ans 8 mois en operations) »",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Fort esprit analytique pour traduire la donnee disponible en analyses strategiques et actionnables",
+    "preuve": "« Reporting 20 M EUR de CA (Carrefour, Cora) sous Power BI et SAP ; 200+ SKU »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Rigueur et proactivite pour le deploiement des processus",
+    "preuve": "« process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Notions et curiosite sur les outils d'automatisation et l'IA appliquee a la Finance et au traitement de la donnee",
+    "preuve": "« workflows n8n et Process Street (relances, declencheurs, scoring, webhooks et API vers le CRM, gestion d'erreurs) » et « Agents IA : systeme personnel de recherche d'emploi (ce depot) »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Experience concrete dans la gestion d'un CRM et des outils lies aux revenus",
+    "preuve": "« Digiforma (CRM deploye de bout en bout) » ; marque signalee en reserve, l'annonce vise idealement HubSpot",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Maitrise d'Excel / Google Sheets a un niveau avance",
+    "preuve": "« Excel avance »",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Administration et optimisation de l'ecosysteme d'outils Revenue (HubSpot)",
+    "preuve": "« HubSpot : certifie Sales Management, Sales Hub, Reporting, Revenue Operations ; jamais en production »",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Mise en place des dashboards funnel, ARR, churn, pipe review, analyses et KPI d'une activite hybride Produit et Conseil",
+    "preuve": "« Reporting 20 M EUR de CA (Carrefour, Cora) sous Power BI et SAP » ; aucun ARR ni churn dans rules/profil.md",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Financial Planning : budgets, rolling forecasts, business plan, supports pour dirigeants et investisseurs",
+    "preuve": null,
+    "etat": "absent",
+    "centrale": true
+   },
+   {
+    "exigence": "Renforcement de la coherence, de l'automatisation et de la fiabilite des donnees entre les systemes (CRM x ERP)",
+    "preuve": "« webhooks et API vers le CRM, gestion d'erreurs » et « Power BI, Excel avance, SAP » ; aucune integration CRM vers ERP dans rules/profil.md",
+    "etat": "partiel",
+    "centrale": false
+   },
+   {
+    "exigence": "Structuration et optimisation de l'ensemble du cycle de vente client",
+    "preuve": "« Cycle de vente construit sans playbook ; process en 23 etapes, 143 dossiers »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Documentation des processus lies au Revenu",
+    "preuve": "« process en 23 etapes, 143 dossiers »",
+    "etat": "couvert",
+    "centrale": false
+   }
+  ],
+  "score_couverture_10": 7.5,
+  "score_conditions_3": 2,
+  "score_entreprise_4": 2,
+  "score_differenciateurs_3": 2,
+  "note_20": 13,
+  "verdict": "veille",
+  "raison_principale": "Poste RevOps de construction, HubSpot et automatisation explicitement demandes, adossement Seven2 date et croissance ecrite ; la note reste en veille parce que le volet Financial Planning (budgets, rolling forecasts, business plan) est sans aucune preuve et que l'annonce demande 5 ans quand Tom en a 2 ans 8 mois.",
+  "exigences_sans_preuve": [
+   "Financial Planning : budgets, rolling forecasts, business plan, supports investisseurs",
+   "Premiere experience d'au moins 5 ans en Sales ou Revenue Operations : preuve partielle seulement, 2 ans 8 mois en operations",
+   "Administration de HubSpot en production : preuve partielle seulement, certifie mais jamais en production",
+   "Dashboards ARR, churn, pipe review : preuve partielle seulement, aucun indicateur SaaS dans rules/profil.md",
+   "Integration de donnees CRM vers ERP : preuve partielle seulement"
+  ],
+  "deductions": "Deductions, sans preuve ecrite dans l'annonce : le rattachement au CFO et le poids du Financial Planning laissent deduire un poste plus finance que commercial, ou la production budgetaire pesera autant que l'outillage RevOps ; la « perspective d'integration de nouvelles entites » laisse deduire des chantiers d'harmonisation post-acquisition ; La Defense laisse deduire une presence sur site reguliere malgre le full remote annonce par la fiche de sourcing.",
+  "detail": "Bande seniorite : stretch (5 ans minimum ecrits (« Premiere experience d'au moins 5 ans en Sales ou Revenue Operations »)). Sans effet sur la note (R8).\n\nCouverture des exigences ecrites (exigence | preuve | etat | centrale) :\n- Bac +5 d'une grande ecole de commerce, d'ingenieur ou grande universite (specialisation finance, business ou commercial) | « Bac+5 emlyon business school (Programme Grande Ecole, 2016-2019) » | couvert | centrale : non\n- Premiere experience d'au moins 5 ans en Sales ou Revenue Operations | « oct. 2023 - mai 2026 (2 ans 8 mois en operations) » | partiel | centrale : oui\n- Fort esprit analytique pour traduire la donnee disponible en analyses strategiques et actionnables | « Reporting 20 M EUR de CA (Carrefour, Cora) sous Power BI et SAP ; 200+ SKU » | couvert | centrale : oui\n- Rigueur et proactivite pour le deploiement des processus | « process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique » | couvert | centrale : oui\n- Notions et curiosite sur les outils d'automatisation et l'IA appliquee a la Finance et au traitement de la donnee | « workflows n8n et Process Street (relances, declencheurs, scoring, webhooks et API vers le CRM, gestion d'erreurs) » et « Agents IA : systeme personnel de recherche d'emploi (ce depot) » | couvert | centrale : oui\n- Experience concrete dans la gestion d'un CRM et des outils lies aux revenus | « Digiforma (CRM deploye de bout en bout) » ; marque signalee en reserve, l'annonce vise idealement HubSpot | couvert | centrale : oui\n- Maitrise d'Excel / Google Sheets a un niveau avance | « Excel avance » | couvert | centrale : non\n- Administration et optimisation de l'ecosysteme d'outils Revenue (HubSpot) | « HubSpot : certifie Sales Management, Sales Hub, Reporting, Revenue Operations ; jamais en production » | partiel | centrale : oui\n- Mise en place des dashboards funnel, ARR, churn, pipe review, analyses et KPI d'une activite hybride Produit et Conseil | « Reporting 20 M EUR de CA (Carrefour, Cora) sous Power BI et SAP » ; aucun ARR ni churn dans rules/profil.md | partiel | centrale : oui\n- Financial Planning : budgets, rolling forecasts, business plan, supports pour dirigeants et investisseurs | aucune preuve dans rules/profil.md | absent | centrale : oui\n- Renforcement de la coherence, de l'automatisation et de la fiabilite des donnees entre les systemes (CRM x ERP) | « webhooks et API vers le CRM, gestion d'erreurs » et « Power BI, Excel avance, SAP » ; aucune integration CRM vers ERP dans rules/profil.md | partiel | centrale : non\n- Structuration et optimisation de l'ensemble du cycle de vente client | « Cycle de vente construit sans playbook ; process en 23 etapes, 143 dossiers » | couvert | centrale : oui\n- Documentation des processus lies au Revenu | « process en 23 etapes, 143 dossiers » | couvert | centrale : non\n\nSous-scores :\nA couverture 7.5/10 : 13 exigences ecrites, 8 couvertes, 4 partielles, 1 absentes, soit 10 point(s) sur 13, ramenes sur 10 et arrondis a 0,5.\nB conditions 2/3 : +1 CDI et lieu compatibles (Paris La Defense, tres proche banlieue) ; +1 full remote selon la fiche de sourcing ; 0 salaire, aucun montant affiche, aucune estimation (R3).\nC entreprise 2/4 : 0 effectif : aucun chiffre d'effectif public dans l'annonce, aucune estimation (R3, R9) ; +1 entreprise ambitieuse, adossement date et croissance ecrite (« Nouvellement adosse au fond prive Seven2, Illuin est entre dans une phase d'investissement et de forte croissance depuis le debut de l'annee ») ; 0 reputation employeur : aucune note ni label cites ; +1 ecosysteme logiciel B2B (« une plateforme technologique de pointe pour permettre aux entreprises et aux organisations de deployer l'IA generative », « activite hybride Produit et Conseil »).\nD differenciateurs 2/3 : +1 automatisation et IA en operations demandees explicitement (« Notions et curiosite attendues sur les outils d'automatisation ainsi que l'IA appliquee ») et pratiquees par Tom (n8n, Process Street, agents IA) ; 0 formation ou enablement d'adultes : non demandes ; +1 outil nomme pratique par Tom, HubSpot cite deux fois (« Administration et optimisation de l'ecosysteme d'outils Revenue (HubSpot) »), certification a signaler en reserve.\n\nNote : 7.5 + 2 + 2 + 2 = 13.5, entier arrondi vers le bas = 13 sur 20 (hesitation = note basse).\nVerdict : veille. Poste RevOps de construction, HubSpot et automatisation explicitement demandes, adossement Seven2 date et croissance ecrite ; la note reste en veille parce que le volet Financial Planning (budgets, rolling forecasts, business plan) est sans aucune preuve et que l'annonce demande 5 ans quand Tom en a 2 ans 8 mois.",
+  "regles_appliquees": [
+   "R2",
+   "R3",
+   "R6",
+   "R7",
+   "R8",
+   "R9"
+  ],
+  "run": "2026-09-07 14:00"
+ },
+ {
+  "cle": "mirakl|revenue operations analyst",
+  "entreprise": "Mirakl",
+  "poste": "Revenue Operations Analyst, Paris",
+  "famille": "RevOps",
+  "dossier_deja_ouvert": true,
+  "couverture": [
+   {
+    "exigence": "2 ans et plus de support d'applications business (Salesforce, CPQ, CRM, outils de sales engagement ou plateformes RevOps)",
+    "preuve": "« oct. 2023 - mai 2026 (2 ans 8 mois en operations) » et « Digiforma (CRM deploye de bout en bout) »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Administrer Salesforce : utilisateurs, permissions, workflows, approbations, qualite de la donnee",
+    "preuve": "« Salesforce : notions seulement, jamais en production »",
+    "etat": "absent",
+    "centrale": true
+   },
+   {
+    "exigence": "Experience hands-on ou fort interet pour les agents IA, l'automatisation de workflows et des outils comme n8n",
+    "preuve": "« workflows n8n et Process Street (relances, declencheurs, scoring, webhooks et API vers le CRM, gestion d'erreurs) »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Concevoir, deployer et maintenir des processus d'agents IA et des workflows n8n qui automatisent les taches recurrentes",
+    "preuve": "« Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Capacite demontree a piloter des projets transverses complexes avec de multiples parties prenantes",
+    "preuve": "« coordination de 5 personnes sans lien hierarchique »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Diplome en Business, Information Systems ou domaine proche, ou experience equivalente",
+    "preuve": "« Bac+5 emlyon business school (Programme Grande Ecole, 2016-2019) »",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Soutenir le deploiement du modele CPQ (DealHub ou plateforme equivalente) : recueil des besoins, tests, documentation, mise en service",
+    "preuve": null,
+    "etat": "absent",
+    "centrale": true
+   },
+   {
+    "exigence": "Documenter solutions, incidents recurrents et procedures standard pour construire une base de connaissances fiable",
+    "preuve": "« process en 23 etapes, 143 dossiers »",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Resolution analytique de problemes avec une forte attention au detail",
+    "preuve": "« 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique »",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Traduire des besoins metier en solutions systeme ou d'automatisation fiables et scalables",
+    "preuve": "« webhooks et API vers le CRM, gestion d'erreurs »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Gestion de donnees sous Databricks",
+    "preuve": null,
+    "etat": "absent",
+    "centrale": false
+   },
+   {
+    "exigence": "Outils de sales engagement et de prospection (Gong, Outreach)",
+    "preuve": null,
+    "etat": "absent",
+    "centrale": false
+   },
+   {
+    "exigence": "Maintenir et ameliorer les outils supportant prospection, execution des ventes, quoting et revenue recognition",
+    "preuve": "« pipeline sur BoondManager » et « Digiforma (CRM deploye de bout en bout) » ; aucun quoting ni revenue recognition dans rules/profil.md",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Anglais C2 et francais C2",
+    "preuve": "« Francais natif, anglais courant (910 TOEIC) »",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Productivite et documentation : Google Workspace ou Microsoft 365, Confluence ou Notion",
+    "preuve": "« Notion (API) »",
+    "etat": "couvert",
+    "centrale": false
+   }
+  ],
+  "score_couverture_10": 7.0,
+  "score_conditions_3": 2,
+  "score_entreprise_4": 3,
+  "score_differenciateurs_3": 2,
+  "note_20": 14,
+  "verdict": "dossier_ouvert",
+  "raison_principale": "Bande de seniorite coeur, agents IA et n8n explicitement au programme, ecosysteme retail qui parle au parcours DIM ; la note est retenue par l'administration Salesforce demandee en hands-on, le CPQ, Databricks et les outils de sales engagement, tous sans preuve, et un dossier est deja ouvert chez Mirakl.",
+  "exigences_sans_preuve": [
+   "Administration Salesforce en hands-on (utilisateurs, permissions, workflows, approbations)",
+   "Deploiement d'un modele CPQ (DealHub ou equivalent)",
+   "Gestion de donnees sous Databricks",
+   "Outils de sales engagement et de prospection (Gong, Outreach)",
+   "Quoting et revenue recognition : preuve partielle seulement"
+  ],
+  "deductions": "Deductions, sans preuve ecrite dans l'annonce : l'equipe compte 10 Revenue Operations Analysts autour d'un Team Lead, ce qui laisse deduire un poste specialise dans une equipe deja structuree plutot qu'un perimetre a construire ; la coexistence de Salesforce, DealHub, Databricks, Gong et Outreach laisse deduire une stack lourde ou l'administration systeme pesera plus que la conception de process ; la double exigence C2 en francais et en anglais laisse deduire des echanges quotidiens avec Boston.",
+  "detail": "Attention : un dossier est deja ouvert chez cet employeur (Enablement Manager, Sales & AI transformation, Candidature envoyee). La note est calculee, le verdict est dossier_ouvert.\nBande seniorite : coeur (2 ans minimum ecrits (« 2+ years of experience supporting business applications »)). Sans effet sur la note (R8).\n\nCouverture des exigences ecrites (exigence | preuve | etat | centrale) :\n- 2 ans et plus de support d'applications business (Salesforce, CPQ, CRM, outils de sales engagement ou plateformes RevOps) | « oct. 2023 - mai 2026 (2 ans 8 mois en operations) » et « Digiforma (CRM deploye de bout en bout) » | couvert | centrale : oui\n- Administrer Salesforce : utilisateurs, permissions, workflows, approbations, qualite de la donnee | « Salesforce : notions seulement, jamais en production » | absent | centrale : oui\n- Experience hands-on ou fort interet pour les agents IA, l'automatisation de workflows et des outils comme n8n | « workflows n8n et Process Street (relances, declencheurs, scoring, webhooks et API vers le CRM, gestion d'erreurs) » | couvert | centrale : oui\n- Concevoir, deployer et maintenir des processus d'agents IA et des workflows n8n qui automatisent les taches recurrentes | « Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous » | couvert | centrale : oui\n- Capacite demontree a piloter des projets transverses complexes avec de multiples parties prenantes | « coordination de 5 personnes sans lien hierarchique » | couvert | centrale : oui\n- Diplome en Business, Information Systems ou domaine proche, ou experience equivalente | « Bac+5 emlyon business school (Programme Grande Ecole, 2016-2019) » | couvert | centrale : non\n- Soutenir le deploiement du modele CPQ (DealHub ou plateforme equivalente) : recueil des besoins, tests, documentation, mise en service | aucune preuve dans rules/profil.md | absent | centrale : oui\n- Documenter solutions, incidents recurrents et procedures standard pour construire une base de connaissances fiable | « process en 23 etapes, 143 dossiers » | couvert | centrale : non\n- Resolution analytique de problemes avec une forte attention au detail | « 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique » | couvert | centrale : non\n- Traduire des besoins metier en solutions systeme ou d'automatisation fiables et scalables | « webhooks et API vers le CRM, gestion d'erreurs » | couvert | centrale : oui\n- Gestion de donnees sous Databricks | aucune preuve dans rules/profil.md | absent | centrale : non\n- Outils de sales engagement et de prospection (Gong, Outreach) | aucune preuve dans rules/profil.md | absent | centrale : non\n- Maintenir et ameliorer les outils supportant prospection, execution des ventes, quoting et revenue recognition | « pipeline sur BoondManager » et « Digiforma (CRM deploye de bout en bout) » ; aucun quoting ni revenue recognition dans rules/profil.md | partiel | centrale : oui\n- Anglais C2 et francais C2 | « Francais natif, anglais courant (910 TOEIC) » | couvert | centrale : non\n- Productivite et documentation : Google Workspace ou Microsoft 365, Confluence ou Notion | « Notion (API) » | couvert | centrale : non\n\nSous-scores :\nA couverture 7/10 : 15 exigences ecrites, 10 couvertes, 1 partielles, 4 absentes, soit 10.5 point(s) sur 15, ramenes sur 10 et arrondis a 0,5.\nB conditions 2/3 : +1 CDI et lieu compatibles (Paris, France) ; +1 hybride selon la fiche de sourcing ; 0 salaire, aucun montant affiche, aucune estimation (R3).\nC entreprise 3/4 : +1 effectif public (« 750+ employees in 9 offices worldwide ») ; +1 entreprise ambitieuse (« Member of French Tech Next40 », « AI-powered multichannel selling (Mirakl Connect) », « an agentic commerce infrastructure (Mirakl Nexus) ») ; 0 reputation employeur : aucune note Glassdoor ni label employeur cites, le Next40 est un label de croissance et non d'employeur (R3, R9) ; +1 ecosysteme retail et SaaS B2B (« 450+ marketplaces (B2C and B2B) », « Brands like Macy's, Decathlon, Carrefour, Asos »).\nD differenciateurs 2/3 : +1 agents IA et automatisation demandes explicitement (« Design, deploy, and maintain AI-agent processes and n8n workflows ») et couverts par le systeme personnel de Tom ; 0 formation ou enablement d'adultes : non demandes ; +1 outils nommes pratiques par Tom (« Automation: n8n, Dust, AI agents », « Confluence or Notion »).\n\nNote : 7 + 2 + 3 + 2 = 14, entier arrondi vers le bas = 14 sur 20 (hesitation = note basse).\nVerdict : dossier_ouvert. Bande de seniorite coeur, agents IA et n8n explicitement au programme, ecosysteme retail qui parle au parcours DIM ; la note est retenue par l'administration Salesforce demandee en hands-on, le CPQ, Databricks et les outils de sales engagement, tous sans preuve, et un dossier est deja ouvert chez Mirakl.",
+  "regles_appliquees": [
+   "R2",
+   "R3",
+   "R7",
+   "R8",
+   "R9"
+  ],
+  "run": "2026-09-07 14:00"
+ },
+ {
+  "cle": "alan|senior revenue ops",
+  "entreprise": "Alan",
+  "poste": "Senior Revenue Ops",
+  "famille": "RevOps",
+  "dossier_deja_ouvert": true,
+  "couverture": [
+   {
+    "exigence": "Au moins 5 ans d'experience dans un role similaire (RevOps, Sales Ops ou Sales Effectiveness)",
+    "preuve": "« oct. 2023 - mai 2026 (2 ans 8 mois en operations) »",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Ownership fort et gestion de projet, a l'aise pour mener des initiatives sans encadrement rapproche",
+    "preuve": "« Cycle de vente construit sans playbook » et « coordination de 5 personnes sans lien hierarchique »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Builder mindset et gout du hands-on",
+    "preuve": "« President-Fondateur | Hack'Coeur (association) | 2020 | Creee a partir de rien, partenariats et benevoles ; incubee a l'INSEAD »",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Conduite du changement : shadowing, formation, mesure de l'adoption, iteration jusqu'a ce que le changement tienne",
+    "preuve": "« Consultant & Formateur (freelance) | PME | mai 2021 - sept. 2022 | ... formation d'adultes »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Lecture de requetes SQL de niveau intermediaire au minimum, ecriture autonome appreciee",
+    "preuve": "« SQL : Kaggle Intro et Advanced SQL ; base Postgres (Supabase) en production sur Mentalizi ; requetes generees par l'IA puis lues et validees. Jamais SQL avance »",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Experience prouvee des outils low-code et des integrations (Clay, Make, Zapier ou equivalent) pour construire des workflows scalables",
+    "preuve": "« Process Street, Notion (API), Zoho Campaigns, Meta Ads, n8n (chez CITYZ'), Make, Zapier, Airtable »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Experience hands-on directe de Salesforce et/ou Outreach, pas seulement une connaissance ou un usage d'administration",
+    "preuve": "« Salesforce : notions seulement, jamais en production »",
+    "etat": "absent",
+    "centrale": true
+   },
+   {
+    "exigence": "Construire et maintenir des pipelines de donnees produisant des insights actionnables a impact business clair",
+    "preuve": "« Reporting 20 M EUR de CA (Carrefour, Cora) sous Power BI et SAP » ; aucun pipeline de donnees dans rules/profil.md",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Reperer les manques du process de vente sur le terrain et concevoir des workflows plus simples et plus automatises",
+    "preuve": "« process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Evaluer de nouveaux outils et technologies, mener des tests et deployer ce qui fonctionne",
+    "preuve": "« workflows n8n et Process Street (relances, declencheurs, scoring, webhooks et API vers le CRM, gestion d'erreurs) »",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Excellentes qualites de communication ecrite et orale",
+    "preuve": "« Consultant & Formateur (freelance) | PME | mai 2021 - sept. 2022 | ... formation d'adultes »",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Francais courant et anglais de niveau avance",
+    "preuve": "« Francais natif, anglais courant (910 TOEIC) »",
+    "etat": "couvert",
+    "centrale": false
+   }
+  ],
+  "score_couverture_10": 8.0,
+  "score_conditions_3": 2,
+  "score_entreprise_4": 2,
+  "score_differenciateurs_3": 3,
+  "note_20": 15,
+  "verdict": "dossier_ouvert",
+  "raison_principale": "Les trois differenciateurs de la grille sont demandes noir sur blanc et Tom les a (automatisation low-code, enablement, Zapier, n8n, Make, Dust) ; la note plafonne parce que Salesforce ou Outreach est exige en hands-on direct, que le SQL reste partiel et que 5 ans sont demandes contre 2 ans 8 mois ; un dossier est deja ouvert chez Alan.",
+  "exigences_sans_preuve": [
+   "Experience hands-on directe de Salesforce et/ou Outreach",
+   "Au moins 5 ans en RevOps, Sales Ops ou Sales Effectiveness : preuve partielle seulement, 2 ans 8 mois en operations",
+   "Lecture de requetes SQL de niveau intermediaire : preuve partielle seulement, jamais SQL avance",
+   "Construction et maintenance de pipelines de donnees : preuve partielle seulement"
+  ],
+  "deductions": "Deductions, sans preuve ecrite dans l'annonce : le titre Senior et la bande D-E laissent deduire un niveau de responsabilite au-dessus de la cible de seniorite de Tom ; les exemples cites (automatisation de generation de slides economisant plus de 1 000 heures par an, machine d'outbound pilotee par IA a 15 % de taux de discovery) laissent deduire une equipe deja tres outillee, ou la barre d'entree technique est haute ; le perimetre France, Belgique, Espagne et Canada laisse deduire des sujets multi-pays.",
+  "detail": "Attention : un dossier est deja ouvert chez cet employeur (Ops & Product Builder, Candidature envoyee). La note est calculee, le verdict est dossier_ouvert.\nBande seniorite : stretch (5 ans minimum ecrits (« Have at least 5 years of experience in a similar role (RevOps, Sales Ops, or Sales Effectiveness) »)). Sans effet sur la note (R8).\n\nCouverture des exigences ecrites (exigence | preuve | etat | centrale) :\n- Au moins 5 ans d'experience dans un role similaire (RevOps, Sales Ops ou Sales Effectiveness) | « oct. 2023 - mai 2026 (2 ans 8 mois en operations) » | partiel | centrale : oui\n- Ownership fort et gestion de projet, a l'aise pour mener des initiatives sans encadrement rapproche | « Cycle de vente construit sans playbook » et « coordination de 5 personnes sans lien hierarchique » | couvert | centrale : oui\n- Builder mindset et gout du hands-on | « President-Fondateur | Hack'Coeur (association) | 2020 | Creee a partir de rien, partenariats et benevoles ; incubee a l'INSEAD » | couvert | centrale : non\n- Conduite du changement : shadowing, formation, mesure de l'adoption, iteration jusqu'a ce que le changement tienne | « Consultant & Formateur (freelance) | PME | mai 2021 - sept. 2022 | ... formation d'adultes » | couvert | centrale : oui\n- Lecture de requetes SQL de niveau intermediaire au minimum, ecriture autonome appreciee | « SQL : Kaggle Intro et Advanced SQL ; base Postgres (Supabase) en production sur Mentalizi ; requetes generees par l'IA puis lues et validees. Jamais SQL avance » | partiel | centrale : oui\n- Experience prouvee des outils low-code et des integrations (Clay, Make, Zapier ou equivalent) pour construire des workflows scalables | « Process Street, Notion (API), Zoho Campaigns, Meta Ads, n8n (chez CITYZ'), Make, Zapier, Airtable » | couvert | centrale : oui\n- Experience hands-on directe de Salesforce et/ou Outreach, pas seulement une connaissance ou un usage d'administration | « Salesforce : notions seulement, jamais en production » | absent | centrale : oui\n- Construire et maintenir des pipelines de donnees produisant des insights actionnables a impact business clair | « Reporting 20 M EUR de CA (Carrefour, Cora) sous Power BI et SAP » ; aucun pipeline de donnees dans rules/profil.md | partiel | centrale : oui\n- Reperer les manques du process de vente sur le terrain et concevoir des workflows plus simples et plus automatises | « process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier » | couvert | centrale : oui\n- Evaluer de nouveaux outils et technologies, mener des tests et deployer ce qui fonctionne | « workflows n8n et Process Street (relances, declencheurs, scoring, webhooks et API vers le CRM, gestion d'erreurs) » | couvert | centrale : non\n- Excellentes qualites de communication ecrite et orale | « Consultant & Formateur (freelance) | PME | mai 2021 - sept. 2022 | ... formation d'adultes » | couvert | centrale : non\n- Francais courant et anglais de niveau avance | « Francais natif, anglais courant (910 TOEIC) » | couvert | centrale : non\n\nSous-scores :\nA couverture 8/10 : 12 exigences ecrites, 8 couvertes, 3 partielles, 1 absentes, soit 9.5 point(s) sur 12, ramenes sur 10 et arrondis a 0,5.\nB conditions 2/3 : +1 CDI et lieu compatibles (« Are based in (or willing to relocate to) Paris, Bordeaux, Marseille... ») ; +1 hybride ecrit (« Flexible office with hybrid setup. Amazing office space at our Paris HQ ») ; 0 salaire, aucun montant affiche (« we are looking to hire within the D-E level range »), aucune estimation (R3).\nC entreprise 2/4 : +1 effectif public (« That's what we're building with our team of 800+ people ») ; +1 entreprise ambitieuse (« 40K+ companies of all sizes, serving more than 1M+ members, and have reached 800M+ EUR in ARR ») ; 0 reputation employeur : la page Glassdoor est citee mais aucune note ne l'est (R3, R9) ; 0 ecosysteme : assurance sante et prevention, hors des ecosystemes listes par la grille.\nD differenciateurs 3/3 : +1 automatisation et IA en operations demandees explicitement (« combining low-code tools, AI (Dust, Claude), Salesforce, and SQL », « increasing automation ») ; +1 enablement d'adultes demande explicitement (« Enablement is a key part of the role: you'll shadow, train, measure adoption, and iterate ») et couvert (« formation d'adultes ») ; +1 outils nommes pratiques par Tom (« low-code tools (like Zapier or n8n) », « Clay, Make, Zapier », « Dust »).\n\nNote : 8 + 2 + 2 + 3 = 15, entier arrondi vers le bas = 15 sur 20 (hesitation = note basse).\nVerdict : dossier_ouvert. Les trois differenciateurs de la grille sont demandes noir sur blanc et Tom les a (automatisation low-code, enablement, Zapier, n8n, Make, Dust) ; la note plafonne parce que Salesforce ou Outreach est exige en hands-on direct, que le SQL reste partiel et que 5 ans sont demandes contre 2 ans 8 mois ; un dossier est deja ouvert chez Alan.",
+  "regles_appliquees": [
+   "R1",
+   "R3",
+   "R7",
+   "R8",
+   "R9"
+  ],
+  "run": "2026-09-07 14:00"
+ },
+ {
+  "cle": "meilleurtaux|ai transformation senior",
+  "entreprise": "Meilleurtaux",
+  "poste": "AI Transformation Senior H/F",
+  "famille": "AI & Ops Automation",
+  "dossier_deja_ouvert": false,
+  "couverture": [
+   {
+    "exigence": "Formation Bac +5 de type Ecole d'Ingenieurs ou Master Informatique avec specialisation en Intelligence Artificielle",
+    "preuve": "« Bac+5 emlyon business school (Programme Grande Ecole, 2016-2019) » ; aucun diplome d'ingenieur ni d'informatique",
+    "etat": "absent",
+    "centrale": true
+   },
+   {
+    "exigence": "3 a 5 ans en AI Engineering, avec une experience en transformation digitale",
+    "preuve": "« oct. 2023 - mai 2026 (2 ans 8 mois en operations) » et « Agents IA : systeme personnel de recherche d'emploi (ce depot) »",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Expertise en prompt engineering et industrialisation de templates",
+    "preuve": "« Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Bonne connaissance des strategies d'apprentissage des LLMs (RLHF, fine-tuning, RAG, memory)",
+    "preuve": null,
+    "etat": "absent",
+    "centrale": true
+   },
+   {
+    "exigence": "Mettre en place des guardrails et securiser les appels API tout en protegeant les donnees sensibles",
+    "preuve": "« schemas, garde-fous » et « webhooks et API vers le CRM, gestion d'erreurs » ; aucune securisation de donnees sensibles dans rules/profil.md",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Experience dans la conception et le deploiement de LLM-as-a-judge",
+    "preuve": null,
+    "etat": "absent",
+    "centrale": true
+   },
+   {
+    "exigence": "Salesforce / Agentforce : experience sur cette plateforme consideree comme un atout",
+    "preuve": "« Salesforce : notions seulement, jamais en production »",
+    "etat": "partiel",
+    "centrale": false
+   },
+   {
+    "exigence": "Parametrage d'Agentforce au sein de la squad IA des equipes Placement, construction et croissance des agents",
+    "preuve": "« Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling » ; Agentforce jamais pratique",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Deploiement des solutions off the shelf (Delos, Gemini Enterprise, ChatGPT Enterprise) aupres des equipes operationnelles",
+    "preuve": "« Agents IA : ... Tourne sur Claude + Notion, et sur Dust » ; aucun deploiement d'outil IA generique en entreprise dans rules/profil.md",
+    "etat": "partiel",
+    "centrale": false
+   },
+   {
+    "exigence": "Gestion du changement : accompagner les equipes dans l'adoption de nouvelles technologies et methodes",
+    "preuve": "« Consultant & Formateur (freelance) | PME | mai 2021 - sept. 2022 | ... formation d'adultes »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Adoption : stimuler l'appropriation des outils IA et creer l'adhesion des utilisateurs",
+    "preuve": "« coordination de 5 personnes sans lien hierarchique »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Animer les champions, relais des outils generiques dans le Groupe, et creer les synergies entre equipes",
+    "preuve": "« coordination de 5 personnes sans lien hierarchique »",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Experience utilisateur : sensibilite a la qualite d'usage des agents IA et optimisation de l'interaction homme-machine",
+    "preuve": "« Mentalizi : application mobile de preparation mentale pour sportifs, personnalisee par l'IA ; construite en vibe coding (Replit) avec un backend Supabase »",
+    "etat": "partiel",
+    "centrale": false
+   },
+   {
+    "exigence": "Formation et transmission : former, coacher et partager les bonnes pratiques aupres des equipes",
+    "preuve": "« Consultant & Formateur (freelance) | PME | mai 2021 - sept. 2022 | ... formation d'adultes »",
+    "etat": "couvert",
+    "centrale": true
+   }
+  ],
+  "score_couverture_10": 5.5,
+  "score_conditions_3": 2,
+  "score_entreprise_4": 2,
+  "score_differenciateurs_3": 2,
+  "note_20": 11,
+  "verdict": "no_go",
+  "raison_principale": "La moitie metier du poste (adoption, conduite du changement, formation, animation des champions) est couverte, mais l'annonce est ecrite pour un profil AI Engineering : diplome d'ingenieur ou master informatique exige, RLHF, fine-tuning et LLM-as-a-judge demandes, tous sans aucune preuve chez Tom.",
+  "exigences_sans_preuve": [
+   "Bac +5 Ecole d'Ingenieurs ou Master Informatique avec specialisation Intelligence Artificielle",
+   "Strategies d'apprentissage des LLMs : RLHF, fine-tuning, RAG, memory",
+   "Conception et deploiement de LLM-as-a-judge",
+   "3 a 5 ans en AI Engineering : preuve partielle seulement, 2 ans 8 mois en operations et aucun poste d'AI Engineering",
+   "Parametrage d'Agentforce : preuve partielle seulement, plateforme jamais pratiquee",
+   "Securisation des appels API et protection des donnees sensibles : preuve partielle seulement"
+  ],
+  "deductions": "Deductions, sans preuve ecrite dans l'annonce : le rattachement au departement « Data, IA & CRM Marketing » et le vocabulaire technique laissent deduire une equipe d'ingenierie ou le poste sera evalue sur la technique avant la conduite du changement ; l'exigence d'un diplome d'ingenieur ou d'un master informatique correspond a une exclusion ferme du perimetre de sourcing (criteres.md paragraphe 1) et devrait etre revue par Lea ; le fort soutien annonce de Salesforce sur Agentforce laisse deduire un environnement Salesforce dominant.",
+  "detail": "Bande seniorite : coeur (3 ans minimum ecrits (« Experience : 3 a 5 ans en AI Engineering »)). Sans effet sur la note (R8).\n\nCouverture des exigences ecrites (exigence | preuve | etat | centrale) :\n- Formation Bac +5 de type Ecole d'Ingenieurs ou Master Informatique avec specialisation en Intelligence Artificielle | « Bac+5 emlyon business school (Programme Grande Ecole, 2016-2019) » ; aucun diplome d'ingenieur ni d'informatique | absent | centrale : oui\n- 3 a 5 ans en AI Engineering, avec une experience en transformation digitale | « oct. 2023 - mai 2026 (2 ans 8 mois en operations) » et « Agents IA : systeme personnel de recherche d'emploi (ce depot) » | partiel | centrale : oui\n- Expertise en prompt engineering et industrialisation de templates | « Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous » | couvert | centrale : oui\n- Bonne connaissance des strategies d'apprentissage des LLMs (RLHF, fine-tuning, RAG, memory) | aucune preuve dans rules/profil.md | absent | centrale : oui\n- Mettre en place des guardrails et securiser les appels API tout en protegeant les donnees sensibles | « schemas, garde-fous » et « webhooks et API vers le CRM, gestion d'erreurs » ; aucune securisation de donnees sensibles dans rules/profil.md | partiel | centrale : oui\n- Experience dans la conception et le deploiement de LLM-as-a-judge | aucune preuve dans rules/profil.md | absent | centrale : oui\n- Salesforce / Agentforce : experience sur cette plateforme consideree comme un atout | « Salesforce : notions seulement, jamais en production » | partiel | centrale : non\n- Parametrage d'Agentforce au sein de la squad IA des equipes Placement, construction et croissance des agents | « Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling » ; Agentforce jamais pratique | partiel | centrale : oui\n- Deploiement des solutions off the shelf (Delos, Gemini Enterprise, ChatGPT Enterprise) aupres des equipes operationnelles | « Agents IA : ... Tourne sur Claude + Notion, et sur Dust » ; aucun deploiement d'outil IA generique en entreprise dans rules/profil.md | partiel | centrale : non\n- Gestion du changement : accompagner les equipes dans l'adoption de nouvelles technologies et methodes | « Consultant & Formateur (freelance) | PME | mai 2021 - sept. 2022 | ... formation d'adultes » | couvert | centrale : oui\n- Adoption : stimuler l'appropriation des outils IA et creer l'adhesion des utilisateurs | « coordination de 5 personnes sans lien hierarchique » | couvert | centrale : oui\n- Animer les champions, relais des outils generiques dans le Groupe, et creer les synergies entre equipes | « coordination de 5 personnes sans lien hierarchique » | couvert | centrale : non\n- Experience utilisateur : sensibilite a la qualite d'usage des agents IA et optimisation de l'interaction homme-machine | « Mentalizi : application mobile de preparation mentale pour sportifs, personnalisee par l'IA ; construite en vibe coding (Replit) avec un backend Supabase » | partiel | centrale : non\n- Formation et transmission : former, coacher et partager les bonnes pratiques aupres des equipes | « Consultant & Formateur (freelance) | PME | mai 2021 - sept. 2022 | ... formation d'adultes » | couvert | centrale : oui\n\nSous-scores :\nA couverture 5.5/10 : 14 exigences ecrites, 5 couvertes, 6 partielles, 3 absentes, soit 8 point(s) sur 14, ramenes sur 10 et arrondis a 0,5.\nB conditions 2/3 : +1 CDI ecrit (« Type de Contrat: CDI ») et lieu Paris (« 36 Rue de Saint-Petersbourg, 75008 Paris ») ; +1 hybride ecrit (« 2 jours de teletravail par semaine apres votre periode d'integration ») et Paris intra-muros ; 0 salaire, aucun montant affiche (« Un package attractif avec primes individuelles et collectives »), aucune estimation (R3).\nC entreprise 2/4 : +1 groupe, preuve ecrite (« pres de 300 agences dans toute la France », « plus de 5 milliards d'euros de credits debloques et 6 milliards d'actifs geres en 2025», « Groupe Meilleurtaux ») ; 0 entreprise ambitieuse : aucune levee datee ni chiffre de croissance date dans l'annonce (R3, R9) ; 0 reputation employeur : aucune note ni label cites ; +1 ecosysteme fintech (« la fintech leader en placement financier, credit et assurance »).\nD differenciateurs 2/3 : +1 agents IA et automatisation en operations demandes explicitement (« devenir le catalyseur de la transformation agentique du Groupe », « supprimer toutes les taches a faible valeur ajoutee de l'ensemble des process ») et couverts par le systeme personnel de Tom ; +1 formation d'adultes demandee explicitement (« Formation et transmission : competence pour former, coacher et partager les bonnes pratiques ») et couverte ; 0 outil nomme pratique par Tom : les outils cites sont Delos, Gemini Enterprise, ChatGPT Enterprise, Agentforce et Salesforce, aucun de la liste de la grille.\n\nNote : 5.5 + 2 + 2 + 2 = 11.5, entier arrondi vers le bas = 11 sur 20 (hesitation = note basse).\nVerdict : no_go. La moitie metier du poste (adoption, conduite du changement, formation, animation des champions) est couverte, mais l'annonce est ecrite pour un profil AI Engineering : diplome d'ingenieur ou master informatique exige, RLHF, fine-tuning et LLM-as-a-judge demandes, tous sans aucune preuve chez Tom.",
+  "regles_appliquees": [
+   "R3",
+   "R7",
+   "R8",
+   "R9"
+  ],
+  "run": "2026-09-07 14:00"
+ },
+ {
+  "cle": "veepee|sales analyst and support",
+  "entreprise": "Veepee",
+  "poste": "Sales Analyst & Support (F/H/X) - CDI",
+  "famille": "Sales Ops",
+  "dossier_deja_ouvert": false,
+  "couverture": [
+   {
+    "exigence": "Formation de type Bac +5 en ecole de commerce ou cursus universitaire",
+    "preuve": "« Bac+5 emlyon business school (Programme Grande Ecole, 2016-2019) »",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Une premiere experience significative similaire en analyses et/ou analyses commerciales",
+    "preuve": "« Reporting 20 M EUR de CA (Carrefour, Cora) sous Power BI et SAP ; 200+ SKU ; negociations annuelles »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Fibre commerciale, esprit analytique et maitrise de la gestion des donnees",
+    "preuve": "« Ingenieur d'affaires | 5 Degres (ESN) | 360 k EUR de CA, 120 % des objectifs, 180 k EUR par compte ouvert » et « Power BI, Excel avance, SAP »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Sens des priorites et rigueur",
+    "preuve": "« process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier, forte reduction des erreurs »",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Autonomie et adaptabilite",
+    "preuve": "« Cycle de vente construit sans playbook »",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Maitrise de Google Apps et du Pack Office, notamment Excel (test Excel au processus de recrutement)",
+    "preuve": "« Excel avance »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Niveau d'anglais professionnel",
+    "preuve": "« Francais natif, anglais courant (910 TOEIC) »",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Analyser les offres et faire des recommandations au commercial pour preparer la negociation",
+    "preuve": "« 200+ SKU ; negociations annuelles » et « 20 entreprises clientes, 40 % converties sur une offre additionnelle »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Preconiser prix de vente et prix d'achat selon la veille concurrentielle, les prix psychologiques et le cycle de vie produit",
+    "preuve": "« Savane & Mousson +15 % de panier moyen » et « negociations annuelles » ; aucune mission de pricing dans rules/profil.md",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Etablir un suivi de performance des operations et realiser les bilans de fin de ventes",
+    "preuve": "« Reporting 20 M EUR de CA (Carrefour, Cora) sous Power BI et SAP »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Preparer les supports de presentation pour les rendez-vous marques et y participer",
+    "preuve": "« negociations annuelles » et « Reporting 20 M EUR de CA (Carrefour, Cora) »",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Gerer la gestion contractuelle avec les partenaires et les litiges de premier niveau",
+    "preuve": "« 20 entreprises clientes, 40 % converties sur une offre additionnelle, 25 % de reconduction » ; aucun contentieux dans rules/profil.md",
+    "etat": "partiel",
+    "centrale": false
+   },
+   {
+    "exigence": "Analyser la composition de l'offre et les volumes des references",
+    "preuve": "« 200+ SKU »",
+    "etat": "couvert",
+    "centrale": true
+   }
+  ],
+  "score_couverture_10": 9.0,
+  "score_conditions_3": 2,
+  "score_entreprise_4": 2,
+  "score_differenciateurs_3": 0,
+  "note_20": 13,
+  "verdict": "veille",
+  "raison_principale": "La meilleure couverture du lot (9/10) parce que le poste reprend presque a l'identique le travail de KAM Junior chez DIM (analyse d'offre, 200+ SKU, negociations, reporting Power BI), mais aucun des trois differenciateurs de la grille n'est demande et l'entreprise ne rapporte que 2 des 4 points.",
+  "exigences_sans_preuve": [
+   "Preconisation de prix de vente et d'achat, veille concurrentielle et strategie pricing : preuve partielle seulement",
+   "Gestion contractuelle et litiges de premier niveau : preuve partielle seulement"
+  ],
+  "deductions": "Deductions, sans preuve ecrite dans l'annonce : le titre « Sales Analyst & Support » et le binome impose avec un commercial laissent deduire un poste de support d'equipe plutot qu'un perimetre autonome ; le test Excel place en deuxieme etape du processus laisse deduire que la maitrise du tableur est le critere discriminant ; Saint-Denis laisse deduire un trajet quotidien a confirmer depuis Vez, comme le signale deja la fiche de sourcing ; aucun sujet IA ni automatisation n'apparait, ce qui laisse deduire un poste eloigne de la famille prioritaire de Tom.",
+  "detail": "Bande seniorite : inconnu (aucune duree ecrite (« Une premiere experience significative similaire en analyses et /ou analyses commerciales »)). Sans effet sur la note (R8).\n\nCouverture des exigences ecrites (exigence | preuve | etat | centrale) :\n- Formation de type Bac +5 en ecole de commerce ou cursus universitaire | « Bac+5 emlyon business school (Programme Grande Ecole, 2016-2019) » | couvert | centrale : non\n- Une premiere experience significative similaire en analyses et/ou analyses commerciales | « Reporting 20 M EUR de CA (Carrefour, Cora) sous Power BI et SAP ; 200+ SKU ; negociations annuelles » | couvert | centrale : oui\n- Fibre commerciale, esprit analytique et maitrise de la gestion des donnees | « Ingenieur d'affaires | 5 Degres (ESN) | 360 k EUR de CA, 120 % des objectifs, 180 k EUR par compte ouvert » et « Power BI, Excel avance, SAP » | couvert | centrale : oui\n- Sens des priorites et rigueur | « process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier, forte reduction des erreurs » | couvert | centrale : non\n- Autonomie et adaptabilite | « Cycle de vente construit sans playbook » | couvert | centrale : non\n- Maitrise de Google Apps et du Pack Office, notamment Excel (test Excel au processus de recrutement) | « Excel avance » | couvert | centrale : oui\n- Niveau d'anglais professionnel | « Francais natif, anglais courant (910 TOEIC) » | couvert | centrale : non\n- Analyser les offres et faire des recommandations au commercial pour preparer la negociation | « 200+ SKU ; negociations annuelles » et « 20 entreprises clientes, 40 % converties sur une offre additionnelle » | couvert | centrale : oui\n- Preconiser prix de vente et prix d'achat selon la veille concurrentielle, les prix psychologiques et le cycle de vie produit | « Savane & Mousson +15 % de panier moyen » et « negociations annuelles » ; aucune mission de pricing dans rules/profil.md | partiel | centrale : oui\n- Etablir un suivi de performance des operations et realiser les bilans de fin de ventes | « Reporting 20 M EUR de CA (Carrefour, Cora) sous Power BI et SAP » | couvert | centrale : oui\n- Preparer les supports de presentation pour les rendez-vous marques et y participer | « negociations annuelles » et « Reporting 20 M EUR de CA (Carrefour, Cora) » | couvert | centrale : non\n- Gerer la gestion contractuelle avec les partenaires et les litiges de premier niveau | « 20 entreprises clientes, 40 % converties sur une offre additionnelle, 25 % de reconduction » ; aucun contentieux dans rules/profil.md | partiel | centrale : non\n- Analyser la composition de l'offre et les volumes des references | « 200+ SKU » | couvert | centrale : oui\n\nSous-scores :\nA couverture 9/10 : 13 exigences ecrites, 11 couvertes, 2 partielles, 0 absentes, soit 12 point(s) sur 13, ramenes sur 10 et arrondis a 0,5.\nB conditions 2/3 : +1 CDI ecrit dans le titre et lieu compatible (Saint-Denis, tres proche banlieue) ; +1 hybride ecrit (« Teletravail possible jusqu'a 2 jours/semaine ») ; 0 salaire, aucun montant affiche (« Prime variable », « Participation aux benefices »), aucune estimation (R3).\nC entreprise 2/4 : +1 effectif public (« compte 5 000 collaborateurs repartis dans 10 pays ») ; 0 entreprise ambitieuse : aucune levee datee, aucun chiffre de croissance, entreprise fondee en 2001 et decrite comme etablie (R3, R9) ; 0 reputation employeur : aucune note ni label cites ; +1 ecosysteme retail (« acteur incontournable du e-commerce en Europe », « collabore avec plus de 7 000 marques »).\nD differenciateurs 0/3 : 0 agents IA ou automatisation : l'annonce n'en demande aucun ; 0 formation ou enablement d'adultes : non demandes ; 0 outil nomme pratique par Tom : seuls Google Apps et le Pack Office sont cites, hors liste de la grille.\n\nNote : 9 + 2 + 2 + 0 = 13, entier arrondi vers le bas = 13 sur 20 (hesitation = note basse).\nVerdict : veille. La meilleure couverture du lot (9/10) parce que le poste reprend presque a l'identique le travail de KAM Junior chez DIM (analyse d'offre, 200+ SKU, negociations, reporting Power BI), mais aucun des trois differenciateurs de la grille n'est demande et l'entreprise ne rapporte que 2 des 4 points.",
+  "regles_appliquees": [
+   "R2",
+   "R3",
+   "R7",
+   "R8",
+   "R9"
+  ],
+  "run": "2026-09-07 14:00"
+ },
+ {
+  "cle": "nomadia|responsable sales operations",
+  "entreprise": "Nomadia",
+  "poste": "Responsable Sales Operations",
+  "famille": "Sales Ops",
+  "dossier_deja_ouvert": false,
+  "couverture": [
+   {
+    "exigence": "Bac +5 ecole de commerce, ecole d'ingenieur ou master universitaire (gestion, finance, data, business analytics)",
+    "preuve": "« Bac+5 emlyon business school (Programme Grande Ecole, 2016-2019) »",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Minimum 4 ans d'experience en Revenue/Sales Operations, dont une partie en environnement SaaS B2B",
+    "preuve": "« oct. 2023 - mai 2026 (2 ans 8 mois en operations) » ; CITYZ'Formation est un CFA et centre de formation continue, pas un SaaS B2B",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Experience souhaitee dans un groupe multi-entites ou en contexte de croissance par acquisitions (private equity, build-and-buy)",
+    "preuve": "« Key Account Manager Junior | DIM (groupe HanesBrands) | 2019 - 2021 » ; aucune integration post-acquisition dans rules/profil.md",
+    "etat": "partiel",
+    "centrale": false
+   },
+   {
+    "exigence": "Experience confirmee d'administration CRM a l'echelle sous HubSpot ou Salesforce, au niveau groupe (pipelines, dealstages, proprietes, regles d'attribution)",
+    "preuve": "« HubSpot : certifie Sales Management, Sales Hub, Reporting, Revenue Operations ; jamais en production » et « Salesforce : notions seulement, jamais en production »",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Maitrise avancee d'un CRM equivalent : pipelines, reporting, automatisation",
+    "preuve": "« Digiforma (CRM deploye de bout en bout) » ; marque signalee en reserve",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Excellente maitrise d'Excel / Google Sheets pour la modelisation (waterfall ARR, forecasting)",
+    "preuve": "« Excel avance » ; aucune modelisation ARR ni forecasting dans rules/profil.md",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Francais courant et anglais professionnel indispensables (reporting investisseurs en anglais)",
+    "preuve": "« Francais natif, anglais courant (910 TOEIC) »",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Comprehension solide des mecaniques SaaS (ARR, NRR, churn, pipeline coverage, sales velocity)",
+    "preuve": null,
+    "etat": "absent",
+    "centrale": true
+   },
+   {
+    "exigence": "Connaissances SQL et outils BI (competences appreciees)",
+    "preuve": "« SQL : Kaggle Intro et Advanced SQL ; base Postgres (Supabase) en production sur Mentalizi. Jamais SQL avance » et « Power BI »",
+    "etat": "partiel",
+    "centrale": false
+   },
+   {
+    "exigence": "Produire le forecasting de pipeline pondere et non pondere et les projections d'ARR/bookings pour la Direction Generale et le board",
+    "preuve": null,
+    "etat": "absent",
+    "centrale": true
+   },
+   {
+    "exigence": "Construire et maintenir les tableaux de bord de revenus (pipeline coverage, bookings, churn, net retention)",
+    "preuve": "« Reporting 20 M EUR de CA (Carrefour, Cora) sous Power BI et SAP » ; aucun indicateur SaaS dans rules/profil.md",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Garantir l'hygiene et l'integrite de la donnee (deduplication, detection de churn cache, coherence multi-devises EUR/USD/INR)",
+    "preuve": "« forte reduction des erreurs, conformite systematique »",
+    "etat": "partiel",
+    "centrale": false
+   },
+   {
+    "exigence": "Concevoir et administrer les plans de commissionnement avec la Direction Commerciale et la Finance",
+    "preuve": null,
+    "etat": "absent",
+    "centrale": true
+   },
+   {
+    "exigence": "Definir et ajuster le territory design et les regles d'allocation des comptes",
+    "preuve": null,
+    "etat": "absent",
+    "centrale": false
+   },
+   {
+    "exigence": "Standardiser le cycle de vente lead-to-cash et les criteres de qualification (MEDDIC ou equivalent)",
+    "preuve": "« Cycle de vente construit sans playbook ; process en 23 etapes, 143 dossiers »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Automatiser les workflows entre Marketing, Sales et Customer Success pour fluidifier le funnel",
+    "preuve": "« workflows n8n et Process Street (relances, declencheurs, scoring, webhooks et API vers le CRM, gestion d'erreurs) »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Piloter l'integration des systemes commerciaux (CRM, reporting, comp plans) des societes acquises et contribuer aux due diligences",
+    "preuve": null,
+    "etat": "absent",
+    "centrale": true
+   },
+   {
+    "exigence": "Preparer les supports de reporting periodiques pour le board et les investisseurs (slides, scorecards individuels)",
+    "preuve": "« Reporting 20 M EUR de CA (Carrefour, Cora) sous Power BI et SAP » ; aucun reporting investisseurs dans rules/profil.md",
+    "etat": "partiel",
+    "centrale": false
+   }
+  ],
+  "score_couverture_10": 5.0,
+  "score_conditions_3": 2,
+  "score_entreprise_4": 2,
+  "score_differenciateurs_3": 2,
+  "note_20": 11,
+  "verdict": "no_go",
+  "raison_principale": "Le poste est un Responsable Sales Ops de groupe adosse a Hg Capital, centre sur le forecasting d'ARR, les comp plans, le territory design et l'integration M&A : cinq exigences centrales sont sans aucune preuve chez Tom, ce qui ramene la couverture a 5/10 malgre HubSpot et l'automatisation demandes.",
+  "exigences_sans_preuve": [
+   "Comprehension solide des mecaniques SaaS (ARR, NRR, churn, pipeline coverage, sales velocity)",
+   "Forecasting de pipeline pondere et projections d'ARR/bookings pour la Direction Generale et le board",
+   "Conception et administration des plans de commissionnement",
+   "Territory design et regles d'allocation des comptes",
+   "Integration des systemes commerciaux des societes acquises et due diligences commerciales",
+   "Administration CRM a l'echelle sous HubSpot ou Salesforce : preuve partielle seulement, certifie HubSpot mais jamais en production",
+   "Modelisation waterfall ARR et forecasting sous Excel : preuve partielle seulement"
+  ],
+  "deductions": "Deductions, sans preuve ecrite dans l'annonce : le rattachement au Directeur Commercial avec un reporting direct au board Hg Capital laisse deduire une pression forte sur la fiabilite du forecast et un poste tres expose ; « l'integration de nouvelles societes au sein du groupe » et la coherence multi-devises EUR/USD/INR laissent deduire une activite deja internationale avec une entite en Inde ; le titre « Responsable » associe a 4 ans minimum laisse deduire un poste de reference unique sur le sujet, sans equipe RevOps existante. L'offre reste non verifiable par le code (lien LinkedIn), elle n'est donc pas presentee comme active.",
+  "detail": "Bande seniorite : stretch (4 ans minimum ecrits (« minimum de 4 ans d'experience en Revenue/Sales Operations »)). Sans effet sur la note (R8).\n\nCouverture des exigences ecrites (exigence | preuve | etat | centrale) :\n- Bac +5 ecole de commerce, ecole d'ingenieur ou master universitaire (gestion, finance, data, business analytics) | « Bac+5 emlyon business school (Programme Grande Ecole, 2016-2019) » | couvert | centrale : non\n- Minimum 4 ans d'experience en Revenue/Sales Operations, dont une partie en environnement SaaS B2B | « oct. 2023 - mai 2026 (2 ans 8 mois en operations) » ; CITYZ'Formation est un CFA et centre de formation continue, pas un SaaS B2B | partiel | centrale : oui\n- Experience souhaitee dans un groupe multi-entites ou en contexte de croissance par acquisitions (private equity, build-and-buy) | « Key Account Manager Junior | DIM (groupe HanesBrands) | 2019 - 2021 » ; aucune integration post-acquisition dans rules/profil.md | partiel | centrale : non\n- Experience confirmee d'administration CRM a l'echelle sous HubSpot ou Salesforce, au niveau groupe (pipelines, dealstages, proprietes, regles d'attribution) | « HubSpot : certifie Sales Management, Sales Hub, Reporting, Revenue Operations ; jamais en production » et « Salesforce : notions seulement, jamais en production » | partiel | centrale : oui\n- Maitrise avancee d'un CRM equivalent : pipelines, reporting, automatisation | « Digiforma (CRM deploye de bout en bout) » ; marque signalee en reserve | couvert | centrale : oui\n- Excellente maitrise d'Excel / Google Sheets pour la modelisation (waterfall ARR, forecasting) | « Excel avance » ; aucune modelisation ARR ni forecasting dans rules/profil.md | partiel | centrale : oui\n- Francais courant et anglais professionnel indispensables (reporting investisseurs en anglais) | « Francais natif, anglais courant (910 TOEIC) » | couvert | centrale : non\n- Comprehension solide des mecaniques SaaS (ARR, NRR, churn, pipeline coverage, sales velocity) | aucune preuve dans rules/profil.md | absent | centrale : oui\n- Connaissances SQL et outils BI (competences appreciees) | « SQL : Kaggle Intro et Advanced SQL ; base Postgres (Supabase) en production sur Mentalizi. Jamais SQL avance » et « Power BI » | partiel | centrale : non\n- Produire le forecasting de pipeline pondere et non pondere et les projections d'ARR/bookings pour la Direction Generale et le board | aucune preuve dans rules/profil.md | absent | centrale : oui\n- Construire et maintenir les tableaux de bord de revenus (pipeline coverage, bookings, churn, net retention) | « Reporting 20 M EUR de CA (Carrefour, Cora) sous Power BI et SAP » ; aucun indicateur SaaS dans rules/profil.md | partiel | centrale : oui\n- Garantir l'hygiene et l'integrite de la donnee (deduplication, detection de churn cache, coherence multi-devises EUR/USD/INR) | « forte reduction des erreurs, conformite systematique » | partiel | centrale : non\n- Concevoir et administrer les plans de commissionnement avec la Direction Commerciale et la Finance | aucune preuve dans rules/profil.md | absent | centrale : oui\n- Definir et ajuster le territory design et les regles d'allocation des comptes | aucune preuve dans rules/profil.md | absent | centrale : non\n- Standardiser le cycle de vente lead-to-cash et les criteres de qualification (MEDDIC ou equivalent) | « Cycle de vente construit sans playbook ; process en 23 etapes, 143 dossiers » | couvert | centrale : oui\n- Automatiser les workflows entre Marketing, Sales et Customer Success pour fluidifier le funnel | « workflows n8n et Process Street (relances, declencheurs, scoring, webhooks et API vers le CRM, gestion d'erreurs) » | couvert | centrale : oui\n- Piloter l'integration des systemes commerciaux (CRM, reporting, comp plans) des societes acquises et contribuer aux due diligences | aucune preuve dans rules/profil.md | absent | centrale : oui\n- Preparer les supports de reporting periodiques pour le board et les investisseurs (slides, scorecards individuels) | « Reporting 20 M EUR de CA (Carrefour, Cora) sous Power BI et SAP » ; aucun reporting investisseurs dans rules/profil.md | partiel | centrale : non\n\nSous-scores :\nA couverture 5/10 : 18 exigences ecrites, 5 couvertes, 8 partielles, 5 absentes, soit 9 point(s) sur 18, ramenes sur 10 et arrondis a 0,5.\nB conditions 2/3 : +1 CDI et lieu compatibles (« Paris et peripherie », « Type d'emploi : Temps plein ») ; +1 hybride ecrit (« teletravail possible ») ; 0 salaire, aucun montant affiche, aucune estimation (R3).\nC entreprise 2/4 : 0 effectif : aucun chiffre d'effectif public dans l'annonce, aucune estimation (R3, R9) ; +1 entreprise ambitieuse, preuve ecrite d'un adossement financier et d'une croissance par acquisitions (« projections d'ARR/bookings pour la Direction Generale et le board Hg Capital », « un environnement stimulant melant croissance et acquisition ») ; 0 reputation employeur : aucune note ni label cites ; +1 ecosysteme SaaS B2B (« Secteur : developpement de logiciels », « dont une partie en environnement SaaS B2B »).\nD differenciateurs 2/3 : +1 automatisation en operations demandee explicitement (« Stack outils et automatisation : piloter la stack RevOps », « automatiser les workflows entre Marketing, Sales et Customer Success ») et pratiquee par Tom (n8n, Process Street, Make, Zapier) ; 0 formation ou enablement d'adultes : le parcours de formation cite est un avantage salarie, pas une exigence du poste ; +1 outil nomme pratique par Tom, HubSpot cite trois fois (« administrer HubSpot au niveau groupe »), certification a signaler en reserve.\n\nNote : 5 + 2 + 2 + 2 = 11, entier arrondi vers le bas = 11 sur 20 (hesitation = note basse).\nVerdict : no_go. Le poste est un Responsable Sales Ops de groupe adosse a Hg Capital, centre sur le forecasting d'ARR, les comp plans, le territory design et l'integration M&A : cinq exigences centrales sont sans aucune preuve chez Tom, ce qui ramene la couverture a 5/10 malgre HubSpot et l'automatisation demandes.",
+  "regles_appliquees": [
+   "R2",
+   "R3",
+   "R7",
+   "R8",
+   "R9"
+  ],
+  "run": "2026-09-07 14:00"
+ },
+ {
+  "cle": "moments lab|revops manager",
+  "entreprise": "Moments Lab",
+  "poste": "RevOps Manager",
+  "famille": "RevOps",
+  "dossier_deja_ouvert": false,
+  "couverture": [
+   {
+    "exigence": "Forte autonomie",
+    "preuve": "« Cycle de vente construit sans playbook »",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Experience hands-on prouvee en RevOps, Sales Ops ou Marketing Ops en environnement SaaS B2B",
+    "preuve": "« oct. 2023 - mai 2026 (2 ans 8 mois en operations) » ; CITYZ'Formation est un CFA et centre de formation continue, pas un SaaS B2B",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Builder mindset : avoir mis en production des workflows d'automatisation et des systemes assistes par IA, pas seulement les avoir cadres",
+    "preuve": "« workflows n8n et Process Street (relances, declencheurs, scoring, webhooks et API vers le CRM, gestion d'erreurs) »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Maitrise de HubSpot sur Sales Hub et Marketing Hub (configuration, API, workflows, reporting)",
+    "preuve": "« HubSpot : certifie Sales Management, Sales Hub, Reporting, Revenue Operations ; jamais en production »",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Profondeur technique : API, webhooks et au moins un de n8n / Make / Zapier / Python, plus les outils IA (Claude, Dust)",
+    "preuve": "« n8n (chez CITYZ'), Make, Zapier » et « Agents IA : ... Tourne sur Claude + Notion, et sur Dust »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Culture commerciale SaaS : comprendre ARR, NRR, CAC payback, pipeline coverage",
+    "preuve": null,
+    "etat": "absent",
+    "centrale": true
+   },
+   {
+    "exigence": "Rigueur sur la donnee : hygiene du pipeline, exactitude de l'attribution, integrite du forecast",
+    "preuve": "« forte reduction des erreurs, conformite systematique » ; aucun forecast ni modele d'attribution dans rules/profil.md",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Concevoir et faire appliquer la methodologie de vente, la gouvernance des deals et le processus de forecast",
+    "preuve": "« Cycle de vente construit sans playbook ; process en 23 etapes, 143 dossiers » ; aucun processus de forecast dans rules/profil.md",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Construire des dashboards pipeline et revenus en temps reel pour les sales, l'executif et le board",
+    "preuve": "« Reporting 20 M EUR de CA (Carrefour, Cora) sous Power BI et SAP » ; aucun reporting board dans rules/profil.md",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Posseder la politique commerciale : grilles de prix, validation des remises, standards contractuels",
+    "preuve": "« negociations annuelles » ; aucune politique de prix ni de remise dans rules/profil.md",
+    "etat": "partiel",
+    "centrale": false
+   },
+   {
+    "exigence": "Piloter le territory planning, la definition des quotas et la modelisation du compensation",
+    "preuve": null,
+    "etat": "absent",
+    "centrale": true
+   },
+   {
+    "exigence": "Faire le pont Sales-Finance : revenue recognition, workflows de facturation, cloture mensuelle",
+    "preuve": null,
+    "etat": "absent",
+    "centrale": true
+   },
+   {
+    "exigence": "Concevoir et maintenir le lead scoring, le routage MQL vers SQL et les workflows de reengagement",
+    "preuve": "« workflows n8n et Process Street (relances, declencheurs, scoring, webhooks et API vers le CRM, gestion d'erreurs) »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Automatisation email, operations evenements et webinars, execution des campagnes avec le Marketing",
+    "preuve": "« Zoho Campaigns, Meta Ads » et « Meta Ads 1 000 EUR/mois, 40 leads/mois, 25 EUR/lead »",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Publier le reporting mensuel de performance du funnel : volume de MQL, taux de conversion, ROI des campagnes",
+    "preuve": "« Meta Ads 1 000 EUR/mois, 40 leads/mois, 25 EUR/lead (cout par lead, pas CAC) »",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Concevoir et deployer des workflows d'agents IA pour la qualification de leads, l'enrichissement, l'orchestration de rendez-vous",
+    "preuve": "« Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Construire et maintenir les integrations de la stack GTM via API, webhooks et n8n ou equivalent",
+    "preuve": "« webhooks et API vers le CRM, gestion d'erreurs »",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Gouverner qualite, securite et conformite des donnees sur tous les systemes GTM",
+    "preuve": "« conformite systematique » ; aucune gouvernance de securite des donnees dans rules/profil.md",
+    "etat": "partiel",
+    "centrale": false
+   },
+   {
+    "exigence": "Documenter l'architecture systeme, les processus et les workflows pour la scalabilite et l'adoption",
+    "preuve": "« process en 23 etapes, 143 dossiers »",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Experience de Clay, Apollo, Cargo ou plateformes comparables d'enrichissement et de prospection par signaux",
+    "preuve": null,
+    "etat": "absent",
+    "centrale": false
+   },
+   {
+    "exigence": "Familiarite avec les frameworks d'IA agentique et l'orchestration par prompts (LangChain, n8n AI nodes ou similaires)",
+    "preuve": "« Agents IA : ... conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous » et « n8n (chez CITYZ') » ; LangChain est un framework de code, exigence absente au titre de R5",
+    "etat": "partiel",
+    "centrale": false
+   },
+   {
+    "exigence": "Exposition prealable a la Finance ou au reporting investisseurs (cloture mensuelle, revenue recognition, board decks)",
+    "preuve": null,
+    "etat": "absent",
+    "centrale": false
+   }
+  ],
+  "score_couverture_10": 6.0,
+  "score_conditions_3": 1,
+  "score_entreprise_4": 2,
+  "score_differenciateurs_3": 2,
+  "note_20": 11,
+  "verdict": "no_go",
+  "raison_principale": "Les outils demandes sont exactement ceux que Tom pratique (HubSpot, n8n, Make, Zapier, Dust, agents IA), mais l'annonce empile 22 exigences dont cinq sans aucune preuve (ARR/NRR/CAC payback, quotas et compensation, pont Sales-Finance, Clay/Apollo/Cargo, reporting investisseurs) et n'affiche aucune politique de teletravail, ce qui fait tomber la couverture a 6/10 et les conditions a 1/3.",
+  "exigences_sans_preuve": [
+   "Culture commerciale SaaS : ARR, NRR, CAC payback, pipeline coverage",
+   "Territory planning, definition des quotas et modelisation du compensation",
+   "Pont Sales-Finance : revenue recognition, workflows de facturation, cloture mensuelle",
+   "Clay, Apollo, Cargo ou plateformes comparables d'enrichissement et de prospection par signaux",
+   "Exposition Finance ou reporting investisseurs (cloture mensuelle, board decks)",
+   "Maitrise de HubSpot Sales Hub et Marketing Hub en production : preuve partielle seulement, certifie mais jamais en production",
+   "Experience en environnement SaaS B2B : preuve partielle seulement",
+   "Processus de forecast et integrite du forecast : preuve partielle seulement"
+  ],
+  "deductions": "Deductions, sans preuve ecrite dans l'annonce : le perimetre couvre Sales Ops, Marketing Ops, automatisation, agents IA et interface Finance pour une seule personne, ce qui laisse deduire une equipe RevOps inexistante et un poste de premier arrivant sur le sujet ; le rattachement au VP Finance « to ensure objective, unbiased revenue reporting » laisse deduire que le reporting financier primera sur l'outillage commercial ; l'absence totale de mention du teletravail et de l'effectif laisse deduire une annonce redigee vite, ces deux points sont a verifier avant tout contact. L'offre reste non verifiable par le code (lien LinkedIn), elle n'est donc pas presentee comme active.",
+  "detail": "Bande seniorite : inconnu (aucune duree ecrite (« Proven hands-on experience in RevOps, Sales Ops, or Marketing Ops in a B2B SaaS environment », aucun nombre d'annees)). Sans effet sur la note (R8).\n\nCouverture des exigences ecrites (exigence | preuve | etat | centrale) :\n- Forte autonomie | « Cycle de vente construit sans playbook » | couvert | centrale : non\n- Experience hands-on prouvee en RevOps, Sales Ops ou Marketing Ops en environnement SaaS B2B | « oct. 2023 - mai 2026 (2 ans 8 mois en operations) » ; CITYZ'Formation est un CFA et centre de formation continue, pas un SaaS B2B | partiel | centrale : oui\n- Builder mindset : avoir mis en production des workflows d'automatisation et des systemes assistes par IA, pas seulement les avoir cadres | « workflows n8n et Process Street (relances, declencheurs, scoring, webhooks et API vers le CRM, gestion d'erreurs) » | couvert | centrale : oui\n- Maitrise de HubSpot sur Sales Hub et Marketing Hub (configuration, API, workflows, reporting) | « HubSpot : certifie Sales Management, Sales Hub, Reporting, Revenue Operations ; jamais en production » | partiel | centrale : oui\n- Profondeur technique : API, webhooks et au moins un de n8n / Make / Zapier / Python, plus les outils IA (Claude, Dust) | « n8n (chez CITYZ'), Make, Zapier » et « Agents IA : ... Tourne sur Claude + Notion, et sur Dust » | couvert | centrale : oui\n- Culture commerciale SaaS : comprendre ARR, NRR, CAC payback, pipeline coverage | aucune preuve dans rules/profil.md | absent | centrale : oui\n- Rigueur sur la donnee : hygiene du pipeline, exactitude de l'attribution, integrite du forecast | « forte reduction des erreurs, conformite systematique » ; aucun forecast ni modele d'attribution dans rules/profil.md | partiel | centrale : oui\n- Concevoir et faire appliquer la methodologie de vente, la gouvernance des deals et le processus de forecast | « Cycle de vente construit sans playbook ; process en 23 etapes, 143 dossiers » ; aucun processus de forecast dans rules/profil.md | partiel | centrale : oui\n- Construire des dashboards pipeline et revenus en temps reel pour les sales, l'executif et le board | « Reporting 20 M EUR de CA (Carrefour, Cora) sous Power BI et SAP » ; aucun reporting board dans rules/profil.md | partiel | centrale : oui\n- Posseder la politique commerciale : grilles de prix, validation des remises, standards contractuels | « negociations annuelles » ; aucune politique de prix ni de remise dans rules/profil.md | partiel | centrale : non\n- Piloter le territory planning, la definition des quotas et la modelisation du compensation | aucune preuve dans rules/profil.md | absent | centrale : oui\n- Faire le pont Sales-Finance : revenue recognition, workflows de facturation, cloture mensuelle | aucune preuve dans rules/profil.md | absent | centrale : oui\n- Concevoir et maintenir le lead scoring, le routage MQL vers SQL et les workflows de reengagement | « workflows n8n et Process Street (relances, declencheurs, scoring, webhooks et API vers le CRM, gestion d'erreurs) » | couvert | centrale : oui\n- Automatisation email, operations evenements et webinars, execution des campagnes avec le Marketing | « Zoho Campaigns, Meta Ads » et « Meta Ads 1 000 EUR/mois, 40 leads/mois, 25 EUR/lead » | couvert | centrale : non\n- Publier le reporting mensuel de performance du funnel : volume de MQL, taux de conversion, ROI des campagnes | « Meta Ads 1 000 EUR/mois, 40 leads/mois, 25 EUR/lead (cout par lead, pas CAC) » | couvert | centrale : non\n- Concevoir et deployer des workflows d'agents IA pour la qualification de leads, l'enrichissement, l'orchestration de rendez-vous | « Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous » | couvert | centrale : oui\n- Construire et maintenir les integrations de la stack GTM via API, webhooks et n8n ou equivalent | « webhooks et API vers le CRM, gestion d'erreurs » | couvert | centrale : oui\n- Gouverner qualite, securite et conformite des donnees sur tous les systemes GTM | « conformite systematique » ; aucune gouvernance de securite des donnees dans rules/profil.md | partiel | centrale : non\n- Documenter l'architecture systeme, les processus et les workflows pour la scalabilite et l'adoption | « process en 23 etapes, 143 dossiers » | couvert | centrale : non\n- Experience de Clay, Apollo, Cargo ou plateformes comparables d'enrichissement et de prospection par signaux | aucune preuve dans rules/profil.md | absent | centrale : non\n- Familiarite avec les frameworks d'IA agentique et l'orchestration par prompts (LangChain, n8n AI nodes ou similaires) | « Agents IA : ... conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous » et « n8n (chez CITYZ') » ; LangChain est un framework de code, exigence absente au titre de R5 | partiel | centrale : non\n- Exposition prealable a la Finance ou au reporting investisseurs (cloture mensuelle, revenue recognition, board decks) | aucune preuve dans rules/profil.md | absent | centrale : non\n\nSous-scores :\nA couverture 6/10 : 22 exigences ecrites, 9 couvertes, 8 partielles, 5 absentes, soit 13 point(s) sur 22, ramenes sur 10 et arrondis a 0,5.\nB conditions 1/3 : +1 CDI et lieu compatibles (Boulogne-Billancourt, tres proche banlieue, « Type d'emploi : Temps plein ») ; 0 teletravail : aucune politique de remote ou d'hybride ecrite dans l'annonce et Boulogne-Billancourt n'est pas Paris intra-muros (R3) ; 0 salaire, aucun montant affiche, aucune estimation (R3).\nC entreprise 2/4 : 0 effectif : aucun chiffre d'effectif public dans l'annonce, aucune estimation (R3, R9) ; +1 entreprise IA-native, preuve ecrite (« Powered by MXT multimodal AI », « building the next generation of AI-driven go-to-market infrastructure ») ; 0 reputation employeur : aucune note ni label cites ; +1 ecosysteme SaaS B2B (« Secteur : developpement de logiciels », plateforme vendue aux detenteurs d'IP des medias).\nD differenciateurs 2/3 : +1 agents IA et automatisation demandes explicitement (« Automation & AI Agents ... design and deploy AI agent workflows for lead qualification, enrichment, meeting orchestration ») et couverts par le systeme personnel de Tom ; 0 formation ou enablement d'adultes : l'annonce parle d'adoption et de documentation, jamais de formation ; +1 outils nommes pratiques par Tom (« HubSpot », « n8n / Make / Zapier », « Dust »).\n\nNote : 6 + 1 + 2 + 2 = 11, entier arrondi vers le bas = 11 sur 20 (hesitation = note basse).\nVerdict : no_go. Les outils demandes sont exactement ceux que Tom pratique (HubSpot, n8n, Make, Zapier, Dust, agents IA), mais l'annonce empile 22 exigences dont cinq sans aucune preuve (ARR/NRR/CAC payback, quotas et compensation, pont Sales-Finance, Clay/Apollo/Cargo, reporting investisseurs) et n'affiche aucune politique de teletravail, ce qui fait tomber la couverture a 6/10 et les conditions a 1/3.",
+  "regles_appliquees": [
+   "R1",
+   "R3",
+   "R5",
+   "R7",
+   "R8",
+   "R9"
+  ],
+  "run": "2026-09-07 14:00"
+ },
+ {
+  "cle": "cegid|senior sales operations specialist nb",
+  "entreprise": "Cegid",
+  "poste": "Senior sales operations specialist - F/H/NB",
+  "famille": "Sales Ops",
+  "dossier_deja_ouvert": false,
+  "couverture": [
+   {
+    "exigence": "Accompagner les Sales Leaders sur la gestion et la generation du pipeline, l'analyse de la performance et les plans d'action",
+    "preuve": "Ingenieur d'affaires, 5 Degres (ESN) : 360 k EUR de CA, 120 % des objectifs, 180 k EUR par compte ouvert (2 comptes), SNCF Connect & Tech ; pipeline sur BoondManager ; Reporting 20 M EUR de CA (Carrefour, Cora) sous Power BI et SAP ; 200+ SKU",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Garantir la fiabilite du forecast et la coherence des donnees entre CRM et systemes financiers",
+    "preuve": "CRM (Digiforma) deploye de bout en bout ; workflows n8n et Process Street (relances, declencheurs, scoring, webhooks et API vers le CRM, gestion d'erreurs)",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Animer les rituels commerciaux (pipeline reviews, QBR) et diffuser les meilleures pratiques",
+    "preuve": "coordination de 5 personnes sans lien hierarchique ; Consultant & Formateur (freelance), PME : formation d'adultes",
+    "etat": "partiel",
+    "centrale": false
+   },
+   {
+    "exigence": "Faire evoluer les processus cles (go-to-market, opportunity management, forecasting)",
+    "preuve": "Cycle de vente construit sans playbook ; process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Contribuer a des projets transverses avec Marketing, SDR, Alliances et Sales Enablement",
+    "preuve": "coordination de 5 personnes sans lien hierarchique ; Meta Ads 1 000 EUR/mois, 40 leads/mois, 25 EUR/lead",
+    "etat": "partiel",
+    "centrale": false
+   },
+   {
+    "exigence": "Mobiliser l'IA au quotidien : copilotes d'analyse et agents IA (Agentforce, agent IA interne), contribuer a l'adoption de l'IA par les equipes commerciales",
+    "preuve": "Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Experience significative en environnement SaaS, au sein d'une equipe Sales Operations ou Revenue Operations",
+    "preuve": "Responsable Commercial, Operations & IA, CITYZ'Formation, 2 ans 8 mois en operations (EdTech, CFA et formation continue)",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Analyse de donnees et traduction des insights en recommandations concretes",
+    "preuve": "Reporting 20 M EUR de CA (Carrefour, Cora) sous Power BI et SAP ; 200+ SKU ; Excel avance",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Maitriser les outils de pilotage commercial, Salesforce en particulier, et les enjeux de forecasting et pipeline management",
+    "preuve": "Salesforce : notions seulement, jamais en production.",
+    "etat": "absent",
+    "centrale": true
+   },
+   {
+    "exigence": "Etre a l'aise avec l'IA generative et agentique, envie de monter sur une stack moderne (Salesforce, Agentforce, Pigment, agent IA interne)",
+    "preuve": "Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Se positionner en partenaire de confiance aupres des Sales Leaders, influencer sans autorite hierarchique",
+    "preuve": "coordination de 5 personnes sans lien hierarchique",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Rigueur, clarte de la communication, orientation resultats",
+    "preuve": "process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique",
+    "etat": "couvert",
+    "centrale": false
+   }
+  ],
+  "score_couverture_10": 7.0,
+  "score_conditions_3": 3,
+  "score_entreprise_4": 2,
+  "score_differenciateurs_3": 2,
+  "note_20": 14,
+  "verdict": "veille",
+  "raison_principale": "Le coeur operationnel du poste est couvert (processus, pipeline, IA agentique, influence sans autorite) mais l'exigence centrale « maitriser Salesforce en particulier » est sans preuve : Salesforce reste des notions, jamais en production, et l'experience SaaS en equipe Sales Ops n'existe pas.",
+  "exigences_sans_preuve": [
+   "Maitrise de Salesforce comme outil de pilotage commercial : notions seulement, jamais en production",
+   "Experience en environnement SaaS au sein d'une equipe Sales Operations ou Revenue Operations : operations reelles mais en EdTech, hors SaaS (partiel)",
+   "Fiabilite du forecast : aucune preuve de forecasting dans rules/profil.md (partiel)",
+   "Animation de QBR et de pipeline reviews : aucune preuve (partiel)",
+   "Agentforce, Pigment, ShowPad : aucun de ces outils n'est pratique par Tom"
+  ],
+  "deductions": "Deduction (non prouvee par l'annonce) : une equipe Revenue Operations de 14 personnes dont 3 Sales Operations Specialists, un Sales Campus et un comite d'entreprise ecrits dans l'annonce laissent penser a une organisation commerciale deja structuree, ou un 4e specialiste arrive sur des process existants plutot qu'a construire ; aucun effectif n'est publie, rien n'est estime. Deuxieme deduction : la stack ecrite (Salesforce, Agentforce, Pigment) suggere un quotidien Salesforce dense, ce que l'annonce ne chiffre pas. La ligne de sourcing signale un dossier Cegid deja refuse par le passe ; le champ dossier_deja_ouvert vaut false, la note est rendue normalement.",
+  "detail": "Bande seniorite : stretch (aucune duree ecrite, « senior » dans le titre), affichee sans effet sur la note (R8).\nCouverture (exigence | preuve | etat | centrale) :\n- Accompagner les Sales Leaders sur la gestion et la generation du pipeline, l'analyse de la performance et les plans d'action | Ingenieur d'affaires, 5 Degres (ESN) : 360 k EUR de CA, 120 % des objectifs, 180 k EUR par compte ouvert (2 comptes), SNCF Connect & Tech ; pipeline sur BoondManager ; Reporting 20 M EUR de CA (Carrefour, Cora) sous Power BI et SAP ; 200+ SKU | partiel | oui\n- Garantir la fiabilite du forecast et la coherence des donnees entre CRM et systemes financiers | CRM (Digiforma) deploye de bout en bout ; workflows n8n et Process Street (relances, declencheurs, scoring, webhooks et API vers le CRM, gestion d'erreurs) | partiel | oui\n- Animer les rituels commerciaux (pipeline reviews, QBR) et diffuser les meilleures pratiques | coordination de 5 personnes sans lien hierarchique ; Consultant & Formateur (freelance), PME : formation d'adultes | partiel | non\n- Faire evoluer les processus cles (go-to-market, opportunity management, forecasting) | Cycle de vente construit sans playbook ; process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique | couvert | oui\n- Contribuer a des projets transverses avec Marketing, SDR, Alliances et Sales Enablement | coordination de 5 personnes sans lien hierarchique ; Meta Ads 1 000 EUR/mois, 40 leads/mois, 25 EUR/lead | partiel | non\n- Mobiliser l'IA au quotidien : copilotes d'analyse et agents IA (Agentforce, agent IA interne), contribuer a l'adoption de l'IA par les equipes commerciales | Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous | couvert | oui\n- Experience significative en environnement SaaS, au sein d'une equipe Sales Operations ou Revenue Operations | Responsable Commercial, Operations & IA, CITYZ'Formation, 2 ans 8 mois en operations (EdTech, CFA et formation continue) | partiel | oui\n- Analyse de donnees et traduction des insights en recommandations concretes | Reporting 20 M EUR de CA (Carrefour, Cora) sous Power BI et SAP ; 200+ SKU ; Excel avance | couvert | oui\n- Maitriser les outils de pilotage commercial, Salesforce en particulier, et les enjeux de forecasting et pipeline management | Salesforce : notions seulement, jamais en production. | absent | oui\n- Etre a l'aise avec l'IA generative et agentique, envie de monter sur une stack moderne (Salesforce, Agentforce, Pigment, agent IA interne) | Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous | couvert | non\n- Se positionner en partenaire de confiance aupres des Sales Leaders, influencer sans autorite hierarchique | coordination de 5 personnes sans lien hierarchique | couvert | oui\n- Rigueur, clarte de la communication, orientation resultats | process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique | couvert | non\nA couverture 7.0/10 : 8.5 points d'etat sur 12 exigence(s), ramenes sur 10.\nB conditions 3/3 : +1 CDI et lieu compatibles (Boulogne-Billancourt, proche banlieue) ; +1 teletravail hybride ecrit (« 3 days of on-site presence per week ») ; +1 aucun salaire affiche (« transparent compensation from recruitment ») et rien dans l'annonce ne contredit le plancher de Tom pour un poste Sales Ops senior ; aucun montant n'est estime.\nC entreprise 2/4 : +1 grand groupe / ETI sur preuve ecrite (« leader europeen des solutions IA de gestion cloud », activite Enterprise, « equipe Revenue Operations composee de 14 personnes ») ; 0 ambition (aucune levee datee ni chiffre de croissance ecrit, R9) ; 0 reputation (aucune note Glassdoor ni label cite, R3) ; +1 ecosysteme (« finance (tresorerie, fiscalite, ERP) », « RH (paie) », « Retail » : SaaS B2B et retail ecrits).\nD differenciateurs 2/3 : +1 agents IA demandes explicitement (« agents IA (Agentforce, agent IA interne) ») et Tom les a ; +1 enablement d'adultes demande (« diffusez les meilleures pratiques », « contribuant a l'adoption de l'IA au sein des equipes commerciales ») et Tom l'a ; 0 outil nomme (Salesforce, Agentforce, Pigment, ShowPad : aucun de la liste que Tom pratique).\nNote 14 ramenee a 14 (entier, arrondi vers le bas ; hesitation = note basse).\nRaison principale : Le coeur operationnel du poste est couvert (processus, pipeline, IA agentique, influence sans autorite) mais l'exigence centrale « maitriser Salesforce en particulier » est sans preuve : Salesforce reste des notions, jamais en production, et l'experience SaaS en equipe Sales Ops n'existe pas.",
+  "regles_appliquees": [
+   "R1",
+   "R2",
+   "R3",
+   "R4",
+   "R7",
+   "R8",
+   "R9"
+  ],
+  "run": "2026-09-07 14:00"
+ },
+ {
+  "cle": "bpifrance|product manager officer comptabilite et ia",
+  "entreprise": "Bpifrance",
+  "poste": "Product Manager Officer Comptabilité et IA F/H",
+  "famille": "AI & Ops Automation",
+  "dossier_deja_ouvert": false,
+  "couverture": [
+   {
+    "exigence": "Suivi et priorisation du backlog avec les Business Owners et Product Owners, au sein d'une equipe de Product Managers",
+    "preuve": "Cycle de vente construit sans playbook ; process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique ; coordination de 5 personnes sans lien hierarchique",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Gestion de projets selon la methodologie SAFe et coordination des interactions entre directions",
+    "preuve": "coordination de 5 personnes sans lien hierarchique",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Accompagner les domaines comptables dans l'expression, la formalisation et la priorisation de leurs besoins",
+    "preuve": "observer les process en place, echanger avec les equipes, lire la documentation ; puis simplifier, outiller, automatiser ; et mesurer, toujours",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Suivi des evolutions fonctionnelles, des demandes d'amelioration et des incidents avec les equipes SI",
+    "preuve": "workflows n8n et Process Street (relances, declencheurs, scoring, webhooks et API vers le CRM, gestion d'erreurs)",
+    "etat": "partiel",
+    "centrale": false
+   },
+   {
+    "exigence": "Definir et piloter la feuille de route IA de la Direction des Operations Comptables",
+    "preuve": "Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous ; Jamais presente en contexte salarie.",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Identifier avec les metiers les opportunites d'application de l'IA et proposer des solutions concretes",
+    "preuve": "Responsable Commercial, Operations & IA ; Ce qui l'anime : l'automatisation et l'IA au service de la croissance.",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Concevoir et mettre en oeuvre des cas d'usage rapidement activables : copilotes, assistants metiers, agents IA, automatisation des traitements",
+    "preuve": "Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous ; workflows n8n et Process Street (relances, declencheurs, scoring, webhooks et API vers le CRM, gestion d'erreurs)",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Participer au developpement et a l'integration de modeles d'IA et d'apprentissage automatique",
+    "preuve": "Code : Tom n'ecrit pas de code de production. Il pilote des generateurs et une base ; il concoit et construit en no-code.",
+    "etat": "absent",
+    "centrale": true
+   },
+   {
+    "exigence": "Mettre en place et superviser un ecosysteme d'agents IA",
+    "preuve": "Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Respect de la gouvernance, de la securite, de la conformite et de la qualite des donnees dans les usages IA",
+    "preuve": "conformite systematique ; garde-fous",
+    "etat": "partiel",
+    "centrale": false
+   },
+   {
+    "exigence": "Concevoir et maintenir des tableaux de bord, reportings et indicateurs de pilotage",
+    "preuve": "Reporting 20 M EUR de CA (Carrefour, Cora) sous Power BI et SAP ; 200+ SKU",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Maitrise des outils de manipulation et d'analyse de donnees (Excel, SQL, Business Objects, Qlik Sense/View, Dataiku)",
+    "preuve": "Excel avance ; SQL : Kaggle Intro et Advanced SQL ; base Postgres (Supabase) en production sur Mentalizi ; requetes generees par l'IA puis lues et validees.",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Veille technologique IA, data et automatisation ; accompagner l'amelioration continue et la transformation des processus",
+    "preuve": "process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Formation Bac+5 (ecole d'ingenieur, ecole de commerce ou universite) avec forte appetence IA, data et transformation digitale",
+    "preuve": "Bac+5 emlyon business school (Programme Grande Ecole, 2016-2019)",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Bonne comprehension des enjeux et processus comptables",
+    "preuve": null,
+    "etat": "absent",
+    "centrale": true
+   },
+   {
+    "exigence": "Experience significative et indispensable dans le cadrage, le deploiement et l'integration de solutions d'IA",
+    "preuve": "Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous ; Jamais presente en contexte salarie.",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Transformer un besoin metier en cas d'usage concret, priorise et realisable",
+    "preuve": "process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique ; workflows n8n et Process Street (relances, declencheurs, scoring, webhooks et API vers le CRM, gestion d'erreurs)",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Comprendre, formaliser et optimiser des processus complexes",
+    "preuve": "process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Excellentes qualites relationnelles et aptitude a travailler en environnement transverse",
+    "preuve": "coordination de 5 personnes sans lien hierarchique",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Conduite du changement et capacite a federer autour de nouveaux usages",
+    "preuve": "Consultant & Formateur (freelance), PME : formation d'adultes ; referent IA",
+    "etat": "couvert",
+    "centrale": true
+   }
+  ],
+  "score_couverture_10": 7.0,
+  "score_conditions_3": 2,
+  "score_entreprise_4": 2,
+  "score_differenciateurs_3": 2,
+  "note_20": 13,
+  "verdict": "veille",
+  "raison_principale": "Le volet IA appliquee aux operations est solidement couvert (agents IA, cas d'usage, automatisation, processus, pilotage), mais deux exigences centrales restent sans preuve : la comprehension des processus comptables et le developpement / l'integration de modeles d'IA et de machine learning, que Tom ne code pas (R5).",
+  "exigences_sans_preuve": [
+   "Bonne comprehension des enjeux et processus comptables : aucune preuve dans rules/profil.md",
+   "Developpement et integration de modeles d'IA et d'apprentissage automatique : Tom n'ecrit pas de code de production (R5)",
+   "Business Objects, Qlik Sense/View, Dataiku : aucune preuve (partiel sur le bloc data)",
+   "Methodologie SAFe : aucune preuve (partiel)",
+   "Experience significative de deploiement de solutions IA : systeme personnel reel, jamais presente en contexte salarie (partiel)"
+  ],
+  "deductions": "Deduction (non prouvee par l'annonce) : l'organisation ecrite (Direction des Operations Comptables, Direction du Developpement, DSI, methodologie SAFe, equipe de Product Managers) est celle d'une grande structure a gouvernance lourde, ou le poste est un role de pilotage plus que de construction ; aucun effectif n'est publie, rien n'est estime. Deuxieme deduction : le couple « feuille de route IA » et « developpement de modeles » suggere un poste qui pourrait glisser vers la technique selon le titulaire, l'annonce ne tranche pas.",
+  "detail": "Bande seniorite : inconnu (aucune duree ecrite), affichee sans effet sur la note (R8).\nCouverture (exigence | preuve | etat | centrale) :\n- Suivi et priorisation du backlog avec les Business Owners et Product Owners, au sein d'une equipe de Product Managers | Cycle de vente construit sans playbook ; process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique ; coordination de 5 personnes sans lien hierarchique | partiel | oui\n- Gestion de projets selon la methodologie SAFe et coordination des interactions entre directions | coordination de 5 personnes sans lien hierarchique | partiel | oui\n- Accompagner les domaines comptables dans l'expression, la formalisation et la priorisation de leurs besoins | observer les process en place, echanger avec les equipes, lire la documentation ; puis simplifier, outiller, automatiser ; et mesurer, toujours | couvert | oui\n- Suivi des evolutions fonctionnelles, des demandes d'amelioration et des incidents avec les equipes SI | workflows n8n et Process Street (relances, declencheurs, scoring, webhooks et API vers le CRM, gestion d'erreurs) | partiel | non\n- Definir et piloter la feuille de route IA de la Direction des Operations Comptables | Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous ; Jamais presente en contexte salarie. | partiel | oui\n- Identifier avec les metiers les opportunites d'application de l'IA et proposer des solutions concretes | Responsable Commercial, Operations & IA ; Ce qui l'anime : l'automatisation et l'IA au service de la croissance. | couvert | oui\n- Concevoir et mettre en oeuvre des cas d'usage rapidement activables : copilotes, assistants metiers, agents IA, automatisation des traitements | Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous ; workflows n8n et Process Street (relances, declencheurs, scoring, webhooks et API vers le CRM, gestion d'erreurs) | couvert | oui\n- Participer au developpement et a l'integration de modeles d'IA et d'apprentissage automatique | Code : Tom n'ecrit pas de code de production. Il pilote des generateurs et une base ; il concoit et construit en no-code. | absent | oui\n- Mettre en place et superviser un ecosysteme d'agents IA | Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous | couvert | oui\n- Respect de la gouvernance, de la securite, de la conformite et de la qualite des donnees dans les usages IA | conformite systematique ; garde-fous | partiel | non\n- Concevoir et maintenir des tableaux de bord, reportings et indicateurs de pilotage | Reporting 20 M EUR de CA (Carrefour, Cora) sous Power BI et SAP ; 200+ SKU | couvert | oui\n- Maitrise des outils de manipulation et d'analyse de donnees (Excel, SQL, Business Objects, Qlik Sense/View, Dataiku) | Excel avance ; SQL : Kaggle Intro et Advanced SQL ; base Postgres (Supabase) en production sur Mentalizi ; requetes generees par l'IA puis lues et validees. | partiel | oui\n- Veille technologique IA, data et automatisation ; accompagner l'amelioration continue et la transformation des processus | process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique | couvert | non\n- Formation Bac+5 (ecole d'ingenieur, ecole de commerce ou universite) avec forte appetence IA, data et transformation digitale | Bac+5 emlyon business school (Programme Grande Ecole, 2016-2019) | couvert | oui\n- Bonne comprehension des enjeux et processus comptables | aucune preuve dans rules/profil.md | absent | oui\n- Experience significative et indispensable dans le cadrage, le deploiement et l'integration de solutions d'IA | Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous ; Jamais presente en contexte salarie. | partiel | oui\n- Transformer un besoin metier en cas d'usage concret, priorise et realisable | process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique ; workflows n8n et Process Street (relances, declencheurs, scoring, webhooks et API vers le CRM, gestion d'erreurs) | couvert | oui\n- Comprendre, formaliser et optimiser des processus complexes | process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique | couvert | oui\n- Excellentes qualites relationnelles et aptitude a travailler en environnement transverse | coordination de 5 personnes sans lien hierarchique | couvert | non\n- Conduite du changement et capacite a federer autour de nouveaux usages | Consultant & Formateur (freelance), PME : formation d'adultes ; referent IA | couvert | oui\nA couverture 7.0/10 : 14.5 points d'etat sur 20 exigence(s), ramenes sur 10.\nB conditions 2/3 : +1 CDI et lieu compatibles, tous deux ecrits (« a pourvoir des que possible en CDI, a Maisons-Alfort (au pied du Metro 8) ») ; 0 teletravail (aucune mention dans l'annonce, le point reste vide, R3 ; Maisons-Alfort n'est pas Paris intra-muros) ; +1 aucun salaire affiche et rien dans l'annonce ne contredit le plancher de Tom pour un poste Bac+5 de pilotage ; aucun montant n'est estime.\nC entreprise 2/4 : +1 grand groupe sur preuve ecrite (structure multi-directions : Direction des Operations Comptables, Direction du Developpement, equipes SI, methodologie SAFe) ; 0 ambition (aucune levee datee ni chiffre de croissance, R9) ; 0 reputation (aucune note Glassdoor ni label cite, R3) ; +1 ecosysteme comptable et financement de l'economie ecrit (« besoins comptables », « copilotes comptables », « au service de l'economie francaise »).\nD differenciateurs 2/3 : +1 agents IA demandes explicitement (« mettre en place et superviser un ecosysteme d'agents IA », « automatisation des traitements ») et Tom les a ; +1 accompagnement et conduite du changement demandes (« accompagner les equipes dans leurs demarches d'amelioration continue », « federer autour de nouveaux usages ») et Tom l'a ; 0 outil nomme (Excel, SQL, Business Objects, Qlik, Dataiku : aucun de la liste des differenciateurs).\nNote 13 ramenee a 13 (entier, arrondi vers le bas ; hesitation = note basse).\nRaison principale : Le volet IA appliquee aux operations est solidement couvert (agents IA, cas d'usage, automatisation, processus, pilotage), mais deux exigences centrales restent sans preuve : la comprehension des processus comptables et le developpement / l'integration de modeles d'IA et de machine learning, que Tom ne code pas (R5).",
+  "regles_appliquees": [
+   "R1",
+   "R3",
+   "R4",
+   "R5",
+   "R7",
+   "R8",
+   "R9"
+  ],
+  "run": "2026-09-07 14:00"
+ },
+ {
+  "cle": "caisse nationale de l assurance maladie|business analyst ia",
+  "entreprise": "Caisse nationale de l'Assurance Maladie",
+  "poste": "Business Analyst IA H/F",
+  "famille": "AI & Ops Automation",
+  "dossier_deja_ouvert": false,
+  "couverture": [
+   {
+    "exigence": "Identifier, analyser et challenger les besoins metiers, les formaliser avec les equipes techniques",
+    "preuve": "observer les process en place, echanger avec les equipes, lire la documentation ; puis simplifier, outiller, automatiser ; et mesurer, toujours",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Accompagner les cas d'usage IA de leur identification jusqu'a la mise en production",
+    "preuve": "CRM (Digiforma) deploye de bout en bout ; workflows n8n et Process Street (relances, declencheurs, scoring, webhooks et API vers le CRM, gestion d'erreurs)",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Transformer rapidement une idee en prototype fonctionnel",
+    "preuve": "Mentalizi : application mobile de preparation mentale pour sportifs, personnalisee par l'IA ; construite en vibe coding (Replit) avec un backend Supabase",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Participer a la definition des criteres de succes et a l'evaluation de la valeur apportee",
+    "preuve": "2 h -> 30 min par dossier ; Meta Ads 1 000 EUR/mois, 40 leads/mois, 25 EUR/lead",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Concevoir, tester, auditer, optimiser et deboguer des prompts, corpus documentaires et parametres",
+    "preuve": "Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Concevoir des assistants IA specialises",
+    "preuve": "Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Concevoir des agents IA et des workflows d'automatisation en environnement no-code / low-code (n8n ou equivalents)",
+    "preuve": "workflows n8n et Process Street (relances, declencheurs, scoring, webhooks et API vers le CRM, gestion d'erreurs) ; il concoit et construit en no-code",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Bonne comprehension du fonctionnement des LLM",
+    "preuve": "Tourne sur Claude + Notion, et sur Dust ; jamais sur n8n.",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Comprehension des architectures RAG",
+    "preuve": null,
+    "etat": "absent",
+    "centrale": true
+   },
+   {
+    "exigence": "Definir des strategies et des scenarios de tests, identifier les limites des solutions IA (hallucinations, qualite des donnees, contexte)",
+    "preuve": "schemas, garde-fous",
+    "etat": "partiel",
+    "centrale": false
+   },
+   {
+    "exigence": "Connaissance des API REST, JSON et principes d'integration",
+    "preuve": "Notion (API) ; webhooks et API vers le CRM ; connecteurs (Notion, Gmail)",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Animer des ateliers d'acculturation, de decouverte et de conception ; former les utilisateurs aux bonnes pratiques",
+    "preuve": "Consultant & Formateur (freelance), PME : formation d'adultes",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Produire des supports, guides et retours d'experience ; assurer une veille active",
+    "preuve": "Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Formation superieure en informatique, intelligence artificielle, data, developpement logiciel ou equivalent",
+    "preuve": "Bac+5 emlyon business school (Programme Grande Ecole, 2016-2019)",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Experience significative dans la conception de solutions numeriques innovantes",
+    "preuve": "Mentalizi : application mobile de preparation mentale pour sportifs, personnalisee par l'IA ; construite en vibe coding (Replit) avec un backend Supabase ; Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous ; Jamais presente en contexte salarie.",
+    "etat": "partiel",
+    "centrale": true
+   }
+  ],
+  "score_couverture_10": 8.5,
+  "score_conditions_3": 3,
+  "score_entreprise_4": 1,
+  "score_differenciateurs_3": 3,
+  "note_20": 15,
+  "verdict": "go_prioritaire",
+  "raison_principale": "C'est l'offre du lot qui colle le mieux au profil : agents IA et workflows no-code avec n8n nomme, prompt engineering, animation d'ateliers et formation des utilisateurs, le tout sans exigence de code (Python n'est qu'un atout) ; seules les architectures RAG et le diplome technique restent sans preuve.",
+  "exigences_sans_preuve": [
+   "Comprehension des architectures RAG : aucune preuve dans rules/profil.md",
+   "Formation superieure en informatique, IA, data ou developpement logiciel : diplome d'ecole de commerce, l'equivalence n'est pas acquise (partiel)",
+   "Experience significative de conception de solutions numeriques innovantes : projets personnels reels (Mentalizi, systeme d'agents), jamais presente en contexte salarie (partiel)",
+   "Atout « parcours technique, notamment en developpement Python » : Tom n'ecrit pas de code de production (R5), atout non couvert",
+   "Connaissances appreciees MCP, LLM Evaluation, Mistral AI, Flowise, Langflow, Dify, Microsoft Graph : aucune preuve"
+  ],
+  "deductions": "Deduction (non prouvee par l'annonce) : le profil vise est ecrit comme technique (« diplome en informatique, developpement logiciel », Python en atout important), ce qui laisse penser que la concurrence sur ce poste sera composee de profils developpeurs, meme si aucune exigence de code n'est posee ; l'annonce ne le dit pas. Deuxieme deduction : un poste en DSI d'organisme public suppose des cycles de decision longs, l'annonce n'en dit rien. Aucun effectif, aucune remuneration et aucune note employeur ne sont publies : les points correspondants restent a 0 (R3).",
+  "detail": "Bande seniorite : inconnu (aucune duree ecrite), affichee sans effet sur la note (R8).\nCouverture (exigence | preuve | etat | centrale) :\n- Identifier, analyser et challenger les besoins metiers, les formaliser avec les equipes techniques | observer les process en place, echanger avec les equipes, lire la documentation ; puis simplifier, outiller, automatiser ; et mesurer, toujours | couvert | oui\n- Accompagner les cas d'usage IA de leur identification jusqu'a la mise en production | CRM (Digiforma) deploye de bout en bout ; workflows n8n et Process Street (relances, declencheurs, scoring, webhooks et API vers le CRM, gestion d'erreurs) | couvert | oui\n- Transformer rapidement une idee en prototype fonctionnel | Mentalizi : application mobile de preparation mentale pour sportifs, personnalisee par l'IA ; construite en vibe coding (Replit) avec un backend Supabase | couvert | oui\n- Participer a la definition des criteres de succes et a l'evaluation de la valeur apportee | 2 h -> 30 min par dossier ; Meta Ads 1 000 EUR/mois, 40 leads/mois, 25 EUR/lead | couvert | non\n- Concevoir, tester, auditer, optimiser et deboguer des prompts, corpus documentaires et parametres | Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous | couvert | oui\n- Concevoir des assistants IA specialises | Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous | couvert | oui\n- Concevoir des agents IA et des workflows d'automatisation en environnement no-code / low-code (n8n ou equivalents) | workflows n8n et Process Street (relances, declencheurs, scoring, webhooks et API vers le CRM, gestion d'erreurs) ; il concoit et construit en no-code | couvert | oui\n- Bonne comprehension du fonctionnement des LLM | Tourne sur Claude + Notion, et sur Dust ; jamais sur n8n. | couvert | oui\n- Comprehension des architectures RAG | aucune preuve dans rules/profil.md | absent | oui\n- Definir des strategies et des scenarios de tests, identifier les limites des solutions IA (hallucinations, qualite des donnees, contexte) | schemas, garde-fous | partiel | non\n- Connaissance des API REST, JSON et principes d'integration | Notion (API) ; webhooks et API vers le CRM ; connecteurs (Notion, Gmail) | couvert | non\n- Animer des ateliers d'acculturation, de decouverte et de conception ; former les utilisateurs aux bonnes pratiques | Consultant & Formateur (freelance), PME : formation d'adultes | couvert | oui\n- Produire des supports, guides et retours d'experience ; assurer une veille active | Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous | couvert | non\n- Formation superieure en informatique, intelligence artificielle, data, developpement logiciel ou equivalent | Bac+5 emlyon business school (Programme Grande Ecole, 2016-2019) | partiel | oui\n- Experience significative dans la conception de solutions numeriques innovantes | Mentalizi : application mobile de preparation mentale pour sportifs, personnalisee par l'IA ; construite en vibe coding (Replit) avec un backend Supabase ; Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous ; Jamais presente en contexte salarie. | partiel | oui\nA couverture 8.5/10 : 12.5 points d'etat sur 15 exigence(s), ramenes sur 10.\nB conditions 3/3 : +1 lieu compatible (Paris) et perimetre CDI ; +1 Paris intra-muros ; +1 aucun salaire affiche et rien dans l'annonce ne contredit le plancher de Tom pour un poste Business Analyst experimente ; aucun montant n'est estime.\nC entreprise 1/4 : +1 grand groupe sur preuve ecrite (« Au sein de la DDSI, la Direction du Developpement assure le pilotage transverse des projets et programmes de l'Assurance Maladie », departement Filiere Digital) ; 0 ambition (aucune levee datee ni chiffre de croissance, R9) ; 0 reputation (aucune note Glassdoor ni label cite, R3) ; 0 ecosysteme (assurance maladie publique : aucun des ecosystemes de la grille n'est ecrit).\nD differenciateurs 3/3 : +1 agents IA demandes explicitement (« concevoir des agents IA et des workflows d'automatisation en environnement no-code/low-code ») et Tom les a ; +1 formation d'adultes demandee explicitement (« animer des ateliers d'acculturation », « former les utilisateurs aux bonnes pratiques ») et Tom l'a ; +1 outil nomme que Tom pratique (« n8n ou equivalents » dans l'annonce, « Make » dans les connaissances appreciees ; n8n chez CITYZ' et Make en pratique reelle).\nNote 15.5 ramenee a 15 (entier, arrondi vers le bas ; hesitation = note basse).\nRaison principale : C'est l'offre du lot qui colle le mieux au profil : agents IA et workflows no-code avec n8n nomme, prompt engineering, animation d'ateliers et formation des utilisateurs, le tout sans exigence de code (Python n'est qu'un atout) ; seules les architectures RAG et le diplome technique restent sans preuve.",
+  "regles_appliquees": [
+   "R1",
+   "R3",
+   "R4",
+   "R5",
+   "R7",
+   "R8",
+   "R9"
+  ],
+  "run": "2026-09-07 14:00"
+ },
+ {
+  "cle": "ntt data|consultant ia",
+  "entreprise": "NTT DATA",
+  "poste": "Consultant IA",
+  "famille": "AI & Ops Automation",
+  "dossier_deja_ouvert": false,
+  "couverture": [
+   {
+    "exigence": "3 a 8 ans d'experience en data, IA, conseil ou transformation digitale",
+    "preuve": "Responsable Commercial, Operations & IA, CITYZ'Formation, 2 ans 8 mois en operations",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Definir et piloter des strategies Data & AI alignees avec les enjeux business et les KPI",
+    "preuve": "Responsable Commercial, Operations & IA ; Reporting 20 M EUR de CA (Carrefour, Cora) sous Power BI et SAP ; 200+ SKU",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Identifier des cas d'usage a fort ROI et concevoir des roadmaps de transformation",
+    "preuve": "process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Piloter des projets IA de bout en bout (cadrage, POC, MVP, industrialisation)",
+    "preuve": "CRM (Digiforma) deploye de bout en bout ; Mentalizi : application mobile de preparation mentale pour sportifs, personnalisee par l'IA ; construite en vibe coding (Replit) avec un backend Supabase",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Concevoir des architectures data & AI robustes et scalables (Cloud, APIs, LLMs)",
+    "preuve": "Code : Tom n'ecrit pas de code de production. Il pilote des generateurs et une base ; il concoit et construit en no-code.",
+    "etat": "absent",
+    "centrale": true
+   },
+   {
+    "exigence": "Accompagner le deploiement des solutions et garantir gouvernance, securite et performance",
+    "preuve": "garde-fous ; conformite systematique",
+    "etat": "partiel",
+    "centrale": false
+   },
+   {
+    "exigence": "Collaborer avec les equipes metiers, IT et data",
+    "preuve": "coordination de 5 personnes sans lien hierarchique",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Contribuer a l'avant-vente, au developpement commercial et a la relation client",
+    "preuve": "Ingenieur d'affaires, 5 Degres (ESN) : 360 k EUR de CA, 120 % des objectifs, 180 k EUR par compte ouvert (2 comptes), SNCF Connect & Tech ; pipeline sur BoondManager",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Veille technologique, referent playbooks de delivery, representer l'entreprise aupres des clients et lors d'evenements",
+    "preuve": "President-Fondateur, Hack'Coeur : creee a partir de rien, partenariats et benevoles ; incubee a l'INSEAD",
+    "etat": "partiel",
+    "centrale": false
+   },
+   {
+    "exigence": "Appetence pour le NLP, la computer vision, les donnees tabulaires ou les series temporelles",
+    "preuve": null,
+    "etat": "absent",
+    "centrale": false
+   },
+   {
+    "exigence": "Bonne comprehension des technologies IA / ML / GenAI",
+    "preuve": "Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous ; Tourne sur Claude + Notion, et sur Dust",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Bonne comprehension des architectures data & cloud (Azure, AWS, GCP)",
+    "preuve": "base Postgres (Supabase) en production sur Mentalizi",
+    "etat": "absent",
+    "centrale": true
+   },
+   {
+    "exigence": "Traduire des besoins metiers en solutions concretes et vulgariser des sujets techniques",
+    "preuve": "observer les process en place, echanger avec les equipes, lire la documentation ; puis simplifier, outiller, automatiser ; et mesurer, toujours ; Consultant & Formateur (freelance), PME : formation d'adultes",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Aisance en environnement client et communication en francais et en anglais",
+    "preuve": "Francais natif, anglais courant (910 TOEIC) ; Ingenieur d'affaires, 5 Degres (ESN) : 360 k EUR de CA, 120 % des objectifs, 180 k EUR par compte ouvert (2 comptes), SNCF Connect & Tech ; pipeline sur BoondManager",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Comprehension generale des environnements data (API, microservices, Big Data)",
+    "preuve": "Notion (API) ; webhooks et API vers le CRM",
+    "etat": "partiel",
+    "centrale": false
+   },
+   {
+    "exigence": "Gestion de projets et programmes digitaux (planning, livrables)",
+    "preuve": "process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique ; coordination de 5 personnes sans lien hierarchique",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Certification Scrum",
+    "preuve": null,
+    "etat": "absent",
+    "centrale": false
+   },
+   {
+    "exigence": "Gestion du changement et des parties prenantes",
+    "preuve": "Consultant & Formateur (freelance), PME : formation d'adultes ; coordination de 5 personnes sans lien hierarchique",
+    "etat": "couvert",
+    "centrale": true
+   }
+  ],
+  "score_couverture_10": 6.0,
+  "score_conditions_3": 3,
+  "score_entreprise_4": 1,
+  "score_differenciateurs_3": 2,
+  "note_20": 12,
+  "verdict": "veille",
+  "raison_principale": "Poste de conseil dont la moitie des exigences est technique (architectures data et cloud Azure / AWS / GCP, NLP, computer vision, ML, certification Scrum) et sans preuve chez Tom ; ce qui est couvert, c'est la partie traduction metier, avant-vente et conduite du changement, pas le socle technique attendu.",
+  "exigences_sans_preuve": [
+   "Architectures data & AI robustes et scalables (Cloud, APIs, LLMs) : Tom n'ecrit pas de code de production (R5)",
+   "Architectures data & cloud Azure, AWS, GCP : aucune preuve",
+   "Appetence NLP, computer vision, donnees tabulaires, series temporelles : aucune preuve",
+   "Certification Scrum : aucune preuve",
+   "3 a 8 ans en data, IA, conseil ou transformation digitale : 2 ans 8 mois en operations, en dessous du plancher ecrit (partiel)",
+   "Comprehension des technologies ML : le systeme d'agents tourne sur des modeles existants, aucune preuve de machine learning (partiel)"
+  ],
+  "deductions": "Deduction (non prouvee par l'annonce) : NTT DATA est un cabinet ; le client, le secteur d'intervention et le quotidien reel ne sont pas ecrits (R6), et une fourchette « 3 a 8 ans » avec avant-vente et representation en evenements laisse penser a un recrutement cible plutot vers le haut de la fourchette ; l'annonce ne le dit pas. Deuxieme deduction : les partenariats ecrits (Nvidia, Mistral) et les playbooks sectoriels indiquent une pratique IA constituee, sans chiffre publie ni levee datee : le point d'ambition reste a 0 (R9).",
+  "detail": "Bande seniorite : coeur (3 ans minimum ecrits, 3 a 8 ans), affichee sans effet sur la note (R8).\nCouverture (exigence | preuve | etat | centrale) :\n- 3 a 8 ans d'experience en data, IA, conseil ou transformation digitale | Responsable Commercial, Operations & IA, CITYZ'Formation, 2 ans 8 mois en operations | partiel | oui\n- Definir et piloter des strategies Data & AI alignees avec les enjeux business et les KPI | Responsable Commercial, Operations & IA ; Reporting 20 M EUR de CA (Carrefour, Cora) sous Power BI et SAP ; 200+ SKU | partiel | oui\n- Identifier des cas d'usage a fort ROI et concevoir des roadmaps de transformation | process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique | couvert | oui\n- Piloter des projets IA de bout en bout (cadrage, POC, MVP, industrialisation) | CRM (Digiforma) deploye de bout en bout ; Mentalizi : application mobile de preparation mentale pour sportifs, personnalisee par l'IA ; construite en vibe coding (Replit) avec un backend Supabase | partiel | oui\n- Concevoir des architectures data & AI robustes et scalables (Cloud, APIs, LLMs) | Code : Tom n'ecrit pas de code de production. Il pilote des generateurs et une base ; il concoit et construit en no-code. | absent | oui\n- Accompagner le deploiement des solutions et garantir gouvernance, securite et performance | garde-fous ; conformite systematique | partiel | non\n- Collaborer avec les equipes metiers, IT et data | coordination de 5 personnes sans lien hierarchique | couvert | non\n- Contribuer a l'avant-vente, au developpement commercial et a la relation client | Ingenieur d'affaires, 5 Degres (ESN) : 360 k EUR de CA, 120 % des objectifs, 180 k EUR par compte ouvert (2 comptes), SNCF Connect & Tech ; pipeline sur BoondManager | couvert | oui\n- Veille technologique, referent playbooks de delivery, representer l'entreprise aupres des clients et lors d'evenements | President-Fondateur, Hack'Coeur : creee a partir de rien, partenariats et benevoles ; incubee a l'INSEAD | partiel | non\n- Appetence pour le NLP, la computer vision, les donnees tabulaires ou les series temporelles | aucune preuve dans rules/profil.md | absent | non\n- Bonne comprehension des technologies IA / ML / GenAI | Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous ; Tourne sur Claude + Notion, et sur Dust | partiel | oui\n- Bonne comprehension des architectures data & cloud (Azure, AWS, GCP) | base Postgres (Supabase) en production sur Mentalizi | absent | oui\n- Traduire des besoins metiers en solutions concretes et vulgariser des sujets techniques | observer les process en place, echanger avec les equipes, lire la documentation ; puis simplifier, outiller, automatiser ; et mesurer, toujours ; Consultant & Formateur (freelance), PME : formation d'adultes | couvert | oui\n- Aisance en environnement client et communication en francais et en anglais | Francais natif, anglais courant (910 TOEIC) ; Ingenieur d'affaires, 5 Degres (ESN) : 360 k EUR de CA, 120 % des objectifs, 180 k EUR par compte ouvert (2 comptes), SNCF Connect & Tech ; pipeline sur BoondManager | couvert | oui\n- Comprehension generale des environnements data (API, microservices, Big Data) | Notion (API) ; webhooks et API vers le CRM | partiel | non\n- Gestion de projets et programmes digitaux (planning, livrables) | process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique ; coordination de 5 personnes sans lien hierarchique | couvert | oui\n- Certification Scrum | aucune preuve dans rules/profil.md | absent | non\n- Gestion du changement et des parties prenantes | Consultant & Formateur (freelance), PME : formation d'adultes ; coordination de 5 personnes sans lien hierarchique | couvert | oui\nA couverture 6.0/10 : 10.5 points d'etat sur 18 exigence(s), ramenes sur 10.\nB conditions 3/3 : +1 lieu compatible (Paris) et perimetre CDI ; +1 Paris intra-muros ; +1 aucun salaire affiche et rien dans l'annonce ne contredit le plancher de Tom pour un poste de consultant de 3 a 8 ans ; aucun montant n'est estime.\nC entreprise 1/4 : +1 grand groupe sur preuve ecrite (pratique sectorielle Finance, Sante, Secteur public et Defense, « referent sur les playbooks de delivery par secteurs », partenariats Nvidia et Mistral) ; 0 ambition (aucune levee datee ni chiffre de croissance, R9) ; 0 reputation (aucune note Glassdoor ni label cite, R3) ; 0 ecosysteme (Finance, Sante, Secteur public, Defense : aucun des ecosystemes de la grille n'est ecrit).\nD differenciateurs 2/3 : +1 agents IA demandes explicitement (« IA Generative & LLMs (RAG, copilots, agents IA) ») et Tom les a ; +1 accompagnement au changement demande (« accompagnement au changement », « gestion du changement et des parties prenantes », « vulgariser des sujets techniques ») et Tom l'a ; 0 outil nomme (Azure, AWS, GCP, Nvidia, Mistral, Scrum : aucun de la liste des differenciateurs).\nNote 12 ramenee a 12 (entier, arrondi vers le bas ; hesitation = note basse).\nRaison principale : Poste de conseil dont la moitie des exigences est technique (architectures data et cloud Azure / AWS / GCP, NLP, computer vision, ML, certification Scrum) et sans preuve chez Tom ; ce qui est couvert, c'est la partie traduction metier, avant-vente et conduite du changement, pas le socle technique attendu.",
+  "regles_appliquees": [
+   "R1",
+   "R2",
+   "R3",
+   "R5",
+   "R6",
+   "R7",
+   "R8",
+   "R9"
+  ],
+  "run": "2026-09-07 14:00"
+ },
+ {
+  "cle": "elevenlabs|chief of staff gtm",
+  "entreprise": "ElevenLabs",
+  "poste": "Chief of Staff GTM - France",
+  "famille": "Autre",
+  "dossier_deja_ouvert": false,
+  "couverture": [
+   {
+    "exigence": "Role GTM (go-to-market) : structurer et piloter les operations commerciales, lisible dans le titre",
+    "preuve": "Je construis et j'optimise des machines de vente. ; Cycle de vente construit sans playbook ; process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Niveau Chief of Staff : coordination transverse d'une direction commerciale, lisible dans le titre",
+    "preuve": "coordination de 5 personnes sans lien hierarchique",
+    "etat": "partiel",
+    "centrale": true
+   }
+  ],
+  "score_couverture_10": 7.5,
+  "score_conditions_3": 2,
+  "score_entreprise_4": 0,
+  "score_differenciateurs_3": 0,
+  "note_20": 9,
+  "verdict": "no_go",
+  "raison_principale": "Texte partiel : seule l'alerte LinkedIn est disponible (titre, entreprise, ville). La note basse vient de l'absence de texte, pas d'une inadequation constatee : aucune exigence, aucun effectif, aucune levee et aucun outil ne sont lisibles, donc les blocs entreprise et differenciateurs restent a 0 (R3, R9). A re-noter des que le texte complet est disponible.",
+  "exigences_sans_preuve": [
+   "Toutes les exigences du poste, hors titre : illisibles, comptees inconnues, ni couvertes ni absentes",
+   "Niveau Chief of Staff : aucune preuve d'un poste de Chief of Staff dans rules/profil.md (partiel)",
+   "Duree d'experience demandee : aucune duree ecrite",
+   "Effectif, financement, remuneration, teletravail : non publies dans le texte fourni"
+  ],
+  "deductions": "Deduction (non prouvee par le texte fourni) : un poste de Chief of Staff GTM sur un perimetre France est generalement un poste de bras droit d'une direction commerciale, avec une exigence d'anglais et une seniorite elevee ; rien de tout cela n'est ecrit, c'est une deduction. Deuxieme deduction, signalee au sourcing : « GTM Chief of Staff, ElevenLabs » existe deja au CRM en statut A contacter, il s'agit probablement du meme poste ; le champ dossier_deja_ouvert vaut false et la liste des dossiers est vide, donc le verdict est rendu normalement, mais le doublon doit etre confirme avant toute action.",
+  "detail": "texte partiel : Bande seniorite : inconnu (aucune duree ecrite), affichee sans effet sur la note (R8).\nCouverture (exigence | preuve | etat | centrale) :\n- Role GTM (go-to-market) : structurer et piloter les operations commerciales, lisible dans le titre | Je construis et j'optimise des machines de vente. ; Cycle de vente construit sans playbook ; process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique | couvert | oui\n- Niveau Chief of Staff : coordination transverse d'une direction commerciale, lisible dans le titre | coordination de 5 personnes sans lien hierarchique | partiel | oui\nA couverture 7.5/10 : 1.5 points d'etat sur 2 exigence(s) lisible(s), ramenes sur 10.\nB conditions 2/3 : +1 lieu compatible (Ville de Paris) et perimetre CDI ; +1 Paris intra-muros ; 0 salaire (aucune donnee lisible, texte partiel, hesitation = note basse, R3).\nC entreprise 0/4 : 0 sur les quatre points : le texte fourni ne publie ni effectif, ni levee datee, ni note Glassdoor, ni ecosysteme ; un vide n'est pas un zero de fond, le point reste vide (R3, R9).\nD differenciateurs 0/3 : 0 sur les trois points : ni agents IA, ni formation, ni outil nomme ne sont demandes dans le texte lisible.\nNote 9.5 ramenee a 9 (entier, arrondi vers le bas ; hesitation = note basse).\nRaison principale : Texte partiel : seule l'alerte LinkedIn est disponible (titre, entreprise, ville). La note basse vient de l'absence de texte, pas d'une inadequation constatee : aucune exigence, aucun effectif, aucune levee et aucun outil ne sont lisibles, donc les blocs entreprise et differenciateurs restent a 0 (R3, R9). A re-noter des que le texte complet est disponible.",
+  "regles_appliquees": [
+   "R2",
+   "R3",
+   "R7",
+   "R8",
+   "R9"
+  ],
+  "run": "2026-09-07 14:00"
+ },
+ {
+  "cle": "sorare|player experience specialist ai and automation",
+  "entreprise": "Sorare",
+  "poste": "Player Experience Specialist (AI & Automation)",
+  "famille": "AI & Ops Automation",
+  "dossier_deja_ouvert": false,
+  "couverture": [
+   {
+    "exigence": "Assurer le support des joueurs via la plateforme de ticketing Zendesk, a fort volume",
+    "preuve": "process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Investiguer les problemes de compte avec les outils internes et les systemes d'administration",
+    "preuve": "CRM (Digiforma) deploye de bout en bout ; process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique",
+    "etat": "partiel",
+    "centrale": false
+   },
+   {
+    "exigence": "Tenir les standards de service : temps de premiere reponse, temps de resolution, CSAT",
+    "preuve": "2 h -> 30 min par dossier, forte reduction des erreurs ; 20 entreprises clientes, 40 % converties sur une offre additionnelle, 25 % de reconduction",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Escalader les sujets complexes aux bonnes equipes, avec des escalades documentees",
+    "preuve": "process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique",
+    "etat": "partiel",
+    "centrale": false
+   },
+   {
+    "exigence": "Reperer les problemes recurrents et les transformer en automatisations (chatbot, reponses automatiques Zendesk, Help Center)",
+    "preuve": "workflows n8n et Process Street (relances, declencheurs, scoring, webhooks et API vers le CRM, gestion d'erreurs)",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Travailler avec l'equipe tech sur l'outillage support et l'automatisation, en utilisant l'IA pour gagner en efficacite",
+    "preuve": "Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous ; 2 h -> 30 min par dossier",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Identifier les bugs et les points de friction et les communiquer a Product et Engineering",
+    "preuve": "Mentalizi : application mobile de preparation mentale pour sportifs, personnalisee par l'IA ; construite en vibe coding (Replit) avec un backend Supabase",
+    "etat": "partiel",
+    "centrale": false
+   },
+   {
+    "exigence": "Partenariat avec Product : partager le retour joueurs et contribuer a une etape de revue sur les nouvelles versions",
+    "preuve": "Mentalizi : application mobile de preparation mentale pour sportifs, personnalisee par l'IA ; construite en vibe coding (Replit) avec un backend Supabase ; 20 entreprises clientes, 40 % converties sur une offre additionnelle, 25 % de reconduction",
+    "etat": "partiel",
+    "centrale": false
+   },
+   {
+    "exigence": "1 a 2 ans en support client ou customer operations",
+    "preuve": "Responsable Commercial, Operations & IA, CITYZ'Formation, 2 ans 8 mois en operations",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Appetence reelle pour l'IA et l'automatisation, gout de l'experimentation d'outils",
+    "preuve": "Ce qui l'anime : l'automatisation et l'IA au service de la croissance. ; Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Excellente communication ecrite en anglais et en francais (C1 minimum)",
+    "preuve": "Francais natif, anglais courant (910 TOEIC)",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Esprit de resolution de problemes et aisance a prendre en main des outils internes",
+    "preuve": "Digiforma, BoondManager, Power BI, Excel avance, SAP, Process Street, Notion (API), Zoho Campaigns, Meta Ads, n8n (chez CITYZ'), Make, Zapier, Airtable",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Attention au detail et capacite a apprendre vite dans un environnement mouvant",
+    "preuve": "process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique",
+    "etat": "couvert",
+    "centrale": false
+   },
+   {
+    "exigence": "Empathie et attention reelle aux joueurs",
+    "preuve": null,
+    "etat": "absent",
+    "centrale": false
+   },
+   {
+    "exigence": "Passion pour le football et le sport, bonne comprehension du jeu",
+    "preuve": "Mentalizi : application mobile de preparation mentale pour sportifs, personnalisee par l'IA ; construite en vibe coding (Replit) avec un backend Supabase",
+    "etat": "couvert",
+    "centrale": false
+   }
+  ],
+  "score_couverture_10": 7.0,
+  "score_conditions_3": 2,
+  "score_entreprise_4": 1,
+  "score_differenciateurs_3": 1,
+  "note_20": 11,
+  "verdict": "no_go",
+  "raison_principale": "Le poste reste d'abord un poste de support client a fort volume sur Zendesk (temps de premiere reponse, CSAT, escalades) dont l'automatisation IA n'est qu'une partie ; Tom n'a aucune experience de support client, et pour un niveau ecrit de 1 a 2 ans aucun salaire n'est affiche qui prouverait le plancher de Tom.",
+  "exigences_sans_preuve": [
+   "Support client via ticketing Zendesk a fort volume : aucune experience de support client dans rules/profil.md (partiel)",
+   "CSAT, temps de premiere reponse, temps de resolution : aucune preuve de ces indicateurs (partiel)",
+   "Empathie et attention aux joueurs : aucun trait de caractere verifie n'est autorise par rules/profil.md",
+   "Zendesk : aucune preuve, l'outil n'est pas pratique par Tom",
+   "Scripting et SQL cites en nice to have : SQL reste une base Postgres sur un projet personnel, jamais avance (R5 pour le scripting)"
+  ],
+  "deductions": "Deduction (non prouvee par l'annonce) : le titre porte « AI & Automation » mais les missions ecrites placent l'automatisation apres le traitement des tickets, ce qui laisse penser a un poste de support ou l'automatisation se merite avec le temps ; l'annonce ne repartit pas le temps. Deuxieme deduction : l'annonce ecrit « 60-plus employees in France » et une levee « $680 million Series B », donc une scale-up financee mais de taille inferieure au seuil de la grille pour le point grand groupe ; aucune estimation n'est faite au-dela de ce chiffre publie. Troisieme deduction : le secteur sport fait echo a Mentalizi, mais la grille ne liste pas cet ecosysteme, le point reste a 0.",
+  "detail": "Bande seniorite : coeur (1 an minimum ecrit, 1 a 2 ans), affichee sans effet sur la note (R8).\nCouverture (exigence | preuve | etat | centrale) :\n- Assurer le support des joueurs via la plateforme de ticketing Zendesk, a fort volume | process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique | partiel | oui\n- Investiguer les problemes de compte avec les outils internes et les systemes d'administration | CRM (Digiforma) deploye de bout en bout ; process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique | partiel | non\n- Tenir les standards de service : temps de premiere reponse, temps de resolution, CSAT | 2 h -> 30 min par dossier, forte reduction des erreurs ; 20 entreprises clientes, 40 % converties sur une offre additionnelle, 25 % de reconduction | partiel | oui\n- Escalader les sujets complexes aux bonnes equipes, avec des escalades documentees | process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique | partiel | non\n- Reperer les problemes recurrents et les transformer en automatisations (chatbot, reponses automatiques Zendesk, Help Center) | workflows n8n et Process Street (relances, declencheurs, scoring, webhooks et API vers le CRM, gestion d'erreurs) | couvert | oui\n- Travailler avec l'equipe tech sur l'outillage support et l'automatisation, en utilisant l'IA pour gagner en efficacite | Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous ; 2 h -> 30 min par dossier | couvert | oui\n- Identifier les bugs et les points de friction et les communiquer a Product et Engineering | Mentalizi : application mobile de preparation mentale pour sportifs, personnalisee par l'IA ; construite en vibe coding (Replit) avec un backend Supabase | partiel | non\n- Partenariat avec Product : partager le retour joueurs et contribuer a une etape de revue sur les nouvelles versions | Mentalizi : application mobile de preparation mentale pour sportifs, personnalisee par l'IA ; construite en vibe coding (Replit) avec un backend Supabase ; 20 entreprises clientes, 40 % converties sur une offre additionnelle, 25 % de reconduction | partiel | non\n- 1 a 2 ans en support client ou customer operations | Responsable Commercial, Operations & IA, CITYZ'Formation, 2 ans 8 mois en operations | partiel | oui\n- Appetence reelle pour l'IA et l'automatisation, gout de l'experimentation d'outils | Ce qui l'anime : l'automatisation et l'IA au service de la croissance. ; Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous | couvert | oui\n- Excellente communication ecrite en anglais et en francais (C1 minimum) | Francais natif, anglais courant (910 TOEIC) | couvert | oui\n- Esprit de resolution de problemes et aisance a prendre en main des outils internes | Digiforma, BoondManager, Power BI, Excel avance, SAP, Process Street, Notion (API), Zoho Campaigns, Meta Ads, n8n (chez CITYZ'), Make, Zapier, Airtable | couvert | non\n- Attention au detail et capacite a apprendre vite dans un environnement mouvant | process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique | couvert | non\n- Empathie et attention reelle aux joueurs | aucune preuve dans rules/profil.md | absent | non\n- Passion pour le football et le sport, bonne comprehension du jeu | Mentalizi : application mobile de preparation mentale pour sportifs, personnalisee par l'IA ; construite en vibe coding (Replit) avec un backend Supabase | couvert | non\nA couverture 7.0/10 : 10.5 points d'etat sur 15 exigence(s), ramenes sur 10.\nB conditions 2/3 : +1 lieu compatible (Paris) et perimetre CDI ; +1 teletravail hybride ecrit (« hybrid work company; employees are required to be in office 3 days a week ») ; 0 salaire (aucun montant affiche et le niveau ecrit « 1-2 years in customer support » ne prouve pas le plancher de Tom ; hesitation = note basse, aucun montant n'est estime).\nC entreprise 1/4 : 0 grand groupe : l'annonce publie « With 60-plus employees in France », soit un effectif ecrit inferieur au seuil de la grille ; +1 entreprise ambitieuse sur preuve ecrite (« recently raised a $680 million Series B funding round from world-class investors including SoftBank, Accel, and Benchmark », « one of Europe's fastest-growing startups », « over 5 million users across 180 countries ») ; 0 reputation (aucune note Glassdoor ni label cite, R3) ; 0 ecosysteme (marketplace et jeu de fantasy sport : aucun des ecosystemes de la grille n'est ecrit).\nD differenciateurs 1/3 : +1 automatisation en operations demandee explicitement (« turn them into opportunities to automate: improve our chatbot, automated Zendesk responses and Help Center », « using AI tools to make yourself and the team more efficient ») et Tom l'a ; 0 formation d'adultes (aucune mission de formation ni d'animation dans l'annonce) ; 0 outil nomme (Zendesk : Tom ne le pratique pas ; les outils no-code cites ne sont pas nommes).\nNote 11 ramenee a 11 (entier, arrondi vers le bas ; hesitation = note basse).\nRaison principale : Le poste reste d'abord un poste de support client a fort volume sur Zendesk (temps de premiere reponse, CSAT, escalades) dont l'automatisation IA n'est qu'une partie ; Tom n'a aucune experience de support client, et pour un niveau ecrit de 1 a 2 ans aucun salaire n'est affiche qui prouverait le plancher de Tom.",
+  "regles_appliquees": [
+   "R1",
+   "R3",
+   "R5",
+   "R7",
+   "R8",
+   "R9"
+  ],
+  "run": "2026-09-07 14:00"
+ },
+ {
+  "cle": "thales|ai solutions product owner domaine offres et projets",
+  "entreprise": "Thales",
+  "poste": "AI SOLUTIONS PRODUCT OWNER - Domaine OFFRES et PROJETS (F/H)",
+  "famille": "Autre",
+  "dossier_deja_ouvert": false,
+  "couverture": [
+   {
+    "exigence": "Role de Product Owner : cadrage du besoin, backlog, priorisation, pilotage produit, lisible dans le titre",
+    "preuve": "process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique ; coordination de 5 personnes sans lien hierarchique",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Concevoir et deployer des solutions d'intelligence artificielle, lisible dans le titre",
+    "preuve": "Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Domaine Offres et Projets : outiller le cycle des offres et la gestion de projets, lisible dans le titre",
+    "preuve": "Ingenieur d'affaires, 5 Degres (ESN) : 360 k EUR de CA, 120 % des objectifs, 180 k EUR par compte ouvert (2 comptes), SNCF Connect & Tech ; pipeline sur BoondManager",
+    "etat": "partiel",
+    "centrale": true
+   }
+  ],
+  "score_couverture_10": 6.5,
+  "score_conditions_3": 1,
+  "score_entreprise_4": 0,
+  "score_differenciateurs_3": 0,
+  "note_20": 7,
+  "verdict": "no_go",
+  "raison_principale": "Texte partiel : seule l'alerte LinkedIn est disponible (titre, entreprise, ville). La note basse vient de l'absence de texte, pas d'une inadequation constatee : aucune exigence detaillee, aucun effectif publie et aucun outil nomme, donc entreprise et differenciateurs restent a 0 (R3, R9). A re-noter sur le texte complet.",
+  "exigences_sans_preuve": [
+   "Toutes les exigences du poste, hors titre : illisibles, comptees inconnues, ni couvertes ni absentes",
+   "Experience de Product Owner : aucune preuve d'un poste de Product Owner dans rules/profil.md (partiel)",
+   "Domaine Offres et Projets dans un contexte industriel : experience d'ingenieur d'affaires reelle mais en ESN (partiel)",
+   "Duree d'experience demandee : aucune duree ecrite",
+   "Effectif, remuneration, teletravail, stack : non publies dans le texte fourni"
+  ],
+  "deductions": "Deduction (non prouvee par le texte fourni) : Thales est un groupe industriel et un poste de Product Owner IA sur le domaine Offres et Projets suppose vraisemblablement une connaissance des processus de reponse a appel d'offres industriels et un contexte de defense ou d'aeronautique ; rien de tout cela n'est ecrit, c'est une deduction. Aucun effectif public n'apparait dans le texte fourni : le point grand groupe reste a 0 tant que l'annonce n'est pas lue (R9), ce qui est un effet du texte manquant et non un jugement sur l'entreprise. Troisieme deduction : Meudon est en proche banlieue et compatible, mais l'absence de mention de teletravail laisse le point a 0.",
+  "detail": "texte partiel : Bande seniorite : inconnu (aucune duree ecrite), affichee sans effet sur la note (R8).\nCouverture (exigence | preuve | etat | centrale) :\n- Role de Product Owner : cadrage du besoin, backlog, priorisation, pilotage produit, lisible dans le titre | process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique ; coordination de 5 personnes sans lien hierarchique | partiel | oui\n- Concevoir et deployer des solutions d'intelligence artificielle, lisible dans le titre | Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous | couvert | oui\n- Domaine Offres et Projets : outiller le cycle des offres et la gestion de projets, lisible dans le titre | Ingenieur d'affaires, 5 Degres (ESN) : 360 k EUR de CA, 120 % des objectifs, 180 k EUR par compte ouvert (2 comptes), SNCF Connect & Tech ; pipeline sur BoondManager | partiel | oui\nA couverture 6.5/10 : 2 points d'etat sur 3 exigence(s) lisible(s), ramenes sur 10.\nB conditions 1/3 : +1 lieu compatible (Meudon, proche banlieue) et perimetre CDI ; 0 teletravail (aucune donnee lisible et Meudon n'est pas Paris intra-muros, R3) ; 0 salaire (aucune donnee lisible, texte partiel, hesitation = note basse).\nC entreprise 0/4 : 0 sur les quatre points : le texte fourni ne publie ni effectif, ni levee datee, ni note Glassdoor, ni ecosysteme ; le point reste vide faute de preuve ecrite (R3, R9).\nD differenciateurs 0/3 : 0 sur les trois points : le titre nomme des solutions IA mais ne demande explicitement ni agents IA ni automatisation en operations ; ni formation ni outil nomme ne sont demandes dans le texte lisible.\nNote 7.5 ramenee a 7 (entier, arrondi vers le bas ; hesitation = note basse).\nRaison principale : Texte partiel : seule l'alerte LinkedIn est disponible (titre, entreprise, ville). La note basse vient de l'absence de texte, pas d'une inadequation constatee : aucune exigence detaillee, aucun effectif publie et aucun outil nomme, donc entreprise et differenciateurs restent a 0 (R3, R9). A re-noter sur le texte complet.",
+  "regles_appliquees": [
+   "R3",
+   "R7",
+   "R8",
+   "R9"
+  ],
+  "run": "2026-09-07 14:00"
+ },
+ {
+  "cle": "dfm|consultant ia",
+  "entreprise": "DFM",
+  "poste": "Consultant IA (H/F)",
+  "famille": "AI & Ops Automation",
+  "dossier_deja_ouvert": false,
+  "couverture": [
+   {
+    "exigence": "Expertise IA : concevoir et deployer des cas d'usage d'intelligence artificielle en contexte professionnel, lisible dans le titre",
+    "preuve": "Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous ; Jamais presente en contexte salarie.",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Posture de consultant : cadrer un besoin client, livrer et restituer, lisible dans le titre",
+    "preuve": "Consultant & Formateur (freelance), PME : formation d'adultes ; Les Ruchers du Valois 350 k EUR de CA (2021) ; Savane & Mousson +15 % de panier moyen",
+    "etat": "couvert",
+    "centrale": true
+   }
+  ],
+  "score_couverture_10": 7.5,
+  "score_conditions_3": 1,
+  "score_entreprise_4": 0,
+  "score_differenciateurs_3": 0,
+  "note_20": 8,
+  "verdict": "no_go",
+  "raison_principale": "Texte partiel : seule l'alerte LinkedIn est disponible (titre, entreprise, ville). La note basse vient de l'absence de texte, pas d'une inadequation constatee ; l'employeur lui-meme n'est pas qualifie, aucune exigence n'est lisible et les blocs entreprise et differenciateurs restent a 0 (R3, R9).",
+  "exigences_sans_preuve": [
+   "Toutes les exigences du poste, hors titre : illisibles, comptees inconnues, ni couvertes ni absentes",
+   "Expertise IA en contexte professionnel : systeme d'agents personnel reel, jamais presente en contexte salarie (partiel)",
+   "Duree d'experience demandee : aucune duree ecrite",
+   "Effectif, remuneration, teletravail, secteur, clients : non publies dans le texte fourni"
+  ],
+  "deductions": "Deduction (non prouvee par le texte fourni) : un poste de Consultant IA a Levallois-Perret sous un sigle de trois lettres ressemble a une offre de cabinet ou de societe de conseil, ou le client final et la mission reelle sont masques (R6) ; il faudrait croiser lieu, rattachement et stack avant de conclure quoi que ce soit sur le quotidien. Deuxieme deduction : sans texte, il est impossible de savoir si le poste est technique (donc potentiellement une exclusion ferme au sourcing) ou fonctionnel ; c'est le premier point a verifier.",
+  "detail": "texte partiel : Bande seniorite : inconnu (aucune duree ecrite), affichee sans effet sur la note (R8).\nCouverture (exigence | preuve | etat | centrale) :\n- Expertise IA : concevoir et deployer des cas d'usage d'intelligence artificielle en contexte professionnel, lisible dans le titre | Agents IA : systeme personnel de recherche d'emploi (ce depot) : conception, prompts, tool calling, connecteurs (Notion, Gmail), schemas, garde-fous ; Jamais presente en contexte salarie. | partiel | oui\n- Posture de consultant : cadrer un besoin client, livrer et restituer, lisible dans le titre | Consultant & Formateur (freelance), PME : formation d'adultes ; Les Ruchers du Valois 350 k EUR de CA (2021) ; Savane & Mousson +15 % de panier moyen | couvert | oui\nA couverture 7.5/10 : 1.5 points d'etat sur 2 exigence(s) lisible(s), ramenes sur 10.\nB conditions 1/3 : +1 lieu compatible (Levallois-Perret, proche banlieue) et perimetre CDI ; 0 teletravail (aucune donnee lisible et Levallois n'est pas Paris intra-muros, R3) ; 0 salaire (aucune donnee lisible, texte partiel, hesitation = note basse).\nC entreprise 0/4 : 0 sur les quatre points : le texte fourni ne publie ni effectif, ni levee datee, ni note Glassdoor, ni ecosysteme ; l'employeur n'est meme pas qualifie, le point reste vide (R3, R9).\nD differenciateurs 0/3 : 0 sur les trois points : le titre nomme l'IA mais ne demande explicitement ni agents IA ni automatisation en operations ; ni formation ni outil nomme ne sont demandes dans le texte lisible.\nNote 8.5 ramenee a 8 (entier, arrondi vers le bas ; hesitation = note basse).\nRaison principale : Texte partiel : seule l'alerte LinkedIn est disponible (titre, entreprise, ville). La note basse vient de l'absence de texte, pas d'une inadequation constatee ; l'employeur lui-meme n'est pas qualifie, aucune exigence n'est lisible et les blocs entreprise et differenciateurs restent a 0 (R3, R9).",
+  "regles_appliquees": [
+   "R3",
+   "R6",
+   "R7",
+   "R8",
+   "R9"
+  ],
+  "run": "2026-09-07 14:00"
+ },
+ {
+  "cle": "esri|deal desk analyst",
+  "entreprise": "Esri France",
+  "poste": "Deal Desk Analyst F/H",
+  "famille": "Sales Ops",
+  "dossier_deja_ouvert": false,
+  "couverture": [
+   {
+    "exigence": "Deal desk : structurer et securiser les deals commerciaux (devis, conditions, validations, conformite), lisible dans le titre",
+    "preuve": "process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique",
+    "etat": "partiel",
+    "centrale": true
+   },
+   {
+    "exigence": "Analyst : analyser l'activite commerciale et produire le reporting, lisible dans le titre",
+    "preuve": "Reporting 20 M EUR de CA (Carrefour, Cora) sous Power BI et SAP ; 200+ SKU ; Excel avance",
+    "etat": "couvert",
+    "centrale": true
+   },
+   {
+    "exigence": "Famille Sales Ops : outiller le CRM et piloter le cycle de vente, lisible dans la famille",
+    "preuve": "CRM (Digiforma) deploye de bout en bout ; Cycle de vente construit sans playbook",
+    "etat": "couvert",
+    "centrale": true
+   }
+  ],
+  "score_couverture_10": 8.5,
+  "score_conditions_3": 1,
+  "score_entreprise_4": 0,
+  "score_differenciateurs_3": 0,
+  "note_20": 9,
+  "verdict": "no_go",
+  "raison_principale": "Texte partiel : seul le resultat Indeed est disponible (titre, entreprise, ville, mention Permanent). Sur les seuls elements lisibles le poste ressemble a la cible Sales Ops, mais aucune exigence, aucun effectif et aucun outil ne sont publies, donc entreprise et differenciateurs restent a 0 (R3, R9) et la note en souffre ; a re-noter sur le texte complet avant toute decision.",
+  "exigences_sans_preuve": [
+   "Toutes les exigences du poste, hors titre : illisibles, comptees inconnues, ni couvertes ni absentes",
+   "Experience de deal desk (pricing, conditions contractuelles, validations) : aucune preuve, le travail sur dossiers de Tom porte sur des dossiers de formation (partiel)",
+   "Outillage attendu d'un deal desk (CRM du marche, CPQ) : non publie ; Salesforce reste des notions et HubSpot est certifie sans production",
+   "Duree d'experience demandee : aucune duree ecrite",
+   "Effectif, remuneration, teletravail : non publies dans le texte fourni"
+  ],
+  "deductions": "Deduction (non prouvee par le texte fourni) : un poste de Deal Desk Analyst chez un editeur de logiciels suppose habituellement un CRM du marche et un outil de devis, souvent Salesforce et un CPQ, ce qui serait un point faible pour Tom (notions seulement) ; rien de tout cela n'est ecrit. Deuxieme deduction : l'offre est publiee le 19/06/2026 et le lien Indeed n'est pas verifiable par le code, il faut confirmer qu'elle est encore active avant toute action. Troisieme deduction : Meudon est compatible mais l'absence de mention de teletravail laisse le point a 0.",
+  "detail": "texte partiel : Bande seniorite : inconnu (aucune duree ecrite), affichee sans effet sur la note (R8).\nCouverture (exigence | preuve | etat | centrale) :\n- Deal desk : structurer et securiser les deals commerciaux (devis, conditions, validations, conformite), lisible dans le titre | process en 23 etapes, 143 dossiers, 2 h -> 30 min par dossier, forte reduction des erreurs, conformite systematique | partiel | oui\n- Analyst : analyser l'activite commerciale et produire le reporting, lisible dans le titre | Reporting 20 M EUR de CA (Carrefour, Cora) sous Power BI et SAP ; 200+ SKU ; Excel avance | couvert | oui\n- Famille Sales Ops : outiller le CRM et piloter le cycle de vente, lisible dans la famille | CRM (Digiforma) deploye de bout en bout ; Cycle de vente construit sans playbook | couvert | oui\nA couverture 8.5/10 : 2.5 points d'etat sur 3 exigence(s) lisible(s), ramenes sur 10.\nB conditions 1/3 : +1 CDI et lieu compatibles, tous deux lisibles (« Permanent », Meudon (92), proche banlieue) ; 0 teletravail (aucune donnee lisible et Meudon n'est pas Paris intra-muros, R3) ; 0 salaire (aucune donnee lisible, texte partiel, hesitation = note basse).\nC entreprise 0/4 : 0 sur les quatre points : le texte fourni ne publie ni effectif, ni levee datee, ni note Glassdoor, ni ecosysteme ; le point reste vide faute de preuve ecrite (R3, R9).\nD differenciateurs 0/3 : 0 sur les trois points : ni agents IA, ni formation, ni outil nomme ne sont demandes dans le texte lisible.\nNote 9.5 ramenee a 9 (entier, arrondi vers le bas ; hesitation = note basse).\nRaison principale : Texte partiel : seul le resultat Indeed est disponible (titre, entreprise, ville, mention Permanent). Sur les seuls elements lisibles le poste ressemble a la cible Sales Ops, mais aucune exigence, aucun effectif et aucun outil ne sont publies, donc entreprise et differenciateurs restent a 0 (R3, R9) et la note en souffre ; a re-noter sur le texte complet avant toute decision.",
+  "regles_appliquees": [
+   "R2",
+   "R3",
+   "R7",
+   "R8",
+   "R9"
+  ],
+  "run": "2026-09-07 14:00"
+ }
+]

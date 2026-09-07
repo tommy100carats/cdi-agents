@@ -54,8 +54,18 @@ def normalize_company(name: str) -> str:
     return COMPANY_ALIASES.get(s, s)
 
 
+_TITLE_LOCATION = re.compile(
+    r"\s*\((?:[^()]*(?:paris|france|remote|lyon|europe|emea|hybride|hybrid|x/f/m|f/h|h/f)[^()]*)\)"
+    r"|\s*[,:–-]\s*(?:paris|france|lyon|remote|europe|emea|100\s*%\s*remote|sales programs)\b.*$",
+    re.IGNORECASE,
+)
+
+
 def normalize_title(title: str) -> str:
-    s = _TITLE_NOISE.sub(" ", title or "")
+    # Incident du 07/09/2026 : « Customer Enablement Manager (Paris, France) », « Revenue Operations Analyst, Paris »
+    # et « Chief of Staff GTM - France » ne rejoignaient pas leur original au CRM. On retire lieu et sous-titre.
+    s = _TITLE_LOCATION.sub(" ", title or "")
+    s = _TITLE_NOISE.sub(" ", s)
     s = _clean(s)
     # « senior » et « junior » restent : ce ne sont pas les mêmes postes
     return s

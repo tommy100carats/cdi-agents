@@ -2,7 +2,7 @@
 """Ligne de commande : ce que les agents appellent dans leurs prompts.
 
     python -m pipeline.cli key "Revenue Operations (H/F)" "Dust SAS"
-    python -m pipeline.cli seniority annonce.txt
+    python -m pipeline.cli seniority annonce.txt --titre "Junior Sales Ops Analyst"
     python -m pipeline.cli links liens.json                  # [{"url": ...}, ...] ou ["url", ...]
     python -m pipeline.cli dedup candidates.json crm.json [inbox.json]
     python -m pipeline.cli validate fichier.json offre|verdict|brief|crm_row|run|evenement_gmail
@@ -20,6 +20,15 @@ import sys
 from datetime import date, datetime
 
 
+def _paris_now():
+    """Horodatage heure de Paris (incident du 07/09/2026 : le conteneur est en UTC, le run était daté 11:34 pour 13:34)."""
+    try:
+        from zoneinfo import ZoneInfo
+        return datetime.now(ZoneInfo("Europe/Paris")).strftime("%Y-%m-%d %H:%M")
+    except Exception:
+        return datetime.now().strftime("%Y-%m-%d %H:%M")
+
+
 def _load(path):
     with open(path, encoding="utf-8") as f:
         return json.load(f)
@@ -34,7 +43,7 @@ def main(argv=None):
     sub = p.add_subparsers(dest="cmd", required=True)
 
     s = sub.add_parser("key"); s.add_argument("titre"); s.add_argument("entreprise")
-    s = sub.add_parser("seniority"); s.add_argument("fichier")
+    s = sub.add_parser("seniority"); s.add_argument("fichier"); s.add_argument("--titre", default="")
     s = sub.add_parser("links"); s.add_argument("fichier")
     s = sub.add_parser("dedup"); s.add_argument("candidates"); s.add_argument("crm"); s.add_argument("inbox", nargs="?")
     s = sub.add_parser("validate"); s.add_argument("fichier"); s.add_argument("schema")
@@ -56,7 +65,7 @@ def main(argv=None):
         _print({"cle": k}); return 0 if k else 1
     if a.cmd == "seniority":
         from .seniority import sourcing_decision
-        _print(sourcing_decision(open(a.fichier, encoding="utf-8").read())); return 0
+        _print(sourcing_decision(open(a.fichier, encoding="utf-8").read(), a.titre)); return 0
     if a.cmd == "links":
         from .link_check import check
         data = _load(a.fichier)
@@ -99,7 +108,7 @@ def main(argv=None):
                 "html": a.html, "pdf": a.pdf}); return 0
     if a.cmd == "runlog":
         from .validate import errors
-        row = {"Run": datetime.now().strftime("%Y-%m-%d %H:%M"), "Agent": a.agent, "Mode": a.mode, "Lues": a.lues,
+        row = {"Run": _paris_now(), "Agent": a.agent, "Mode": a.mode, "Lues": a.lues,
                "Écrites": a.ecrites, "Écartées": a.ecartees, "Erreurs": a.erreurs, "Résumé": a.resume,
                "Contrôles": a.controles, "Statut run": a.statut}
         errs = errors(row, "run")

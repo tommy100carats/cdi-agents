@@ -50,3 +50,13 @@ def test_empty_page_is_unknown_not_active():
 def test_api_down_is_unknown():
     r = check("https://jobs.ashbyhq.com/dust/35d21c5b-907d-4be4-a7fb-6e7bf85d4dbc", fetch=lambda u, timeout=12: (503, ""))
     assert r["active"] is None
+
+
+def test_truncated_board_json_still_finds_id():
+    # Incident du 07/09/2026 : réponse Ashby tronquée → JSON illisible → None pour toute offre Ashby
+    a = "35d21c5b-907d-4be4-a7fb-6e7bf85d4dbc"; z = "00000000-0000-0000-0000-000000000000"
+    body = '{"jobs":[{"id":"' + a + '","title":"RevOps"},{"id":"def-4'  # coupé
+    r = check(f"https://jobs.ashbyhq.com/dust/{a}", fetch=lambda u, timeout=12: (200, body))
+    assert r["active"] is True
+    r2 = check(f"https://jobs.ashbyhq.com/dust/{z}", fetch=lambda u, timeout=12: (200, body))
+    assert r2["active"] is None

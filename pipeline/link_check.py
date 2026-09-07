@@ -29,7 +29,9 @@ def _default_fetch(url, timeout=12):
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (cdi-agents link-check)"})
     try:
         with urllib.request.urlopen(req, timeout=timeout) as r:
-            return r.status, r.read(400_000).decode("utf-8", "ignore")
+            # 6 Mo : un job board Ashby de 250 offres pèse 500 Ko ; à 400 Ko le JSON était tronqué
+            # et toute offre Ashby sortait « réponse illisible » (incident du 07/09/2026).
+            return r.status, r.read(6_000_000).decode("utf-8", "ignore")
     except Exception as e:  # HTTPError a un code, le reste non
         code = getattr(e, "code", 0)
         return code or 0, ""
@@ -84,6 +86,10 @@ def _api_result(url, ats, code, body, jid):
     try:
         data = json.loads(body)
     except ValueError:
+        # JSON tronqué ou invalide : l'identifiant présent tel quel dans le corps vaut preuve d'activité,
+        # son absence ne prouve rien (le corps peut être coupé avant).
+        if str(jid) in body:
+            return {"url": url, "active": True, "method": ats, "evidence": f"id présent dans la réponse {ats} (JSON illisible, recherche textuelle)"}
         return {"url": url, "active": None, "method": ats, "evidence": f"API {ats} : réponse illisible"}
     ids = set()
     if ats == "ashby":
