@@ -47,7 +47,7 @@ Voir `rules/profil.md` pour les faits et chiffres. Pour la notation, retenir :
 - Formation d'adultes et conduite du changement : réelles (formateur, référent IA).
 - Anglais courant (910 TOEIC). Aucune expérience de comité de direction en anglais dans un grand groupe matriciel.
 
-## 3. Grille de notation v3, sur 20, additive, sans malus (règle R7)
+## 3. Grille de notation v3.1, sur 20, additive, sans malus (règle R7)
 
 **Aucun malus.** Une exigence absente vaut 0 dans la couverture et c'est tout. Les exclusions fermes sont
 traitées en sourcing, avant la note. On n'estime jamais : un salaire absent ne coûte rien (R12), une entreprise
