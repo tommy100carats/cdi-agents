@@ -7,3 +7,9 @@ data/runs.json
 *.pdf
 !docs/*.pdf
 cv/avatar.jpg
+data/ats_candidates*.json
+data/candidates_raw.json
+data/inbox_pages.json
+data/crm.json
+data/inbox.json
+data/runs.json
