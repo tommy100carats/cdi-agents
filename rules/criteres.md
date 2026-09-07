@@ -1,4 +1,4 @@
-# Critères de recherche et grille de notation — v3 (07/09/2026)
+# Critères de recherche et grille de notation, v3.1 (calibrée le 07/09/2026)
 
 Source de vérité unique pour Léa (sourcing) et Hugo (notation). Modifier ici, jamais dans un prompt.
 Toute correction de Tom devient une règle numérotée en fin de document (registre), datée, jamais rediscutée.
@@ -21,7 +21,9 @@ Toute correction de Tom devient une règle numérotée en fin de document (regis
   fait par `pipeline/seniority.py` (années écrites d'abord, puis mot de niveau dans le titre), pas par le modèle.
 - **Exclusions fermes** (Écartée, jamais notée) : quotidien fait de prospection outbound à froid ; code de
   production, pipelines de données, profil Data Scientist / ML Engineer / Software Engineer, diplôme
-  d'ingénieur exigé, LangChain, LangGraph, CI-CD, AWS. Tom ne code pas, par choix.
+  d'ingénieur exigé, LangChain, LangGraph, CI-CD, AWS. Tom ne code pas, par choix. Les deux premières exclusions
+  lisibles (diplôme d'ingénieur ou d'informatique exigé sans alternative commerce, code au coeur du poste) sont
+  détectées par `python3 -m pipeline.cli exclusions annonce.txt`, phrase citée (R16).
 - **Vérification d'activité** : une offre n'est présentée comme active que si `pipeline/link_check.py` l'a
   confirmée (API ATS ou page lisible). LinkedIn et Welcome to the Jungle ne se vérifient pas par le code : chercher le
   lien ATS ou site carrière ; sinon « Non vérifiable », et l'offre passe quand même (notation, brief, CRM), jamais
@@ -48,18 +50,18 @@ Voir `rules/profil.md` pour les faits et chiffres. Pour la notation, retenir :
 ## 3. Grille de notation v3, sur 20, additive, sans malus (règle R7)
 
 **Aucun malus.** Une exigence absente vaut 0 dans la couverture et c'est tout. Les exclusions fermes sont
-traitées en sourcing, avant la note. Une donnée introuvable (effectif, salaire, avis) laisse le point à 0 et
-le champ vide ; on n'estime jamais.
+traitées en sourcing, avant la note. On n'estime jamais : un salaire absent ne coûte rien (R12), une entreprise
+absente du registre se cherche une fois sur le web, source citée, sinon C vaut 0 et l'entreprise est à qualifier (R11).
 
 | Bloc | Points | Comment |
 |---|---|---|
 | **A. Couverture des exigences écrites** | /10 | Chaque exigence de l'annonce : couvert 1, partiel 0,5, absent 0. Total ramené sur 10. Quand l'annonce publie ses indicateurs de succès, ce sont eux la liste, pas les compétences. |
-| **B. Conditions** | /3 | +1 CDI et lieu compatibles (Paris, proche banlieue, remote) · +1 télétravail hybride ou remote, ou Paris intra-muros · +1 salaire affiché ≥ 50 k€, ou non affiché mais fourchette de marché plausible. |
-| **C. Entreprise** | /4 | +1 grand groupe, ETI ou effectif ≥ 500 · +1 entreprise ambitieuse : levée de fonds < 18 mois, croissance forte, IA-native, scale-up financée · +1 réputation employeur (Glassdoor ≥ 4 ou label reconnu) · +1 écosystème qui parle au parcours (SaaS B2B, fintech, edtech / formation, comptable / TPE-PME, retail). |
+| **B. Conditions** | /3 | +1 CDI · +1 lieu compatible (Paris, proche banlieue accessible, ou remote) · +1 salaire : point acquis sauf si un salaire affiché est inférieur à 50 k€ (on n'estime jamais). Le télétravail est affiché dans le détail, sans effet sur la note (R12). |
+| **C. Entreprise** | /4 | **Le type d'entreprise fait la note (R11)**, prouvé par `rules/entreprises.md` ou par l'annonce : **4** scale-up financée (levée VC publique datée, Next40 / FT120, licorne) ou grand groupe privé (≥ 1 000 salariés, coté, groupe international) · **3** ETI en croissance (250 à 999 salariés, adossement ou croissance documentés) · **2** ETI ou PME établie, organisme public ou parapublic, cabinet / ESN (client masqué, R6), filiale française sans preuve d'effectif local · **1** petite structure identifiée (< 100 salariés) sans levée · **0** entreprise non identifiable. |
 | **D. Différenciateurs demandés** | /3 | +1 chacun, seulement si l'annonce le demande explicitement ET que Tom l'a : agents IA / automatisation en opérations · formation ou enablement d'adultes · outil nommé que Tom pratique (n8n, Make, Zapier, HubSpot, Dust, Notion, Airtable, Process Street). |
 
-**Note = A + B + C + D**, entière, plafonnée à 20. En cas d'hésitation entre deux notes, prendre la basse et
-l'écrire dans le détail.
+**Note = A + B + C + D**, entière (arrondi vers le bas), plafonnée à 20. En cas d'hésitation entre deux notes,
+prendre la basse et l'écrire dans le détail. **Texte partiel** : A plafonné à 6/10, B et C sur les faits publics (R15).
 
 **Bande séniorité** : affichée dans le détail (coeur / stretch / inconnu), sans effet sur la note (R8).
 
@@ -70,10 +72,15 @@ l'écrire dans le détail.
 | 15 à 20 | go_prioritaire | Camille rédige le brief, Scribe crée la fiche CRM « À contacter », priorité Haute (famille 1) ou Moyenne |
 | 12 à 14 | veille | Reste dans Inbox « En veille » ; visible dans le pipeline du mardi et du vendredi ; pas de brief |
 | 0 à 11 | no_go | Inbox « Écartée », raison écrite ; rien ne va au CRM |
-| — | dossier_ouvert | Un dossier est déjà ouvert chez cette entreprise : verdict rendu, note calculée, mais Scribe ne crée rien et écrit l'avertissement |
+| toute note | dossier_ouvert | Un dossier est déjà ouvert chez cette entreprise : verdict rendu, note calculée, mais Scribe ne crée rien et écrit l'avertissement |
 
 Un doute exprimé par Hugo (annonce incomplète, deux notes possibles) fait descendre au seuil inférieur et
 s'écrit dans le détail.
+
+**Plafonds de verdict** (calculés par `pipeline/verdicts.py`, la note n'est jamais modifiée, R7) : un verdict
+go_prioritaire devient **veille** quand le titre est senior avec 5 ans et plus demandés (R13), quand le poste est hors
+opérations (R14) ou quand le texte est partiel (R15). La ligne reste visible dans le pipeline du mardi et du
+vendredi : Tom décide. Commande : `python3 -m pipeline.cli verdict 16 --titre "Senior Revenue Ops" --annees 5`.
 
 ## 5. Sortie attendue de Hugo (validée par `schemas/verdict.json`)
 
@@ -107,4 +114,39 @@ Ne jamais rédiger de CV ni de lettre.
   demandés, Customer Success Manager inclus au même titre que RevOps et Sales Ops. Les bandes coeur / stretch
   restent affichées mais ne trient plus : les deux passent.
 
-*Les règles suivantes seront extraites des 20 offres de calibration (voir `docs/calibration.md`).*
+- **R11 (07/09/2026, calibration de Tom)** : **l'entreprise fait la note.** Mot de Tom : « les top postes sont
+  dans les opérations d'une scale-up ou d'un grand groupe, même si le poste est plus junior ou sans télétravail ;
+  Dust c'est top ». Scale-up financée ou grand groupe privé = C 4/4 d'office ; le type se prouve par
+  `rules/entreprises.md` (faits publics sourcés : effectif, levée, label) ou par l'annonce ; entreprise absente du
+  registre : une recherche web unique, source citée dans le détail, sinon 0 et « entreprise à qualifier » dans le
+  résumé du run. Remplace les quatre sous-points de C (la note Glassdoor n'était citée par aucune annonce).
+- **R12 (07/09/2026)** : **ni l'absence de télétravail ni l'absence de salaire ne pénalisent.** B = CDI + lieu +
+  salaire non contredit. Résout la contradiction de l'ancien B3 (« fourchette de marché plausible » contre « on
+  n'estime jamais »).
+- **R13 (07/09/2026)** : **titre senior (Senior, Lead, Head, Director) avec 5 ans et plus demandés = au mieux
+  veille.** Note calculée, jamais de brief. Alan Senior Revenue Ops : agent 15, Tom 13 « pas assez d'expérience » ;
+  Mistral Enablement Lead (5 à 8 ans) : Tom 14 « un peu junior ». Un « Senior » sans années écrites n'est pas
+  plafonné (Cegid : Tom a dit oui).
+- **R14 (07/09/2026)** : **hors opérations = au mieux veille** : produit (PM, PO), ingénierie, conseil IA, business
+  analyst IA, data. Tom a dit non à 13/20 ou moins à Bpifrance (PM), CNAM (BA IA), Thales (PO), DFM (consultant),
+  même en grand groupe. Lu dans le titre seulement, par le code.
+- **R15 (07/09/2026)** : **texte partiel** : A plafonné à 6/10 (une couverture ne se mesure pas sur un titre), B et
+  C sur les faits publics, verdict au mieux veille (Camille ne briefe pas sans l'annonce). Thales, DFM, Esri,
+  ElevenLabs : agent 7 à 9, Tom 10 à 11.
+- **R16 (07/09/2026)** : **exclusions lisibles par le code** : `pipeline/exclusions.py` cite la phrase qui exige un
+  diplôme d'ingénieur ou d'informatique sans alternative commerce, ou du code au coeur du poste ; Léa l'appelle avant
+  de retenir. Meilleurtaux (« Bac +5 École d'Ingénieurs ou Master Informatique ») avait été noté au lieu d'être écarté.
+
+## 7. Calibration du 07/09/2026 (20 offres, notes de Tom contre notes de l'agent)
+
+Tom a noté les 20 offres sur l'artefact « Calibration Léa ». Écart moyen absolu avant les règles R11 à R16 :
+**2,1 points** (l'agent notait plus bas, 1,6 point en moyenne) ; après recalcul avec les mêmes tableaux de
+couverture : **1,4 point**, objectif ≤ 1,5 atteint. Accord de verdict : les huit offres que l'agent recalculé met à
+15 et plus sans plafond (Pennylane, Alan Compliance Ops, ILLUIN, Mirakl, Veepee, Moments Lab, Cegid, Sorare) sont
+toutes des « oui » de Tom ; aucun « non » de Tom n'est en go. Détail par offre dans
+`data/runs/2026-09-07_test/calibration_tom_vs_agent.md`.
+
+Ce que Tom a dit et qui a produit les règles : « 15/20 car je suis un peu junior » (Pennylane), « le secteur, si
+c'est scale-up c'est tous les points » (Alan Compliance Ops, 18), « pas Salesforce mais sinon le poste et
+l'entreprise sont top » (Mirakl, 17), « pas assez d'expérience » (Alan Senior, non), « profil trop ingénieur »
+(Meilleurtaux, non).

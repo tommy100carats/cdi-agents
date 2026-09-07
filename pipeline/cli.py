@@ -6,6 +6,8 @@
     python -m pipeline.cli links liens.json                  # [{"url": ...}, ...] ou ["url", ...]
     python -m pipeline.cli dedup candidates.json crm.json [inbox.json]
     python -m pipeline.cli validate fichier.json offre|verdict|brief|crm_row|run|evenement_gmail
+    python -m pipeline.cli exclusions annonce.txt                       # diplôme d'ingénieur / code exigés (R5, § 1)
+    python -m pipeline.cli verdict 16 --titre "Senior Revenue Ops" --annees 5 [--partiel] [--dossier-ouvert]
     python -m pipeline.cli classify sujet.txt corps.txt
     python -m pipeline.cli hygiene crm.json [--inbox inbox.json] [--runs runs.json] [--md]
     python -m pipeline.cli relances crm.json
@@ -48,6 +50,10 @@ def main(argv=None):
     s = sub.add_parser("dedup"); s.add_argument("candidates"); s.add_argument("crm"); s.add_argument("inbox", nargs="?")
     s = sub.add_parser("validate"); s.add_argument("fichier"); s.add_argument("schema")
     s = sub.add_parser("classify"); s.add_argument("sujet"); s.add_argument("corps")
+    s = sub.add_parser("exclusions"); s.add_argument("fichier")
+    s = sub.add_parser("verdict"); s.add_argument("note", type=int); s.add_argument("--titre", default="")
+    s.add_argument("--annees", type=int, default=None); s.add_argument("--partiel", action="store_true")
+    s.add_argument("--dossier-ouvert", action="store_true")
     s = sub.add_parser("hygiene"); s.add_argument("crm"); s.add_argument("--inbox"); s.add_argument("--runs"); s.add_argument("--md", action="store_true"); s.add_argument("--today")
     s = sub.add_parser("relances"); s.add_argument("crm"); s.add_argument("--today")
     s = sub.add_parser("report"); s.add_argument("crm"); s.add_argument("--mode", default="soir", choices=["soir", "pipeline"]); s.add_argument("--inbox"); s.add_argument("--runs"); s.add_argument("--pdf"); s.add_argument("--html"); s.add_argument("--today")
@@ -83,7 +89,15 @@ def main(argv=None):
         from .precedence import classify_email
         c = classify_email(open(a.sujet, encoding="utf-8").read(), open(a.corps, encoding="utf-8").read())
         _print(c.__dict__); return 0
-    today = date.fromisoformat(a.today) if getattr(a, "today", None) else date.today()
+    if a.cmd == "exclusions":
+        from .exclusions import check
+        r = check(open(a.fichier, encoding="utf-8").read())
+        _print(r); return 1 if r["exclue"] else 0
+    if a.cmd == "verdict":
+        from .verdicts import verdict
+        _print(verdict(a.note, dossier_ouvert=a.dossier_ouvert, titre=a.titre, annees_min=a.annees,
+                       texte_partiel=a.partiel)); return 0
+    today =date.fromisoformat(a.today) if getattr(a, "today", None) else date.today()
     if a.cmd == "hygiene":
         from . import hygiene
         rep = hygiene.run(_load(a.crm), today=today, inbox_rows=_load(a.inbox) if a.inbox else None,

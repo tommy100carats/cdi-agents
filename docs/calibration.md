@@ -30,6 +30,14 @@ passe en production qu'après.*
 5. Critère de validation : **écart moyen absolu ≤ 1,5 point** sur les 20 offres et **aucune inversion de seuil**
    (une offre que Tom met à 15 ou plus et que Hugo met sous 15, ou l'inverse). Sinon, second tour.
 
+**Premier tour, fait le 07/09/2026** : Tom a noté les 20 offres sur l'artefact « Calibration Léa » (notes, oui /
+non, commentaires). Écart moyen 2,1 avant, 1,4 après les règles R11 à R16 (`rules/criteres.md` § 6 et § 7,
+tableau complet dans `data/runs/2026-09-07_test/calibration_tom_vs_agent.md`). Aucune inversion : les huit offres
+à 15 et plus sans plafond sont huit « oui » de Tom. Un écart de 5 subsiste sur Alan Senior Revenue Ops (Tom 13,
+agent 18) : la grille n'a pas de malus, le plafond R13 règle le routage (veille, pas de brief), pas le chiffre.
+Second tour : sur le prochain lot de 20 offres sourcées en production, comparer Score Tom et Score agent avec la
+grille v3.1 ; les règles R17 et suivantes viendront de là.
+
 ## Étape 3 : bascule
 
 1. Vérifier que Camille et Scribe produisent, sur 3 lignes « Briefée » de test, des fiches CRM valides

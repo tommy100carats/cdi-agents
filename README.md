@@ -51,7 +51,8 @@ bases en JSON, fait valider ses écritures par `pipeline/cli.py`, puis écrit un
 
 ## Règles (source de vérité, lues par les agents à chaque run)
 
-`rules/criteres.md` (périmètre, grille v3 additive sans malus, registre R1–R9), `rules/statuts.md`,
+`rules/criteres.md` (périmètre, grille v3.1 additive sans malus, registre R1 à R16, calibration du 07/09), `rules/entreprises.md`
+(type d'entreprise prouvé, bloc C), `rules/statuts.md`,
 `rules/sources.md` (où chercher, API d'ATS, slugs), `rules/profil.md` (faits et chiffres autorisés), `rules/cv.md`.
 
 ## Ce que ce dépôt ne fait pas
