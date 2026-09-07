@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Brief entreprise (Camille)",
+  "type": "object",
+  "properties": {
+    "cle": {
+      "type": "string",
+      "minLength": 3
+    },
+    "entreprise": {
+      "type": "string"
+    },
+    "poste": {
+      "type": "string"
+    },
+    "activite": {
+      "type": "string",
+      "minLength": 20
+    },
+    "effectif": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "1-50",
+        "51-100",
+        "101-500",
+        "500+",
+        null
+      ]
+    },
+    "note_glassdoor": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "levee_ou_ca": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "grand_groupe": {
+      "type": "boolean"
+    },
+    "actualites": {
+      "type": "array",
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "titre": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string",
+            "pattern": "^https?://"
+          }
+        },
+        "required": [
+          "date",
+          "titre",
+          "source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "stack_verbatim": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "niveau_code_verbatim": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "recruteur": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "fit": {
+      "type": "string",
+      "minLength": 80
+    },
+    "missions_verbatim": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^https?://"
+      }
+    },
+    "run": {
+      "type": "string",
+      "minLength": 10
+    },
+    "score": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 20
+    }
+  },
+  "required": [
+    "cle",
+    "entreprise",
+    "poste",
+    "activite",
+    "effectif",
+    "note_glassdoor",
+    "levee_ou_ca",
+    "grand_groupe",
+    "actualites",
+    "stack_verbatim",
+    "niveau_code_verbatim",
+    "recruteur",
+    "fit",
+    "missions_verbatim",
+    "sources",
+    "run"
+  ],
+  "additionalProperties": false
+}

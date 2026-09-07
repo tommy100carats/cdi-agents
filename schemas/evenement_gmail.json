@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Événement de recrutement lu dans Gmail (Noé)",
+  "type": "object",
+  "properties": {
+    "thread_id": {
+      "type": "string",
+      "minLength": 8
+    },
+    "message_id": {
+      "type": "string",
+      "minLength": 8
+    },
+    "date": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}"
+    },
+    "expediteur": {
+      "type": "string"
+    },
+    "objet": {
+      "type": "string"
+    },
+    "entreprise": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "poste": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "cle": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evenement": {
+      "type": "string",
+      "enum": [
+        "accuse_reception",
+        "entretien_confirme",
+        "creneau_propose",
+        "test",
+        "offre",
+        "refus",
+        "relance_recruteur",
+        "inconnu",
+        "hors_perimetre"
+      ]
+    },
+    "confiance": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "needs_review": {
+      "type": "boolean"
+    },
+    "extrait": {
+      "type": "string",
+      "maxLength": 400
+    },
+    "crm_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "statut_avant": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "statut_apres": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ecrit": {
+      "type": "boolean"
+    },
+    "run": {
+      "type": "string",
+      "minLength": 10
+    }
+  },
+  "required": [
+    "thread_id",
+    "message_id",
+    "date",
+    "expediteur",
+    "objet",
+    "entreprise",
+    "poste",
+    "cle",
+    "evenement",
+    "confiance",
+    "needs_review",
+    "extrait",
+    "crm_url",
+    "statut_avant",
+    "statut_apres",
+    "ecrit",
+    "run"
+  ],
+  "additionalProperties": false
+}

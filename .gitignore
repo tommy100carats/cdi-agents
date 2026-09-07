@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+out/
+data/crm.json
+data/inbox.json
+data/runs.json
+*.pdf
+!docs/*.pdf
+cv/avatar.jpg

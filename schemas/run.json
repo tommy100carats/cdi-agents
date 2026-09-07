@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Journal d'exécution (base Runs)",
+  "type": "object",
+  "properties": {
+    "Run": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}$"
+    },
+    "Agent": {
+      "type": "string",
+      "enum": [
+        "Lea_Sourcing",
+        "Hugo_Notation",
+        "Camille_Brief",
+        "Scribe_CRM",
+        "Noe_Controle",
+        "Ines_CV",
+        "Routine_Matin",
+        "Routine_Pipeline"
+      ]
+    },
+    "Mode": {
+      "type": "string",
+      "enum": [
+        "calibration",
+        "production",
+        "test"
+      ]
+    },
+    "Lues": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "Écrites": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "Écartées": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "Erreurs": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "Résumé": {
+      "type": "string",
+      "minLength": 10
+    },
+    "Contrôles": {
+      "type": "string"
+    },
+    "Statut run": {
+      "type": "string",
+      "enum": [
+        "OK",
+        "Partiel",
+        "Échec",
+        "Rien à faire"
+      ]
+    }
+  },
+  "required": [
+    "Run",
+    "Agent",
+    "Mode",
+    "Lues",
+    "Écrites",
+    "Écartées",
+    "Erreurs",
+    "Résumé",
+    "Contrôles",
+    "Statut run"
+  ],
+  "additionalProperties": false
+}

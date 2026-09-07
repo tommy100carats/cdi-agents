@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ligne CRM à insérer (Scribe)",
+  "type": "object",
+  "properties": {
+    "Opportunité": {
+      "type": "string",
+      "pattern": "^.+ — .+$"
+    },
+    "Poste": {
+      "type": "string",
+      "minLength": 3
+    },
+    "Statut": {
+      "type": "string",
+      "enum": [
+        "À contacter",
+        "Candidature envoyée",
+        "Entretien",
+        "Test / Étude de cas",
+        "Offre reçue",
+        "Accepté",
+        "Refusé / Clos",
+        "En veille"
+      ]
+    },
+    "Type de contrat": {
+      "type": "string",
+      "enum": [
+        "CDI"
+      ]
+    },
+    "Localisation": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "Télétravail": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "Sur site",
+        "Hybride",
+        "Full remote",
+        null
+      ]
+    },
+    "Note Glassdoor": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "Rôle cible": {
+      "type": "string",
+      "enum": [
+        "AI & Ops Automation",
+        "RevOps",
+        "Sales Ops",
+        "Commercial (SDR/AE)",
+        "Autre"
+      ]
+    },
+    "Score /20": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 20
+    },
+    "Répond aux critères": {
+      "type": "string",
+      "enum": [
+        "Oui",
+        "Partiel",
+        "Non"
+      ]
+    },
+    "Source": {
+      "type": "string",
+      "enum": [
+        "LinkedIn",
+        "Welcome to the Jungle",
+        "Indeed",
+        "Cooptation",
+        "Site entreprise",
+        "Cabinet de recrutement",
+        "Autre"
+      ]
+    },
+    "Lien offre": {
+      "type": "string",
+      "pattern": "^https?://"
+    },
+    "date:Date publication:start": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "Fit — pourquoi c'est pour toi": {
+      "type": "string",
+      "minLength": 40
+    },
+    "Priorité": {
+      "type": "string",
+      "enum": [
+        "Haute",
+        "Moyenne",
+        "Basse"
+      ]
+    },
+    "Clé": {
+      "type": "string",
+      "minLength": 3
+    },
+    "Écrit par": {
+      "type": "string",
+      "enum": [
+        "Lea_Sourcing",
+        "Scribe_CRM",
+        "Noe_Controle",
+        "Routine_Matin",
+        "Tom"
+      ]
+    },
+    "Run": {
+      "type": "string",
+      "minLength": 10
+    },
+    "Notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "Opportunité",
+    "Poste",
+    "Statut",
+    "Type de contrat",
+    "Rôle cible",
+    "Score /20",
+    "Répond aux critères",
+    "Source",
+    "Lien offre",
+    "Fit — pourquoi c'est pour toi",
+    "Priorité",
+    "Clé",
+    "Écrit par",
+    "Run"
+  ],
+  "additionalProperties": false
+}

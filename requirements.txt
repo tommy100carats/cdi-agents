@@ -1,0 +1,4 @@
+jsonschema>=4.20
+weasyprint>=60
+pillow>=10
+pytest>=8
