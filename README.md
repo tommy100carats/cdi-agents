@@ -56,6 +56,6 @@ bases en JSON, fait valider ses écritures par `pipeline/cli.py`, puis écrit un
 
 ## Ce que ce dépôt ne fait pas
 
-Il ne candidate pas, n'écrit à aucun recruteur, ne supprime rien, n'estime rien. Il ne lit ni LinkedIn ni
-Welcome to the Jungle (pages illisibles par du code : ces offres vont en veille jusqu'à un lien vérifiable).
+Il ne candidate pas, n'écrit à aucun recruteur, ne supprime rien, n'estime rien. Il ne sait pas lire LinkedIn ni
+Welcome to the Jungle par du code : ces offres passent avec « Non vérifiable » et un texte partiel, jamais présentées comme actives.
 Il n'a pas encore tourné un jour complet en production : voir `docs/grille-18-20.md` pour ce que ça change.

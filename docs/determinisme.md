@@ -42,7 +42,7 @@ Un prompt peut être ignoré par un modèle. Quatre mécanismes rendent l'oubli 
   `needs_review = true`, ce qui bloque toute écriture et le met dans la liste « à relire » de Tom. Le
   faux négatif coûte une relecture ; le faux positif est impossible par construction.
 - **L'activité d'une page HTML** hors ATS : détection de 404 et de motifs de fermeture. Une page ambiguë sort
-  « inconnu » et l'offre va en veille, jamais en « À contacter ».
+  « inconnu » : l'offre passe, marquée « Non vérifiable », jamais présentée comme active.
 
 ## 4. Idempotence
 

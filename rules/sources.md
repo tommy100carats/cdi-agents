@@ -1,9 +1,10 @@
 # Sources de sourcing — RevOps, Sales Ops, AI Ops (v3, 07/09/2026)
 
 Ordre de fiabilité pour Léa : **(1) API d'ATS**, structurées, vérifiables par code ; **(2) alertes LinkedIn dans
-Gmail**, à re-trouver ensuite sur une source vérifiable ; **(3) agrégateurs lisibles** ; **(4) boards
-spécialisés** ; **(5) généralistes**. Pour chaque offre repérée sur une source non vérifiable (LinkedIn,
-Welcome to the Jungle, Indeed), retrouver le lien direct avant toute suite.
+Gmail** ; **(3) agrégateurs lisibles** ; **(4) boards spécialisés** ; **(5) généralistes**. Pour une offre repérée
+sur une source que le code ne sait pas lire (LinkedIn, Welcome to the Jungle, Indeed), chercher d'abord le lien
+ATS ou site carrière ; sinon garder ce lien tel quel : il est acceptable, l'offre passe avec « Actif vérifié :
+Non vérifiable » et un texte partiel signalé. Non vérifiable n'est jamais un motif d'écart.
 
 ## 1. API d'ATS (interroger directement, réponse JSON)
 
@@ -25,7 +26,8 @@ Recherche à faire sur chaque board : `revenue operations`, `revops`, `sales ope
 
 Requête Gmail : `from:jobalerts-noreply@linkedin.com OR from:jobs-listings@linkedin.com newer_than:3d`.
 Lire `plaintextBody`, extraire titre / entreprise / lieu. Les liens `linkedin.com/comm/jobs/view/…` sont
-authentifiés : jamais utilisés comme lien direct. Retrouver l'offre sur l'ATS ou le site carrière.
+acceptés comme lien direct (le code ne peut pas les lire : pas de scraping LinkedIn). Chercher d'abord l'offre
+sur l'ATS ou le site carrière pour le texte intégral ; à défaut, garder le lien LinkedIn et le texte de l'alerte.
 
 Alertes LinkedIn à maintenir côté Tom (une par intitulé, Paris + remote France) : Revenue Operations ·
 RevOps Analyst · Sales Operations · Sales Ops Analyst · Business Operations · GTM Operations · AI Ops ·

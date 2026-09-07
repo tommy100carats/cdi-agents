@@ -22,8 +22,9 @@ Toute correction de Tom devient une règle numérotée en fin de document (regis
   production, pipelines de données, profil Data Scientist / ML Engineer / Software Engineer, diplôme
   d'ingénieur exigé, LangChain, LangGraph, CI-CD, AWS. Tom ne code pas, par choix.
 - **Vérification d'activité** : une offre n'est présentée comme active que si `pipeline/link_check.py` l'a
-  confirmée (API ATS ou page lisible). LinkedIn et Welcome to the Jungle ne se vérifient pas : chercher le lien
-  direct (ATS, site carrière, Built In) ; sinon « Non vérifiable », étape « En veille ».
+  confirmée (API ATS ou page lisible). LinkedIn et Welcome to the Jungle ne se vérifient pas par le code : chercher le
+  lien ATS ou site carrière ; sinon « Non vérifiable », et l'offre passe quand même (notation, brief, CRM), jamais
+  présentée comme active.
 
 ## 2. Profil réel de Tom (ne jamais gonfler, ne jamais retirer)
 

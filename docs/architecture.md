@@ -64,7 +64,7 @@ flowchart LR
 | **Scribe** · CRM | 09:15 lun–sam | Inbox « Briefée », CRM complet | fiches CRM depuis Briefée ; corrections d'hygiène de la liste fermée | créer sans brief, reculer un statut, supprimer, email |
 | **Noé** · contrôle | 19:00 tous les jours | Gmail (4 j), CRM, Inbox, Runs | Statut / dates / Notes sur fiches existantes ; un email à Tom | créer une fiche (il la propose), écrire à un tiers |
 | **Inès** · CV | à la demande | annonce, référence, règles CV, CRM (dossier ouvert) | fichier cv_data, PDF, diff, rapport du linter | envoyer, inventer, changer la maquette |
-| Routine matin | 10:00 tous les jours | CRM « À contacter » ≥ 15 | veille sur lien mort ; un email | envoyer une offre non vérifiée |
+| Routine matin | 10:00 tous les jours | CRM « À contacter » ≥ 15 | veille sur lien mort ; un email | présenter une offre comme active sans preuve du script |
 | Routine pipeline | 18:00 mar. et ven. | CRM, Inbox, Runs | un email avec PDF | modifier une fiche |
 
 ## Ce qui est décidé par du code, jamais par le modèle

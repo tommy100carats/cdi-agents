@@ -13,17 +13,17 @@ MODE PRODUCTION : chaîne complète ci-dessous, Étape « À noter » pour les o
 ÉTAPE 1, EXPORTS. Exporte le CRM (Base CRM : url, Opportunité, Statut, Clé, Lien offre, Créé le) et l'Inbox (url, Titre, Clé, Étape, Lien direct, Créé le) dans data/crm.json et data/inbox.json.
 
 ÉTAPE 2, SOURCES, dans l'ordre de rules/sources.md :
-(a) Alertes LinkedIn dans Gmail : search_threads `from:jobalerts-noreply@linkedin.com OR from:jobs-listings@linkedin.com newer_than:3d`, get_thread en PLAIN_TEXT, extraire titre / entreprise / lieu. Les liens LinkedIn ne sont jamais un lien direct : retrouve l'offre sur l'ATS ou le site carrière par recherche web.
+(a) Alertes LinkedIn dans Gmail : search_threads `from:jobalerts-noreply@linkedin.com OR from:jobs-listings@linkedin.com newer_than:3d`, get_thread en PLAIN_TEXT, extraire titre / entreprise / lieu. Un lien LinkedIn est un lien direct acceptable. Cherche d'abord la même offre sur l'ATS ou le site carrière (texte intégral, vérifiable par code) ; si tu ne la trouves pas, garde le lien LinkedIn et le texte de l'alerte.
 (b) API d'ATS : appelle les URL Ashby, Greenhouse, Lever de rules/sources.md avec WebFetch, cherche les intitulés des familles 1 à 4.
 (c) Agrégateurs lisibles (Built In, jobs.techstars.com, Wellfound, APEC, HelloWork) et, si le connecteur existe, Indeed search_jobs et ZipRecruiter search_jobs (requêtes : revenue operations paris, sales operations paris, ai ops paris, automation specialist paris, gtm operations remote france).
 (d) Boards spécialisés RevOps et IA de rules/sources.md.
-Pour chaque offre repérée : récupère le texte intégral de l'annonce (WebFetch sur le lien direct ; si la page est illisible, cherche une source lisible ; sinon marque « Non vérifiable »).
+Pour chaque offre repérée : récupère le texte intégral de l'annonce (WebFetch sur le lien direct ; si la page est illisible, cherche une source lisible ; sinon garde le texte disponible, alerte comprise, et marque « Non vérifiable » : l'offre passe, avec un texte partiel signalé).
 
 ÉTAPE 3, FILTRES DÉTERMINISTES, par du code, pour chaque candidate :
 - Clé : `python3 -m pipeline.cli key "<titre>" "<entreprise>"`. Clé vide = candidate « Erreur ».
 - Séniorité : écris le texte de l'annonce dans un fichier et lance `python3 -m pipeline.cli seniority <fichier>`. Bande « hors » = Écartée (raison « > 5 ans demandés »). « stretch » et « inconnu » passent, signalés.
 - Périmètre (rules/criteres.md § 1) : CDI, géographie, familles, exclusions fermes. Toute exclusion = Écartée avec la raison exacte citée de l'annonce.
-- Activité : écris la liste des liens directs dans un JSON et lance `python3 -m pipeline.cli links <fichier>`. active = true → « Actif vérifié : Oui » ; false → Écartée (raison « offre fermée, preuve : … ») ; null → « Non vérifiable », Étape « En veille » (jamais « À noter »).
+- Activité : écris la liste des liens directs dans un JSON et lance `python3 -m pipeline.cli links <fichier>`. active = true → « Actif vérifié : Oui » ; false → Écartée (raison « offre fermée, preuve : … ») ; null → « Actif vérifié : Non vérifiable » et l'offre passe quand même en « À noter », signalée dans Raison (« lien non lisible par le code : LinkedIn / WTTJ / Indeed »). Non vérifiable n'est pas un motif d'écart ; seul false écarte.
 - Doublons : écris les candidates dans un JSON et lance `python3 -m pipeline.cli dedup candidates.json data/crm.json data/inbox.json`. decision = doublon_* → Étape « Doublon », Raison = lien de l'original. lignes_employeur > 0 → Raison commence par « ⚠️ Nb lignes existantes pour cet employeur : X ».
 
 ÉTAPE 4, VALIDATION. Construis pour chaque candidate un objet conforme à schemas/offre.json (titre, entreprise, cle, lien_direct, source, date_publication, localisation, teletravail, famille, experience_texte, experience_bande, actif, actif_preuve, texte_annonce intégral, decision_sourcing, raison, run). `python3 -m pipeline.cli validate offres.json offre`. Une candidate refusée par le schéma est créée en Étape « Erreur » avec le message du validateur dans Raison ; tu ne la « répares » pas en inventant une valeur.

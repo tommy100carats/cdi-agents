@@ -34,7 +34,7 @@ la tête du modèle ; on trie dans une base, avec un motif.
   lendemain (`run_manquant`) et la fenêtre de 4 jours de Noé rattrape les emails.
 - **Gmail indisponible** : Léa continue sans les alertes (le dit) ; Noé s'arrête, ligne Runs « Échec ».
 - **Dépôt de code inaccessible** : aucun agent n'écrit (fail-closed).
-- **Site d'annonce illisible** : « Non vérifiable », En veille, jamais À contacter.
+- **Site d'annonce illisible** (LinkedIn, WTTJ) : « Non vérifiable », l'offre passe, texte partiel signalé, jamais présentée comme active.
 - **Un agent dépasse son budget** : « Partiel » dans Runs, les lignes restent à leur étape, le run suivant reprend.
 - **Deux runs d'un même agent le même jour** (relance manuelle) : idempotence par clé, par Étape, par note datée.
 
