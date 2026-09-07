@@ -9,15 +9,16 @@ Toute correction de Tom devient une règle numérotée en fin de document (regis
 - **Géographie** : Paris et très proche banlieue pour les postes sur site ou hybrides ; full remote accepté,
   y compris depuis un autre pays (Europe, EMEA, worldwide). Écarter d'office : Montigny-le-Bretonneux (78),
   l'Essonne (91), tout trajet quotidien déraisonnable depuis Paris.
-- **Familles, par ordre de priorité** : (1) AI Ops / automatisation IA côté business, sans exigence de
-  développement logiciel ; (2) Revenue Operations ; (3) Sales Ops, Business Ops ; (4) Enablement, commercial
-  inbound ; (5) autres postes projet ou produit hors tech quand le secteur parle au parcours (formation,
-  éducation, sport). Également acceptés : Sales Enablement, PMO, Account Manager, Customer Success, Team Lead
-  SDR si le coaching est réel.
-- **Séniorité (règle R8)** : cible = postes demandant **moins de 3 ans en opérations** (« coeur »).
-  **3 à 5 ans passent aussi, au cas où** (« stretch », signalé, jamais pénalisé). Plus de 5 ans : « hors »,
-  écartée avec raison. Aucune durée écrite : « inconnu », retenue et signalée. Le calcul est fait par
-  `pipeline/seniority.py`, pas par le modèle.
+- **Périmètre (précisé par Tom le 07/09/2026)** : tout ce qui touche aux opérations, de 0 à 5 ans d'expérience
+  demandés. **Familles, par ordre de priorité** : (1) AI Ops / automatisation IA côté business, sans exigence de
+  développement logiciel ; (2) Revenue Operations ; (3) Sales Ops, Business Ops ; (4) **Customer Success Manager**
+  (CSM, account management) ; (5) Enablement, commercial inbound ; (6) autres postes projet ou produit hors tech
+  quand le secteur parle au parcours (formation, éducation, sport). Également acceptés : Sales Enablement, PMO,
+  Team Lead SDR si le coaching est réel.
+- **Séniorité (règle R8, précisée le 07/09)** : cible = postes demandant **de 0 à 5 ans d'expérience**. Deux
+  bandes retenues, sans effet sur la note : « coeur » (≤ 3 ans) et « stretch » (3 à 5 ans, signalé). Plus de
+  5 ans : « hors », écartée avec raison. Aucune durée écrite : « inconnu », retenue et signalée. Le calcul est
+  fait par `pipeline/seniority.py` (années écrites d'abord, puis mot de niveau dans le titre), pas par le modèle.
 - **Exclusions fermes** (Écartée, jamais notée) : quotidien fait de prospection outbound à froid ; code de
   production, pipelines de données, profil Data Scientist / ML Engineer / Software Engineer, diplôme
   d'ingénieur exigé, LangChain, LangGraph, CI-CD, AWS. Tom ne code pas, par choix.
@@ -101,5 +102,9 @@ Ne jamais rédiger de CV ni de lettre.
   pénalité ; > 5 ans écartés au sourcing ; inconnu accepté et signalé.
 - **R9 (07/09/2026)** : **bonus entreprise explicites** : grand groupe (+1) et entreprise ambitieuse (+1) sont
   des points de la grille, pas des impressions ; ils exigent une preuve (effectif public, levée datée, actualité).
+
+- **R10 (07/09/2026, précision de Tom)** : **périmètre = tout ce qui touche aux opérations, de 0 à 5 ans**
+  demandés, Customer Success Manager inclus au même titre que RevOps et Sales Ops. Les bandes coeur / stretch
+  restent affichées mais ne trient plus : les deux passent.
 
 *Les règles suivantes seront extraites des 20 offres de calibration (voir `docs/calibration.md`).*

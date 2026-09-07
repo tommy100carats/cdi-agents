@@ -20,7 +20,8 @@ Non vérifiable » et un texte partiel signalé. Non vérifiable n'est jamais un
 Recherche à faire sur chaque board : `revenue operations`, `revops`, `sales operations`, `sales ops`,
 `business operations`, `gtm operations`, `go-to-market`, `ai ops`, `ai operations`, `automation`,
 `ai automation`, `ai enablement`, `ai adoption`, `ai transformation`, `no-code`, `workflow`, `enablement`,
-`implementation manager`, `solutions consultant`.
+`implementation manager`, `solutions consultant`, `customer success`, `customer success manager`, `csm`,
+`account manager`, `operations analyst`, `operations specialist`.
 
 ## 2. LinkedIn, via les alertes Gmail
 
@@ -31,7 +32,8 @@ sur l'ATS ou le site carrière pour le texte intégral ; à défaut, garder le l
 
 Alertes LinkedIn à maintenir côté Tom (une par intitulé, Paris + remote France) : Revenue Operations ·
 RevOps Analyst · Sales Operations · Sales Ops Analyst · Business Operations · GTM Operations · AI Ops ·
-AI Automation · Automation Specialist · AI Enablement · AI Adoption · Sales Enablement · Implementation Manager.
+AI Automation · Automation Specialist · AI Enablement · AI Adoption · Sales Enablement · Implementation Manager ·
+Customer Success Manager · Operations Analyst.
 
 ## 3. Agrégateurs lisibles et vérifiables (source de confirmation de secours)
 

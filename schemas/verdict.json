@@ -1,149 +1,150 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Verdict de notation (Hugo)",
-  "type": "object",
-  "properties": {
-    "cle": {
-      "type": "string",
-      "minLength": 3
-    },
-    "entreprise": {
-      "type": "string"
-    },
-    "poste": {
-      "type": "string"
-    },
-    "famille": {
-      "type": "string",
-      "enum": [
-        "AI & Ops Automation",
-        "RevOps",
-        "Sales Ops",
-        "Commercial (SDR/AE)",
-        "Autre"
-      ]
-    },
-    "dossier_deja_ouvert": {
-      "type": "boolean"
-    },
-    "couverture": {
-      "type": "array",
-      "minItems": 1,
-      "items": {
-        "type": "object",
-        "properties": {
-          "exigence": {
-            "type": "string"
-          },
-          "preuve": {
-            "type": [
-              "string",
-              "null"
-            ]
-          },
-          "etat": {
-            "type": "string",
-            "enum": [
-              "couvert",
-              "partiel",
-              "absent"
-            ]
-          },
-          "centrale": {
-            "type": "boolean"
-          }
-        },
-        "required": [
-          "exigence",
-          "preuve",
-          "etat",
-          "centrale"
-        ],
-        "additionalProperties": false
-      }
-    },
-    "score_couverture_10": {
-      "type": "number",
-      "minimum": 0,
-      "maximum": 10
-    },
-    "score_conditions_3": {
-      "type": "number",
-      "minimum": 0,
-      "maximum": 3
-    },
-    "score_entreprise_4": {
-      "type": "number",
-      "minimum": 0,
-      "maximum": 4
-    },
-    "score_differenciateurs_3": {
-      "type": "number",
-      "minimum": 0,
-      "maximum": 3
-    },
-    "note_20": {
-      "type": "integer",
-      "minimum": 0,
-      "maximum": 20
-    },
-    "verdict": {
-      "type": "string",
-      "enum": [
-        "go_prioritaire",
-        "go_prudent",
-        "veille",
-        "no_go",
-        "dossier_ouvert"
-      ]
-    },
-    "raison_principale": {
-      "type": "string",
-      "minLength": 10
-    },
-    "exigences_sans_preuve": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "deductions": {
-      "type": "string"
-    },
-    "detail": {
-      "type": "string",
-      "minLength": 20
-    },
-    "regles_appliquees": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "run": {
-      "type": "string",
-      "minLength": 10
-    }
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Verdict de notation (Hugo)",
+ "type": "object",
+ "properties": {
+  "cle": {
+   "type": "string",
+   "minLength": 3
   },
-  "required": [
-    "cle",
-    "entreprise",
-    "poste",
-    "famille",
-    "dossier_deja_ouvert",
-    "couverture",
-    "score_couverture_10",
-    "score_conditions_3",
-    "score_entreprise_4",
-    "score_differenciateurs_3",
-    "note_20",
-    "verdict",
-    "raison_principale",
-    "exigences_sans_preuve",
-    "deductions",
-    "detail",
-    "regles_appliquees",
-    "run"
-  ],
-  "additionalProperties": false
+  "entreprise": {
+   "type": "string"
+  },
+  "poste": {
+   "type": "string"
+  },
+  "famille": {
+   "type": "string",
+   "enum": [
+    "AI & Ops Automation",
+    "RevOps",
+    "Sales Ops",
+    "Customer Success",
+    "Commercial (SDR/AE)",
+    "Autre"
+   ]
+  },
+  "dossier_deja_ouvert": {
+   "type": "boolean"
+  },
+  "couverture": {
+   "type": "array",
+   "minItems": 1,
+   "items": {
+    "type": "object",
+    "properties": {
+     "exigence": {
+      "type": "string"
+     },
+     "preuve": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "etat": {
+      "type": "string",
+      "enum": [
+       "couvert",
+       "partiel",
+       "absent"
+      ]
+     },
+     "centrale": {
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "exigence",
+     "preuve",
+     "etat",
+     "centrale"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "score_couverture_10": {
+   "type": "number",
+   "minimum": 0,
+   "maximum": 10
+  },
+  "score_conditions_3": {
+   "type": "number",
+   "minimum": 0,
+   "maximum": 3
+  },
+  "score_entreprise_4": {
+   "type": "number",
+   "minimum": 0,
+   "maximum": 4
+  },
+  "score_differenciateurs_3": {
+   "type": "number",
+   "minimum": 0,
+   "maximum": 3
+  },
+  "note_20": {
+   "type": "integer",
+   "minimum": 0,
+   "maximum": 20
+  },
+  "verdict": {
+   "type": "string",
+   "enum": [
+    "go_prioritaire",
+    "go_prudent",
+    "veille",
+    "no_go",
+    "dossier_ouvert"
+   ]
+  },
+  "raison_principale": {
+   "type": "string",
+   "minLength": 10
+  },
+  "exigences_sans_preuve": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "deductions": {
+   "type": "string"
+  },
+  "detail": {
+   "type": "string",
+   "minLength": 20
+  },
+  "regles_appliquees": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "run": {
+   "type": "string",
+   "minLength": 10
+  }
+ },
+ "required": [
+  "cle",
+  "entreprise",
+  "poste",
+  "famille",
+  "dossier_deja_ouvert",
+  "couverture",
+  "score_couverture_10",
+  "score_conditions_3",
+  "score_entreprise_4",
+  "score_differenciateurs_3",
+  "note_20",
+  "verdict",
+  "raison_principale",
+  "exigences_sans_preuve",
+  "deductions",
+  "detail",
+  "regles_appliquees",
+  "run"
+ ],
+ "additionalProperties": false
 }
