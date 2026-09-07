@@ -1,0 +1,64 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Contenu d'un CV ciblé (Inès)",
+ "description": "Ce que l'agent produit. La maquette (cv/cv_build.py) et le linter (cv/cv_check.py) ne changent jamais : l'agent remplit des données, il ne met pas en page.",
+ "type": "object",
+ "properties": {
+  "cible": {"type": "string", "minLength": 2},
+  "lang": {"type": "string", "enum": ["fr", "en"]},
+  "titre": {"type": "string", "minLength": 3},
+  "ouverture": {"type": "string", "enum": ["structuration", "builder"]},
+  "profil": {"type": "string", "minLength": 80},
+  "sidebar": {
+   "type": "array",
+   "minItems": 2,
+   "items": {
+    "type": "object",
+    "properties": {
+     "section": {"type": "string"},
+     "lignes": {"type": "array", "items": {"type": "string"}}
+    },
+    "required": ["section", "lignes"],
+    "additionalProperties": false
+   }
+  },
+  "experiences": {
+   "type": "array",
+   "minItems": 1,
+   "items": {
+    "type": "object",
+    "properties": {
+     "poste": {"type": "string"},
+     "boite": {"type": "string"},
+     "dates": {"type": "string"},
+     "activite": {"type": "string"},
+     "puces": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+    },
+    "required": ["poste", "boite", "dates", "activite", "puces"],
+    "additionalProperties": false
+   }
+  },
+  "projets": {"type": "array", "items": {"type": "string"}},
+  "cartographie": {
+   "type": "array",
+   "description": "Chaque exigence de l'annonce et la preuve verbatim chez Tom, ou null.",
+   "items": {
+    "type": "object",
+    "properties": {
+     "exigence": {"type": "string"},
+     "preuve": {"type": ["string", "null"]}
+    },
+    "required": ["exigence", "preuve"],
+    "additionalProperties": false
+   }
+  },
+  "a_verifier": {
+   "type": "array",
+   "description": "Ce que l'agent n'a pas pu prouver. Tom tranche. Jamais vide par confort.",
+   "items": {"type": "string"}
+  },
+  "run": {"type": "string"}
+ },
+ "required": ["cible", "lang", "titre", "ouverture", "profil", "sidebar", "experiences", "projets", "cartographie", "a_verifier", "run"],
+ "additionalProperties": false
+}

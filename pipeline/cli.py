@@ -8,6 +8,7 @@
     python -m pipeline.cli validate fichier.json offre|verdict|brief|crm_row|run|evenement_gmail
     python -m pipeline.cli exclusions annonce.txt                       # diplôme d'ingénieur / code exigés (R5, § 1)
     python -m pipeline.cli verdict 16 --titre "Senior Revenue Ops" --annees 5 [--partiel] [--dossier-ouvert]
+    python -m pipeline.cli dust-schema verdict                          # Structured Response Format Dust
     python -m pipeline.cli classify sujet.txt corps.txt
     python -m pipeline.cli hygiene crm.json [--inbox inbox.json] [--runs runs.json] [--md]
     python -m pipeline.cli relances crm.json
@@ -51,6 +52,7 @@ def main(argv=None):
     s = sub.add_parser("validate"); s.add_argument("fichier"); s.add_argument("schema")
     s = sub.add_parser("classify"); s.add_argument("sujet"); s.add_argument("corps")
     s = sub.add_parser("exclusions"); s.add_argument("fichier")
+    s = sub.add_parser("dust-schema"); s.add_argument("schema"); s.add_argument("--out")
     s = sub.add_parser("verdict"); s.add_argument("note", type=int); s.add_argument("--titre", default="")
     s.add_argument("--annees", type=int, default=None); s.add_argument("--partiel", action="store_true")
     s.add_argument("--dossier-ouvert", action="store_true")
@@ -93,11 +95,21 @@ def main(argv=None):
         from .exclusions import check
         r = check(open(a.fichier, encoding="utf-8").read())
         _print(r); return 1 if r["exclue"] else 0
+    if a.cmd == "dust-schema":
+        import pathlib as _p
+        from .dust_schema import to_dust
+        racine = _p.Path(__file__).resolve().parent.parent
+        d = to_dust(_load(str(racine / "schemas" / (a.schema + ".json"))), a.schema)
+        txt = json.dumps(d, ensure_ascii=False, indent=1)
+        if a.out:
+            open(a.out, "w", encoding="utf-8").write(txt)
+        print(txt)
+        return 0
     if a.cmd == "verdict":
         from .verdicts import verdict
         _print(verdict(a.note, dossier_ouvert=a.dossier_ouvert, titre=a.titre, annees_min=a.annees,
                        texte_partiel=a.partiel)); return 0
-    today =date.fromisoformat(a.today) if getattr(a, "today", None) else date.today()
+    today = date.fromisoformat(a.today) if getattr(a, "today", None) else date.today()
     if a.cmd == "hygiene":
         from . import hygiene
         rep = hygiene.run(_load(a.crm), today=today, inbox_rows=_load(a.inbox) if a.inbox else None,
