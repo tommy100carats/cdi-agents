@@ -13,6 +13,7 @@
     python -m pipeline.cli hygiene crm.json [--inbox inbox.json] [--runs runs.json] [--md]
     python -m pipeline.cli relances crm.json
     python -m pipeline.cli report crm.json --mode soir|pipeline [--pdf out.pdf] [--html out.html]
+    python -m pipeline.cli funnel inbox.json [--jours 7] [--reperees N] [--md]
     python -m pipeline.cli runlog --agent Lea_Sourcing --mode production --lues 12 --ecrites 5 --ecartees 7 --erreurs 0 --resume "..." --controles "..."
 
 Toute commande sort du JSON sur stdout et un code retour non nul si une règle est violée.
@@ -59,12 +60,15 @@ def main(argv=None):
     s = sub.add_parser("hygiene"); s.add_argument("crm"); s.add_argument("--inbox"); s.add_argument("--runs"); s.add_argument("--md", action="store_true"); s.add_argument("--today")
     s = sub.add_parser("relances"); s.add_argument("crm"); s.add_argument("--today")
     s = sub.add_parser("report"); s.add_argument("crm"); s.add_argument("--mode", default="soir", choices=["soir", "pipeline"]); s.add_argument("--inbox"); s.add_argument("--runs"); s.add_argument("--pdf"); s.add_argument("--html"); s.add_argument("--today")
+    s = sub.add_parser("funnel"); s.add_argument("inbox"); s.add_argument("--jours", type=int); s.add_argument("--du"); s.add_argument("--au"); s.add_argument("--reperees", type=int); s.add_argument("--md", action="store_true"); s.add_argument("--today")
     s = sub.add_parser("runlog")
     for a in ("agent", "mode", "resume", "controles"):
         s.add_argument(f"--{a}", required=True)
     for a in ("lues", "ecrites", "ecartees", "erreurs"):
         s.add_argument(f"--{a}", type=int, required=True)
     s.add_argument("--statut", default="OK")
+    for a2 in ("reperees", "etudiees", "envoyees"):
+        s.add_argument(f"--{a2}", type=int)
     a = p.parse_args(argv)
 
     if a.cmd == "key":
@@ -132,11 +136,27 @@ def main(argv=None):
             report.write_pdf(r["html"], a.pdf)
         _print({"stats": r["stats"], "relances": len(r["relances"]), "problemes": r["hygiene"]["resume"]["problemes"],
                 "html": a.html, "pdf": a.pdf}); return 0
+    if a.cmd == "funnel":
+        from . import funnel
+        since = date.fromisoformat(a.du) if a.du else (funnel.since_days(a.jours, today) if a.jours is not None else None)
+        until = date.fromisoformat(a.au) if a.au else None
+        rep = funnel.build(_load(a.inbox), since=since, until=until)
+        inv = funnel.check_invariant(a.reperees, rep) if a.reperees is not None else None
+        if inv:
+            rep["invariant_zero_perte"] = inv
+        if a.md:
+            print(funnel.to_markdown(rep))
+        else:
+            _print(rep)
+        return 1 if inv and not inv["ok"] else 0
     if a.cmd == "runlog":
         from .validate import errors
         row = {"Run": _paris_now(), "Agent": a.agent, "Mode": a.mode, "Lues": a.lues,
                "Écrites": a.ecrites, "Écartées": a.ecartees, "Erreurs": a.erreurs, "Résumé": a.resume,
                "Contrôles": a.controles, "Statut run": a.statut}
+        for k, v in (("Repérées", a.reperees), ("Étudiées", a.etudiees), ("Envoyées à Hugo", a.envoyees)):
+            if v is not None:
+                row[k] = v
         errs = errors(row, "run")
         _print({"row": row, "erreurs": errs}); return 1 if errs else 0
     return 2

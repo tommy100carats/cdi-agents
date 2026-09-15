@@ -59,6 +59,26 @@
         "Échec",
         "Rien à faire"
       ]
+    },
+    "Étudiées": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "Envoyées à Hugo": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "Écartées sourcing": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "Doublons": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "Repérées": {
+      "type": "integer",
+      "minimum": 0
     }
   },
   "required": [
