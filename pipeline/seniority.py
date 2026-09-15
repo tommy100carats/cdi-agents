@@ -25,8 +25,9 @@ _WORDS = [("junior", 1), ("débutant", 0), ("entry level", 0), ("entry-level", 0
 # Une durée ne compte que si elle parle d'expérience. Incident du 07/09/2026 : « vos données peuvent être
 # conservées 2 ans » (politique RGPD en pied d'annonce) et « en 6 ans d'existence » étaient lus comme des
 # années d'expérience demandées.
+# Incident du 10/09/2026 : « Your data is kept for up to 2 years » (Qonto) lu comme 2 ans d'expérience.
 _EXP_CONTEXT = re.compile(r"exp[ée]rience|experience|années? d'|years? (?:of|in)|yrs|minimum|at least|au moins|\+", re.IGNORECASE)
-_NOT_EXP = re.compile(r"conserv|retain|retention|existence|fond[ée]e|founded|il y a|ago|depuis|since|garantie|warranty|contrat de|cdd de|mission de|tous les|every|per year|par an\b", re.IGNORECASE)
+_NOT_EXP = re.compile(r"conserv|retain|retention|kept|keep (?:your|them)|stored|stock[ée]|gard[ée]es?|up to|jusqu'à|existence|fond[ée]e|founded|il y a|ago|depuis|since|garantie|warranty|contrat de|cdd de|mission de|tous les|every|per year|par an\b", re.IGNORECASE)
 
 
 def _negated(text, start, end):

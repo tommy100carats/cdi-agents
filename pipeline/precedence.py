@@ -36,7 +36,10 @@ REJECT_EN = [
 ]
 ACK = ["bien reçu", "avons bien reçu", "we received", "we have received", "thank you for applying",
        "thanks for applying", "will review", "merci pour votre candidature", "merci pour ta candidature",
-       "application has been received", "accusé de réception"]
+       "application has been received", "accusé de réception",
+       # Incident du 14/09/2026 : la confirmation LinkedIn (Creality) sortait « inconnu ».
+       "votre candidature a été envoyée", "votre candidature a bien été envoyée",
+       "your application was sent", "your application has been submitted", "candidature envoyée à"]
 INTERVIEW_CONFIRMED = ["interview confirmation", "confirmation d'entretien", "you have been scheduled",
                        "is confirmed", "est confirmé", "invitation:", "calendar invite", "meet.google.com",
                        "zoom.us/j/", "teams.microsoft.com/l/meetup"]

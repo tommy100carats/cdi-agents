@@ -26,3 +26,11 @@
 | 2026-09-07 | calibration | ElevenLabs, Thales, DFM, Esri notés 7 à 9 sur un titre seul (texte partiel), Tom 10 à 11 | A calculée sur deux exigences lisibles, B et C à 0 faute de texte | texte partiel : A plafonnée à 6, B et C sur les faits publics, verdict au mieux veille (R15) | `rules/criteres.md` § 3 |
 | 2026-09-07 | migration Dust | les schémas du dépôt ne passent pas en « strict » chez Dust (propriété absente de `required`) | mode strict : toute propriété doit être requise, une optionnelle doit être nullable | conversion par `pipeline.cli dust-schema`, jamais à la main ; 6 tests | `pipeline/dust_schema.py` |
 | 2026-09-07 | migration Dust | Inès rendait un JSON qu'il fallait retaper en `cv_data_*.py` avant le linter | pas de passerelle entre la sortie structurée et le générateur | `cv/cv_data_from_json.py` : valide puis génère ; la maquette vient du CV de référence | `cv/cv_data_from_json.py` |
+
+## 15/09/2026 — correctifs groupés (protocole v3.2)
+- Qonto 10/09 : durée de conservation des données lue comme ancienneté → `seniority._NOT_EXP` étendu.
+- 09/09 : région en fin de titre sans virgule (« … EMEA ») non retirée de la clé → `keys._TITLE_LOCATION`.
+- Creality 14/09 : confirmation LinkedIn classée « inconnu » → lexique ACK étendu.
+- 14/09 : « Notée » signalée à tort comme bloquée → retirée des étapes surveillées.
+- 12/09 : 5 doublons créés par la routine du matin → la routine ne crée plus de fiches ; doublons tagués et rangés.
+- Plafond 2 offres/run contraire au zéro perte → plafond 8, surplus rangé « En veille » au lieu d'être perdu.

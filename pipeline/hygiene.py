@@ -123,7 +123,9 @@ def run(crm_rows, today=None, inbox_rows=None, runs_rows=None):
     for r in inbox_rows or []:
         etape = r.get("Étape") or r.get("etape")
         maj = _d(r.get("Modifié le") or r.get("last_edited") or r.get("cree"))
-        if etape in ("Sourcée", "À noter", "Notée", "À briefer", "Briefée") and maj and (today - maj).days >= 1:
+        # « Notée » est terminale quand un dossier est déjà ouvert (verdict dossier_ouvert) : pas un blocage.
+        # Incident du 14/09/2026 : Qonto et Mistral AI signalés à tort comme bloqués.
+        if etape in ("Sourcée", "À noter", "À briefer", "Briefée") and maj and (today - maj).days >= 1:
             add("majeur", "inbox_bloquee", {"url": r.get("url"), "opportunite": r.get("Titre") or r.get("titre")},
                 f"étape « {etape} » depuis {(today - maj).days} j", "l'agent suivant n'a pas tourné : vérifier la base Runs")
 

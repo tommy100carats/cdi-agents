@@ -61,3 +61,15 @@ def test_hygiene_detects_missing_run():
     rep = hygiene.run([], today=date(2026, 9, 8), runs_rows=[{"Run": "2026-09-08 07:31", "Agent": "Lea_Sourcing"}])
     missing = {p["message"] for p in rep["problemes"] if p["code"] == "run_manquant"}
     assert any("Hugo_Notation" in m for m in missing) and not any("Lea_Sourcing" in m for m in missing)
+
+
+def test_notee_nest_pas_bloquee():
+    # Incident du 14/09/2026 : « Notée » (dossier déjà ouvert) est une étape terminale
+    import datetime as dt
+    from pipeline import hygiene
+    today = dt.date(2026, 9, 14)
+    inbox = [{"url": "u1", "Titre": "X — Qonto", "Étape": "Notée", "Modifié le": "2026-09-10"},
+             {"url": "u2", "Titre": "Y — Joko", "Étape": "À briefer", "Modifié le": "2026-09-09"}]
+    rep = hygiene.run([], today=today, inbox_rows=inbox)
+    bloquees = [p["url"] for p in rep["problemes"] if p["code"] == "inbox_bloquee"]
+    assert bloquees == ["u2"]

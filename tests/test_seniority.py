@@ -45,3 +45,10 @@ def test_years_outside_experience_context_are_ignored():
     assert years_required(body) == (5, None)
     assert band(body)["band"] == "stretch"
     assert years_required("Fondée il y a 3 ans, l'entreprise recrute. Aucune expérience requise.") == (None, None)
+
+
+def test_duree_de_conservation_des_donnees_ignoree():
+    # Incident du 10/09/2026 (Qonto)
+    from pipeline.seniority import band
+    txt = "Customer Success & Development Manager. Your data is kept for up to 2 years after the process."
+    assert band(txt, "Customer Success & Development Manager")["band"] == "inconnu"

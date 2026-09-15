@@ -40,3 +40,11 @@ def test_title_location_suffixes_are_ignored():
     assert business_key("Doctolib", "Sales Operations Lead (x/f/m)") == business_key("Doctolib", "Sales Operations Lead")
     # mais un vrai qualificatif reste distinct
     assert business_key("Brevo", "Senior Sales Operations Manager") != business_key("Brevo", "Sales Operations Manager")
+
+
+def test_region_en_fin_de_titre_sans_virgule():
+    # Incident du 09/09/2026 (Aircall)
+    from pipeline.keys import business_key
+    a = business_key("Aircall", "Senior Revenue Operations Business Partner, EMEA")
+    b = business_key("Aircall", "Senior Revenue Operations Business Partner EMEA")
+    assert a == b and a.endswith("business partner")

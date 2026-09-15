@@ -56,7 +56,9 @@ def normalize_company(name: str) -> str:
 
 _TITLE_LOCATION = re.compile(
     r"\s*\((?:[^()]*(?:paris|france|remote|lyon|europe|emea|hybride|hybrid|x/f/m|f/h|h/f)[^()]*)\)"
-    r"|\s*[,:–-]\s*(?:paris|france|lyon|remote|europe|emea|100\s*%\s*remote|sales programs)\b.*$",
+    r"|\s*[,:–-]\s*(?:paris|france|lyon|remote|europe|emea|100\s*%\s*remote|sales programs)\b.*$"
+    # Incident du 09/09/2026 : « Business Partner EMEA » et « Business Partner, EMEA » donnaient deux clés.
+    r"|\s+(?:paris|france|remote|emea|europe)\s*$",
     re.IGNORECASE,
 )
 

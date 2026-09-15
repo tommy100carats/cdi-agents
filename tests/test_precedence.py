@@ -56,3 +56,10 @@ def test_relance_delays():
     assert relance_after("entretien_confirme", d) == date(2026, 9, 9)
     assert relance_after("refus", d) is None
     assert relance_after("accuse_reception", d, doubt=True) is None
+
+
+def test_confirmation_linkedin_vaut_accuse():
+    # Incident du 14/09/2026 (Creality)
+    from pipeline.precedence import classify_email
+    c = classify_email("Tom, votre candidature a été envoyée à Creality", "Votre candidature a été envoyée à Creality.")
+    assert c.event == "accuse_reception" and not c.needs_review
