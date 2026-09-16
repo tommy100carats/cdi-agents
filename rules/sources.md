@@ -1,4 +1,4 @@
-# Sources de sourcing — RevOps, Sales Ops, AI Ops (v3, 07/09/2026)
+# Sources de sourcing, Sales Ops, AI Ops, RevOps junior (v4, 16/09/2026)
 
 Ordre de fiabilité pour Léa : **(1) API d'ATS**, structurées, vérifiables par code ; **(2) alertes LinkedIn dans
 Gmail** ; **(3) agrégateurs lisibles** ; **(4) boards spécialisés** ; **(5) généralistes**. Pour une offre repérée
@@ -18,10 +18,10 @@ Non vérifiable » et un texte partiel signalé. Non vérifiable n'est jamais un
 | Recruitee, Workable, SmartRecruiters, Taleez, WeRecruit | pages HTML lisibles | ouvrir la page directe |
 
 Recherche à faire sur chaque board : `revenue operations`, `revops`, `sales operations`, `sales ops`,
-`business operations`, `gtm operations`, `go-to-market`, `ai ops`, `ai operations`, `automation`,
-`ai automation`, `ai enablement`, `ai adoption`, `ai transformation`, `no-code`, `workflow`, `enablement`,
-`implementation manager`, `solutions consultant`, `customer success`, `customer success manager`, `csm`,
-`account manager`, `operations analyst`, `operations specialist`.
+`business operations`, `gtm operations`, `ai ops`, `ai operations`, `automation`, `ai automation`,
+`ai adoption`, `no-code`, `workflow`, `operations analyst`, `operations specialist`, `operations associate`,
+`sales analyst`, `revenue analyst`, `commercial operations`, `junior`, `chargé(e) d'opérations commerciales`,
+`analyste performance commerciale`, `sales excellence`, `sales effectiveness`.
 
 ## 2. LinkedIn, via les alertes Gmail
 
@@ -30,10 +30,10 @@ Lire `plaintextBody`, extraire titre / entreprise / lieu. Les liens `linkedin.co
 acceptés comme lien direct (le code ne peut pas les lire : pas de scraping LinkedIn). Chercher d'abord l'offre
 sur l'ATS ou le site carrière pour le texte intégral ; à défaut, garder le lien LinkedIn et le texte de l'alerte.
 
-Alertes LinkedIn à maintenir côté Tom (une par intitulé, Paris + remote France) : Revenue Operations ·
-RevOps Analyst · Sales Operations · Sales Ops Analyst · Business Operations · GTM Operations · AI Ops ·
-AI Automation · Automation Specialist · AI Enablement · AI Adoption · Sales Enablement · Implementation Manager ·
-Customer Success Manager · Operations Analyst.
+Alertes LinkedIn à maintenir côté Tom (une par intitulé, Paris + remote France, filtre « Premier emploi,
+Confirmé » et non « Directeur ») : Sales Operations Analyst · Sales Operations Specialist · Business Operations
+Analyst · Revenue Operations Analyst · RevOps junior · AI Ops · AI Automation · Automation Specialist ·
+Chargé d'opérations commerciales · Analyste performance commerciale.
 
 ## 3. Agrégateurs lisibles et vérifiables (source de confirmation de secours)
 
@@ -52,6 +52,16 @@ Customer Success Manager · Operations Analyst.
   Station F Jobs, EU-Startups Jobs, Sifted Jobs, Tech.eu Jobs, VivaTech Jobs, Welcome to the Jungle
   (repérage).
 - **Cabinets et réseaux** : Elinoï, Ignition Program, Bureau des Talents, Mistertemp Cadres (repérage).
+
+## 5 bis. Grands groupes cotés (priorité depuis le 16/09/2026, R19)
+
+Pages carrière des groupes de `rules/entreprises.md` (section « Grands groupes cotés »), recherche « sales
+operations », « sales ops », « business operations », « revenue operations », « analyste commercial »,
+« performance commerciale », « sales excellence », « ai ops », « automatisation ». ATS fréquents : Workday
+(`<groupe>.wd3.myworkdayjobs.com`, pages lisibles), SuccessFactors, Taleo, Eightfold. Amazon :
+`https://www.amazon.jobs/en/search.json?base_query=<requête>&loc_query=Paris` (JSON lisible). Google :
+`careers.google.com` (recherche Paris). Microsoft : `jobs.careers.microsoft.com` (Paris). Toujours vérifier le lieu
+(R21) et la séniorité (R17) : les grands groupes publient beaucoup d'intitulés « Senior » hors cible.
 
 ## 5. Entreprises cibles à surveiller nommément (pages carrière)
 

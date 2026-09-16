@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 """Expérience demandée par une annonce, et sa lecture pour le profil de Tom.
 
-Règle posée par Tom le 06/09/2026 : cible = postes demandant moins de 3 ans en opérations ;
-3 à 5 ans passent aussi « au cas où » ; au-delà de 5 ans, hors cible. Aucune donnée → inconnu,
-accepté et signalé (un vide n'est pas un zéro).
+Règle R17 (16/09/2026, après les refus de Kolecto, Walter Learning, Believe, Dust, Pennylane) : Tom a 2 à 3 ans
+en opérations (7 ans au total). Cible = postes demandant 3 ans ou moins (« coeur ») ; 4 ans = « stretch », signalé ;
+5 ans et plus = « hors », écarté au sourcing. Un « Senior », « Lead », « Head » sans durée écrite = hors.
+Aucune donnée → inconnu, accepté et signalé (un vide n'est pas un zéro).
 """
 import re
 
@@ -70,7 +71,7 @@ def title_level(title: str):
 
 
 def band(text: str, title: str = "") -> dict:
-    """Classe l'annonce : coeur (≤ 3 ans), stretch (3 à 5), hors (> 5), inconnu.
+    """Classe l'annonce : coeur (≤ 3 ans), stretch (4 ans), hors (5 ans et plus), inconnu (R17).
 
     Les années écrites dans le texte priment ; à défaut, un mot de niveau dans le titre ; sinon inconnu.
     """
@@ -84,7 +85,7 @@ def band(text: str, title: str = "") -> dict:
         return {"years_min": None, "years_max": None, "band": "inconnu", "reason": "aucune durée écrite"}
     if lo <= 3:
         b = "coeur"
-    elif lo <= 5:
+    elif lo <= 4:
         b = "stretch"
     else:
         b = "hors"

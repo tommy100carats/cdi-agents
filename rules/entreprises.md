@@ -34,6 +34,20 @@ Types et points : **scale-up financée** 4 · **grand groupe privé** 4 · **ETI
 | DFM | non identifiable | 0 | sigle sans site ni effectif lisible dans l'annonce | annonce, 07/09/2026 |
 | Dataworks | non identifiable | 0 | aucune preuve lisible | annonce, 07/09/2026 |
 
+## Grands groupes cotés (R19, 16/09/2026) : C = 4 et seuil go à 13
+
+Groupes du CAC 40 et du SBF 120 dont le siège ou un grand site est à Paris ou à 30 minutes de la Mairie de Clichy,
+et grandes entreprises cotées avec bureaux parisiens. Liste de départ, statut « coté » public et connu :
+L'Oréal (Clichy), TotalEnergies (La Défense), Engie (La Défense), Saint-Gobain (La Défense), Capgemini, AXA,
+BNP Paribas, Société Générale (La Défense), Crédit Agricole, LVMH, Kering, Hermès, Danone, Pernod Ricard, Orange,
+Schneider Electric, Sanofi, Publicis, Bouygues, Vinci, Veolia, Thales, Safran, Airbus, Carrefour (Massy : hors
+zone), Renault, Stellantis, Michelin, Legrand, Dassault Systèmes, Teleperformance, Edenred, Sodexo, Pluxee,
+Accor, Bureau Veritas, Worldline, Ubisoft, Elis, SEB, BIC (Clichy), Imerys, Nexans, Rexel, Eiffage, Spie, Ipsos,
+Sopra Steria, Atos, Amundi, Covivio, Klépierre. Cotées étrangères à Paris : Amazon, Google (Alphabet), Microsoft,
+Meta, Apple, Salesforce, Oracle, SAP, IBM, Adobe, ServiceNow, Workday, Uber, Booking, Airbnb, Datadog, HubSpot,
+NVIDIA, Accenture, Siemens Energy, Canonical (non cotée : à vérifier), Mirakl (non cotée : scale-up).
+Hugo cite la source (bourse, site investisseurs) au premier usage et passe la ligne dans « Prouvées ».
+
 ## Présumées (sources ATS de `rules/sources.md`) : à confirmer au premier usage par une recherche web, source citée
 
 Doctolib, Qonto, PhotoRoom, Notion, Ledger, Back Market, Ankorstore, Swan, Wellhub (Gympass), Algolia, TheFork,

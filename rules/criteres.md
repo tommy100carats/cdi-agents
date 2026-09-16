@@ -1,24 +1,29 @@
-# Critères de recherche et grille de notation, v3.1 (calibrée le 07/09/2026)
+# Critères de recherche et grille de notation, v4 (16/09/2026, après les refus de juillet à septembre)
 
 Source de vérité unique pour Léa (sourcing) et Hugo (notation). Modifier ici, jamais dans un prompt.
 Toute correction de Tom devient une règle numérotée en fin de document (registre), datée, jamais rediscutée.
 
-## 1. Périmètre (appliqué par Léa, avant toute note)
+## 1. Périmètre (appliqué par Léa, avant toute note ; version du 16/09/2026)
 
 - **CDI uniquement.** Un CDD, une mission, une franchise, un stage : ligne Inbox « Écartée », raison écrite.
-- **Géographie** : Paris et très proche banlieue pour les postes sur site ou hybrides ; full remote accepté,
-  y compris depuis un autre pays (Europe, EMEA, worldwide). Écarter d'office : Montigny-le-Bretonneux (78),
-  l'Essonne (91), tout trajet quotidien déraisonnable depuis Paris.
-- **Périmètre (précisé par Tom le 07/09/2026)** : tout ce qui touche aux opérations, de 0 à 5 ans d'expérience
-  demandés. **Familles, par ordre de priorité** : (1) AI Ops / automatisation IA côté business, sans exigence de
-  développement logiciel ; (2) Revenue Operations ; (3) Sales Ops, Business Ops ; (4) **Customer Success Manager**
-  (CSM, account management) ; (5) Enablement, commercial inbound ; (6) autres postes projet ou produit hors tech
-  quand le secteur parle au parcours (formation, éducation, sport). Également acceptés : Sales Enablement, PMO,
-  Team Lead SDR si le coaching est réel.
-- **Séniorité (règle R8, précisée le 07/09)** : cible = postes demandant **de 0 à 5 ans d'expérience**. Deux
-  bandes retenues, sans effet sur la note : « coeur » (≤ 3 ans) et « stretch » (3 à 5 ans, signalé). Plus de
-  5 ans : « hors », écartée avec raison. Aucune durée écrite : « inconnu », retenue et signalée. Le calcul est
-  fait par `pipeline/seniority.py` (années écrites d'abord, puis mot de niveau dans le titre), pas par le modèle.
+- **Géographie (R21)** : Paris intra-muros, ou **30 minutes environ de la Mairie de Clichy** en transports
+  (ligne 13, ligne 14, RER C, Transilien L) : Clichy, Levallois-Perret, Neuilly-sur-Seine, Saint-Ouen, Asnières,
+  Gennevilliers, Courbevoie, Puteaux et La Défense, Colombes, Bois-Colombes, Saint-Denis (Pleyel, Plaine),
+  Boulogne-Billancourt (nord). Au-delà (Issy, Vanves, Noisy-le-Grand, Rueil, Montigny, Essonne, Val-de-Marne sud) :
+  Écartée, raison « trajet > 30 min depuis Clichy ». Full remote France : accepté, signalé.
+- **Familles (R22), par ordre de priorité** : (1) **Sales Ops / Business Ops** ; (2) **AI Ops** / automatisation
+  IA côté business, sans développement logiciel ; (3) **RevOps junior** (Analyst, Specialist, Associate,
+  Coordinator, Chargé(e)). Customer Success, account management, Enablement, commercial, PMO, produit et conseil
+  ne sont plus sourcés : ils sont écartés, raison « hors familles cibles (R22) ».
+- **Séniorité (R17)** : Tom a **2 à 3 ans en opérations** (7 ans d'expérience au total). Cible = **3 ans ou moins**
+  demandés (« coeur ») ; **4 ans** = « stretch », signalé ; **5 ans et plus** = « hors », écarté. Un titre Senior,
+  Lead, Head, Director, VP ou « Confirmé » sans durée écrite est « hors ». Aucune durée écrite et titre neutre :
+  « inconnu », retenu et signalé. Calcul fait par `pipeline/seniority.py`, pas par le modèle.
+- **Salaire (R20)** : minimum 40 k€ brut annuel, idéal 50 à 55 k€. Un salaire affiché dont le haut de fourchette est
+  inférieur à 40 k€ : Écartée. Un salaire absent passe (on n'estime jamais).
+- **Grands groupes (R19)** : Léa cherche activement dans les groupes du **CAC 40, du SBF 120 et les grandes
+  entreprises cotées** (Amazon, Google, Microsoft, Salesforce, Oracle, SAP, IBM, Adobe, Meta, Uber...), y compris
+  pour des postes moins sur mesure : Tom accepte d'entrer plus bas dans un grand groupe pour monter ensuite.
 - **Exclusions fermes** (Écartée, jamais notée) : quotidien fait de prospection outbound à froid ; code de
   production, pipelines de données, profil Data Scientist / ML Engineer / Software Engineer, diplôme
   d'ingénieur exigé, LangChain, LangGraph, CI-CD, AWS. Tom ne code pas, par choix. Les deux premières exclusions
@@ -56,20 +61,20 @@ absente du registre se cherche une fois sur le web, source citée, sinon C vaut 
 | Bloc | Points | Comment |
 |---|---|---|
 | **A. Couverture des exigences écrites** | /10 | Chaque exigence de l'annonce : couvert 1, partiel 0,5, absent 0. Total ramené sur 10. Quand l'annonce publie ses indicateurs de succès, ce sont eux la liste, pas les compétences. |
-| **B. Conditions** | /3 | +1 CDI · +1 lieu compatible (Paris, proche banlieue accessible, ou remote) · +1 salaire : point acquis sauf si un salaire affiché est inférieur à 50 k€ (on n'estime jamais). Le télétravail est affiché dans le détail, sans effet sur la note (R12). |
-| **C. Entreprise** | /4 | **Le type d'entreprise fait la note (R11)**, prouvé par `rules/entreprises.md` ou par l'annonce : **4** scale-up financée (levée VC publique datée, Next40 / FT120, licorne) ou grand groupe privé (≥ 1 000 salariés, coté, groupe international) · **3** ETI en croissance (250 à 999 salariés, adossement ou croissance documentés) · **2** ETI ou PME établie, organisme public ou parapublic, cabinet / ESN (client masqué, R6), filiale française sans preuve d'effectif local · **1** petite structure identifiée (< 100 salariés) sans levée · **0** entreprise non identifiable. |
+| **B. Conditions** | /3 | +1 CDI · +1 lieu compatible (Paris ou 30 min de la Mairie de Clichy, ou full remote France, R21) · +1 salaire : point acquis si le salaire est absent ou si le haut de fourchette atteint 40 k€ (R20 ; sous 40 k€ l'offre est écartée). Le télétravail est affiché dans le détail, sans effet sur la note (R12). |
+| **C. Entreprise** | /4 | **Le type d'entreprise fait la note (R11)**, prouvé par `rules/entreprises.md` ou par l'annonce : **4** groupe du CAC 40 / SBF 120, grande entreprise cotée (Amazon, Google...), scale-up financée (levée VC publique datée, Next40 / FT120, licorne) ou grand groupe privé (≥ 1 000 salariés, groupe international) · **3** ETI en croissance (250 à 999 salariés, adossement ou croissance documentés) · **2** ETI ou PME établie, organisme public ou parapublic, cabinet / ESN (client masqué, R6), filiale française sans preuve d'effectif local · **1** petite structure identifiée (< 100 salariés) sans levée · **0** entreprise non identifiable. |
 | **D. Différenciateurs demandés** | /3 | +1 chacun, seulement si l'annonce le demande explicitement ET que Tom l'a : agents IA / automatisation en opérations · formation ou enablement d'adultes · outil nommé que Tom pratique (n8n, Make, Zapier, HubSpot, Dust, Notion, Airtable, Process Street). |
 
 **Note = A + B + C + D**, entière (arrondi vers le bas), plafonnée à 20. En cas d'hésitation entre deux notes,
 prendre la basse et l'écrire dans le détail. **Texte partiel** : A plafonné à 6/10, B et C sur les faits publics (R15).
 
-**Bande séniorité** : affichée dans le détail (coeur / stretch / inconnu), sans effet sur la note (R8).
+**Bande séniorité** : affichée dans le détail (coeur / stretch / inconnu). Depuis R17, un poste « stretch » ne peut pas être go_prioritaire hors grand groupe coté : la note reste, le verdict est au mieux veille.
 
 ## 4. Seuils et effets
 
 | Note | Verdict | Effet dans la chaîne |
 |---|---|---|
-| 15 à 20 | go_prioritaire | Camille rédige le brief, Scribe crée la fiche CRM « À contacter », priorité Haute (famille 1) ou Moyenne |
+| 15 à 20 (13 à 20 en grand groupe coté, R19) | go_prioritaire | Camille rédige le brief, Scribe crée la fiche CRM « À contacter », priorité Haute (famille 1) ou Moyenne |
 | 12 à 14 | veille | Reste dans Inbox « En veille » ; visible dans le pipeline du mardi et du vendredi ; pas de brief |
 | 0 à 11 | no_go | Inbox « Écartée », raison écrite ; rien ne va au CRM |
 | toute note | dossier_ouvert | Un dossier est déjà ouvert chez cette entreprise : verdict rendu, note calculée, mais Scribe ne crée rien et écrit l'avertissement |
@@ -78,9 +83,11 @@ Un doute exprimé par Hugo (annonce incomplète, deux notes possibles) fait desc
 s'écrit dans le détail.
 
 **Plafonds de verdict** (calculés par `pipeline/verdicts.py`, la note n'est jamais modifiée, R7) : un verdict
-go_prioritaire devient **veille** quand le titre est senior avec 5 ans et plus demandés (R13), quand le poste est hors
-opérations (R14) ou quand le texte est partiel (R15). La ligne reste visible dans le pipeline du mardi et du
-vendredi : Tom décide. Commande : `python3 -m pipeline.cli verdict 16 --titre "Senior Revenue Ops" --annees 5`.
+go_prioritaire devient **veille** quand le titre est senior sans « 3 ans ou moins » écrit (R17), quand le poste est
+hors opérations (R14), quand le texte est partiel (R15) ou quand l'administration d'un CRM en production est une
+exigence centrale (R18). Un salaire affiché sous 40 k€ donne no_go (R20). Le seuil go descend à 13 en grand groupe
+coté (R19). La ligne reste visible dans le pipeline du mardi et du
+vendredi : Tom décide. Commande : `python3 -m pipeline.cli verdict 16 --titre "Senior Revenue Ops" --annees 5 [--grand-groupe] [--crm-admin] [--salaire-max 45000]`.
 
 ## 5. Sortie attendue de Hugo (validée par `schemas/verdict.json`)
 
@@ -136,6 +143,32 @@ Ne jamais rédiger de CV ni de lettre.
 - **R16 (07/09/2026)** : **exclusions lisibles par le code** : `pipeline/exclusions.py` cite la phrase qui exige un
   diplôme d'ingénieur ou d'informatique sans alternative commerce, ou du code au coeur du poste ; Léa l'appelle avant
   de retenir. Meilleurtaux (« Bac +5 École d'Ingénieurs ou Master Informatique ») avait été noté au lieu d'être écarté.
+
+- **R17 (16/09/2026, motifs des refus)** : **la séniorité bloque, pas les compétences.** Tom a 2 à 3 ans en
+  opérations. Refus qui le montrent : Kolecto Senior RevOps (25/08, « le niveau de complexité recherché ne
+  correspond pas à ton expérience actuelle », « process d'une startup de 10 personnes non comparables ») ;
+  Pennylane Associate Team Lead SDR (10/08, après entretien, « expérience opérationnelle et managériale en SaaS ») ;
+  Dust Revenue Operations (11/09, après entretien, « more extensive experience in classical B2B SaaS environments »
+  et « large-scale systems structuring ») ; Walter Learning Senior Sales Ops Manager (04/08) ; Believe Senior
+  Automation Lead, 6 à 7 ans (17/08 et 21/08). Effet : coeur ≤ 3 ans, stretch = 4 ans, hors ≥ 5 ans ; titre senior
+  plafonné à veille sauf « 3 ans ou moins » écrit. Remplace R8, R10 et R13 sur la séniorité.
+- **R18 (16/09/2026)** : **administration CRM en production exigée = au mieux veille.** Mirakl RevOps Analyst
+  (15/09, après entretien) : « candidates whose experience and skills with Salesforce are more closely aligned ».
+  Salesforce et HubSpot restent des notions et certifications chez Tom (rules/profil.md). Hugo passe `--crm-admin`
+  quand l'annonce écrit « administer Salesforce », « Salesforce admin », « HubSpot admin », ou en fait une
+  exigence centrale.
+- **R19 (16/09/2026, consigne de Tom)** : **grand groupe coté = seuil go à 13.** « Je peux prendre un poste moins
+  sur mesure dans un grand groupe, pour monter ensuite. » CAC 40, SBF 120, grandes entreprises cotées (Amazon...).
+  Hugo passe `--grand-groupe` si le registre ou une source citée le prouve.
+- **R20 (16/09/2026)** : **salaire** : minimum 40 k€, idéal 50 à 55 k€. Sous 40 k€ affichés : écartée ou no_go.
+- **R21 (16/09/2026)** : **lieu** : Paris ou 30 minutes environ de la Mairie de Clichy ; liste au § 1.
+- **R22 (16/09/2026)** : **familles** : Sales Ops, AI Ops, RevOps junior. Customer Success et commercial sortent.
+- **R23 (16/09/2026)** : **pas de plafond de sourcing.** Léa envoie à Hugo toutes les offres qu'elle juge
+  pertinentes (Paramètres : « Plafond offres par run » = aucun).
+- **Leçon des refus sans motif** (Insight, YOOBIC, Revolut, NVIDIA, SNCF Connect & Tech, Alan, Alma, Kolecto
+  Knowledge & Bot, Edflex, leboncoin) : 10 refus sur CV sur 19. Quand un refus sur CV arrive, Noé l'écrit dans la
+  colonne Refus du CRM ; au-delà de 3 refus sur CV pour une même famille dans le mois, Tom et Claude recalibrent
+  ensemble sur 10 offres (séance de notation commune).
 
 ## 7. Calibration du 07/09/2026 (20 offres, notes de Tom contre notes de l'agent)
 
