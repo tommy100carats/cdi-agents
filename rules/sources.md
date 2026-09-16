@@ -53,7 +53,10 @@ Chargé d'opérations commerciales · Analyste performance commerciale.
   (repérage).
 - **Cabinets et réseaux** : Elinoï, Ignition Program, Bureau des Talents, Mistertemp Cadres (repérage).
 
-## 5 bis. Grands groupes cotés (priorité depuis le 16/09/2026, R19)
+## 5 bis. Grands groupes cotés (priorité depuis le 16/09/2026, R19 ; tous à chaque run, R25)
+
+Léa consulte **tous** les groupes de la liste à chaque run de production (budget 30 min pour cette étape ; si le
+budget est dépassé, elle reprend au prochain run là où elle s'est arrêtée et le note dans Contrôles).
 
 Pages carrière des groupes de `rules/entreprises.md` (section « Grands groupes cotés »), recherche « sales
 operations », « sales ops », « business operations », « revenue operations », « analyste commercial »,

@@ -9,11 +9,15 @@ Toute correction de Tom devient une règle numérotée en fin de document (regis
 - **Géographie (R21)** : Paris intra-muros, ou **30 minutes environ de la Mairie de Clichy** en transports
   (ligne 13, ligne 14, RER C, Transilien L) : Clichy, Levallois-Perret, Neuilly-sur-Seine, Saint-Ouen, Asnières,
   Gennevilliers, Courbevoie, Puteaux et La Défense, Colombes, Bois-Colombes, Saint-Denis (Pleyel, Plaine),
-  Boulogne-Billancourt (nord). Au-delà (Issy, Vanves, Noisy-le-Grand, Rueil, Montigny, Essonne, Val-de-Marne sud) :
-  Écartée, raison « trajet > 30 min depuis Clichy ». Full remote France : accepté, signalé.
+  Boulogne-Billancourt (nord). **Tolérance jusqu'à 45 à 50 min si le poste est bon** (consigne de Tom, 16/09) :
+  Meudon, Issy, Vanves, Rueil, Nanterre, Suresnes, Montrouge, Châtillon, Vélizy, Noisy-le-Grand, Massy, Marne-la-Vallée
+  (Val d'Europe exclu) passent avec « [TRAJET 45-50 min] » en tête de Raison, et Hugo exige go pour les garder.
+  Au-delà de 50 min (Essonne sud, Yvelines ouest, Val-d'Oise nord, Seine-et-Marne est) : Écartée, raison
+  « trajet > 50 min depuis Clichy ». Full remote France : accepté, signalé.
 - **Familles (R22), par ordre de priorité** : (1) **Sales Ops / Business Ops** ; (2) **AI Ops** / automatisation
   IA côté business, sans développement logiciel ; (3) **RevOps junior** (Analyst, Specialist, Associate,
-  Coordinator, Chargé(e)). Customer Success, account management, Enablement, commercial, PMO, produit et conseil
+  Coordinator, Chargé(e)). Comptent aussi comme opérations : Deal Desk, Pricing / Commercial Operations,
+  Sales Excellence, Performance commerciale, analyste commercial. Customer Success, account management, Enablement, commercial, PMO, produit et conseil
   ne sont plus sourcés : ils sont écartés, raison « hors familles cibles (R22) ».
 - **Séniorité (R17)** : Tom a **2 à 3 ans en opérations** (7 ans d'expérience au total). Cible = **3 ans ou moins**
   demandés (« coeur ») ; **4 ans** = « stretch », signalé ; **5 ans et plus** = « hors », écarté. Un titre Senior,
@@ -24,6 +28,10 @@ Toute correction de Tom devient une règle numérotée en fin de document (regis
 - **Grands groupes (R19)** : Léa cherche activement dans les groupes du **CAC 40, du SBF 120 et les grandes
   entreprises cotées** (Amazon, Google, Microsoft, Salesforce, Oracle, SAP, IBM, Adobe, Meta, Uber...), y compris
   pour des postes moins sur mesure : Tom accepte d'entrer plus bas dans un grand groupe pour monter ensuite.
+- **Priorités de Tom (R24, 16/09/2026)**, dans l'ordre : (1) **un poste en opérations** ; (2) **un grand groupe** ;
+  (3) **le fit avec son profil**. Tom accepte des concessions : **en cas de doute, l'offre passe** chez Hugo avec
+  « [DOUTE] <sur quoi> » dans Raison, au lieu d'être écartée. Les seuls écarts sans appel restent : CDD, 5 ans et
+  plus, salaire affiché < 40 k€, trajet > 50 min, exclusions fermes ci-dessous.
 - **Exclusions fermes** (Écartée, jamais notée) : quotidien fait de prospection outbound à froid ; code de
   production, pipelines de données, profil Data Scientist / ML Engineer / Software Engineer, diplôme
   d'ingénieur exigé, LangChain, LangGraph, CI-CD, AWS. Tom ne code pas, par choix. Les deux premières exclusions
@@ -61,7 +69,7 @@ absente du registre se cherche une fois sur le web, source citée, sinon C vaut 
 | Bloc | Points | Comment |
 |---|---|---|
 | **A. Couverture des exigences écrites** | /10 | Chaque exigence de l'annonce : couvert 1, partiel 0,5, absent 0. Total ramené sur 10. Quand l'annonce publie ses indicateurs de succès, ce sont eux la liste, pas les compétences. |
-| **B. Conditions** | /3 | +1 CDI · +1 lieu compatible (Paris ou 30 min de la Mairie de Clichy, ou full remote France, R21) · +1 salaire : point acquis si le salaire est absent ou si le haut de fourchette atteint 40 k€ (R20 ; sous 40 k€ l'offre est écartée). Le télétravail est affiché dans le détail, sans effet sur la note (R12). |
+| **B. Conditions** | /3 | +1 CDI · +1 lieu compatible (Paris ou 30 min de la Mairie de Clichy, ou full remote France, R21 ; 45 à 50 min : point non acquis) · +1 salaire : point acquis si le salaire est absent ou si le haut de fourchette atteint 40 k€ (R20 ; sous 40 k€ l'offre est écartée). Le télétravail est affiché dans le détail, sans effet sur la note (R12). |
 | **C. Entreprise** | /4 | **Le type d'entreprise fait la note (R11)**, prouvé par `rules/entreprises.md` ou par l'annonce : **4** groupe du CAC 40 / SBF 120, grande entreprise cotée (Amazon, Google...), scale-up financée (levée VC publique datée, Next40 / FT120, licorne) ou grand groupe privé (≥ 1 000 salariés, groupe international) · **3** ETI en croissance (250 à 999 salariés, adossement ou croissance documentés) · **2** ETI ou PME établie, organisme public ou parapublic, cabinet / ESN (client masqué, R6), filiale française sans preuve d'effectif local · **1** petite structure identifiée (< 100 salariés) sans levée · **0** entreprise non identifiable. |
 | **D. Différenciateurs demandés** | /3 | +1 chacun, seulement si l'annonce le demande explicitement ET que Tom l'a : agents IA / automatisation en opérations · formation ou enablement d'adultes · outil nommé que Tom pratique (n8n, Make, Zapier, HubSpot, Dust, Notion, Airtable, Process Street). |
 
@@ -161,8 +169,13 @@ Ne jamais rédiger de CV ni de lettre.
   sur mesure dans un grand groupe, pour monter ensuite. » CAC 40, SBF 120, grandes entreprises cotées (Amazon...).
   Hugo passe `--grand-groupe` si le registre ou une source citée le prouve.
 - **R20 (16/09/2026)** : **salaire** : minimum 40 k€, idéal 50 à 55 k€. Sous 40 k€ affichés : écartée ou no_go.
-- **R21 (16/09/2026)** : **lieu** : Paris ou 30 minutes environ de la Mairie de Clichy ; liste au § 1.
+- **R21 (16/09/2026, élargie le jour même)** : **lieu** : Paris ou 30 minutes environ de la Mairie de Clichy ;
+  jusqu'à 45 à 50 min accepté si le poste est bon (go exigé) ; au-delà écarté. Liste au § 1.
 - **R22 (16/09/2026)** : **familles** : Sales Ops, AI Ops, RevOps junior. Customer Success et commercial sortent.
+- **R24 (16/09/2026, séance de notation commune)** : **priorités** poste en opérations, puis grand groupe, puis
+  fit ; **doute = l'offre passe** (« [DOUTE] ») ; Deal Desk et Pricing comptent comme opérations. **R25** : Léa
+  consulte **tous** les sites carrière de la liste « Grands groupes cotés » (rules/entreprises.md) à chaque run de
+  production et remonte les offres compatibles dans une section « Grands groupes » de son résumé.
 - **R23 (16/09/2026)** : **pas de plafond de sourcing.** Léa envoie à Hugo toutes les offres qu'elle juge
   pertinentes (Paramètres : « Plafond offres par run » = aucun).
 - **Leçon des refus sans motif** (Insight, YOOBIC, Revolut, NVIDIA, SNCF Connect & Tech, Alan, Alma, Kolecto

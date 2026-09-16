@@ -17,7 +17,7 @@ MOTIFS = [
     ("exclusion_technique", r"diplôme|ingénieur|informatique|\bcode\b|python|langchain|aws|r16|data scien|software|ml\b"),
     ("prospection", r"outbound|prospection|cold call|chasse|business developer|sdr\b"),
     ("contrat", r"\bcdd\b|stage|alternance|freelance|interim|intérim|mission|pas un cdi"),
-    ("geographie", r"lieu|localisation|géograph|hors (paris|idf|île|france)|relocation|étranger"),
+    ("geographie", r"trajet|lieu|localisation|géograph|hors (paris|idf|île|france)|relocation|étranger"),
     ("hors_perimetre", r"hors (périmètre|cible|famille)|famille|pas un poste|hors opérations"),
     ("deja_refuse", r"déjà refusé|refus"),
 ]

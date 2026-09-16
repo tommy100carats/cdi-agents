@@ -9,7 +9,7 @@ Sales Operations / Revenue Operations, Bac+5 **emlyon business school** (Program
 IAE d'Amiens M1 Management & Entrepreneuriat (2013–2016) ; INSEAD CEDEP, Live for Good (2020–2021) ; IUT
 d'Amiens DUT Techniques de Commercialisation (2011–2013). Français natif, anglais courant (910 TOEIC),
 espagnol intermédiaire. Basé à Vez (Oise), mobile Paris ; les CV affichent « Paris · Permis B ».
-Disponible immédiatement. CDI à Paris ou à 30 minutes de la Mairie de Clichy, ou full remote France.
+Disponible immédiatement. CDI à Paris ou à 30 minutes de la Mairie de Clichy (jusqu'à 45-50 min si le poste est bon), ou full remote France. Priorités : poste en opérations, grand groupe, fit. Concessions possibles.
 **Salaire : minimum 40 k€, idéal 50 à 55 k€** (16/09/2026). **Expérience : 7 ans au total, dont 2 à 3 ans en
 opérations** : c'est ce chiffre que les recruteurs retiennent pour les postes Ops ; viser des postes à 3 ans ou moins.
 
