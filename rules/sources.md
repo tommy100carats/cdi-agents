@@ -66,6 +66,16 @@ operations », « sales ops », « business operations », « revenue operations
 `careers.google.com` (recherche Paris). Microsoft : `jobs.careers.microsoft.com` (Paris). Toujours vérifier le lieu
 (R21) et la séniorité (R17) : les grands groupes publient beaucoup d'intitulés « Senior » hors cible.
 
+Accès vérifiés le 17/09/2026 (recherche POST Workday `https://<tenant>.<wdN>.myworkdayjobs.com/wday/cxs/<tenant>/<site>/jobs`,
+corps `{"searchText": "...", "limit": 20, "offset": 0, "appliedFacets": {}}`) : nvidia wd5, salesforce wd12,
+adobe wd5 (external_experienced), thales wd3 (Careers), pernodricard wd3 (pernod-ricard), ag wd3 (Airbus),
+accenture wd103, michelinhr wd3, mastercard wd1, hp wd5, sanofi wd3 (SanofiCareers), teleperformance wd1.
+Tenant existant, nom de site à trouver sur la page carrière (réponse 422) : schneiderelectric wd3, danone wd3,
+engie wd3. Capgemini : JSON `https://www.capgemini.com/wp-json/macs/v1/jobs?country_code=fr-fr&search=<mot>&size=50`.
+L'Oréal et TotalEnergies : Avature (voir rules/entreprises.md). BNP Paribas, Société Générale, Orange, Decathlon :
+pas d'accès par le code, passer par Indeed et les alertes LinkedIn. Un accès trouvé en cours de run se note dans
+Contrôles pour être ajouté ici.
+
 ## 5. Entreprises cibles à surveiller nommément (pages carrière)
 
 Fintech et SaaS français : Qonto, Pennylane, Alan, Dust, Doctolib, Swile, PayFit, Spendesk, Malt, Brevo,

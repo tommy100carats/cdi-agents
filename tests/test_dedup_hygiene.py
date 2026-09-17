@@ -73,3 +73,10 @@ def test_notee_nest_pas_bloquee():
     rep = hygiene.run([], today=today, inbox_rows=inbox)
     bloquees = [p["url"] for p in rep["problemes"] if p["code"] == "inbox_bloquee"]
     assert bloquees == ["u2"]
+
+
+def test_cle_echappee_par_notion_detectee():
+    # Incident du 17/09/2026 : l'export Notion en mode view rend « | » en « \| »
+    from pipeline.dedup import index_existing
+    idx = index_existing([], [{"Clé": "joko\\|operations manager", "url": "u", "Étape": "À noter", "Titre": "t"}])
+    assert "joko|operations manager" in idx

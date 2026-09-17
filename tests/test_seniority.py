@@ -53,3 +53,20 @@ def test_duree_de_conservation_des_donnees_ignoree():
     from pipeline.seniority import band
     txt = "Customer Success & Development Manager. Your data is kept for up to 2 years after the process."
     assert band(txt, "Customer Success & Development Manager")["band"] == "inconnu"
+
+
+def test_corrections_du_17_09():
+    # durée qui décrit une personne (Qonto)
+    assert years_required("Our Head of Pricing: she spent 15+ years in fintech. You have 2 years of experience in pricing.") == (2, 2)
+    # 8/10 ans et 5-7 années (Pennylane, Digitrips)
+    assert years_required("Vous avez 8/10 ans d'expérience en Strategy & Ops") == (8, 10)
+    assert years_required("5-7 années d'expérience") == (5, 7)
+    # nombres en lettres (NHCO)
+    assert band("Vous justifiez de cinq ans d'expérience en contrôle de gestion")["band"] == "hors"
+    assert years_required("at least three years of experience") == (3, None)
+    # plusieurs exigences : la plus grande compte
+    assert years_required("Minimum de 2 ans en management. 5 ans d'expérience en pilotage commercial.")[0] == 5
+    # une durée « appréciée » ne remonte pas le minimum
+    assert years_required("2 ans d'expérience en Sales Ops. 5 ans en SaaS serait un plus.")[0] == 2
+    # « un an » ne casse pas les mots
+    assert years_required("Une première expérience d'un an minimum en opérations")[0] == 1

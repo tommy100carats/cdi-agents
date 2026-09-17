@@ -9,16 +9,22 @@ avec la ligne existante pointée. Aucune candidate n'est perdue : un doublon est
 from .keys import business_key, key_from_opportunite
 
 
+def _clean_key(k):
+    """Clé lue dans un export Notion : le mode view échappe « | » en « \\| » (incident du 17/09/2026 :
+    aucun doublon Inbox détecté). On dé-échappe et on retire les espaces."""
+    return str(k or "").replace("\\|", "|").strip()
+
+
 def index_existing(crm_rows, inbox_rows=None):
     """Construit {clé: {source, url, statut, titre}} à partir des exports Notion."""
     idx = {}
     for r in crm_rows or []:
-        k = (r.get("Clé") or key_from_opportunite(r.get("Opportunité", ""))).strip()
+        k = _clean_key(r.get("Clé") or key_from_opportunite(r.get("Opportunité", "")))
         if k and k not in idx:  # la première (la plus ancienne si trié) fait foi
             idx[k] = {"source": "crm", "url": r.get("url"), "statut": r.get("Statut"),
                       "titre": r.get("Opportunité"), "doublon_tag": str(r.get("Opportunité", "")).startswith("🗑️")}
     for r in inbox_rows or []:
-        k = (r.get("cle") or r.get("Clé") or "").strip()
+        k = _clean_key(r.get("cle") or r.get("Clé"))
         if k and k not in idx:
             idx[k] = {"source": "inbox", "url": r.get("url"), "statut": r.get("Étape") or r.get("etape"),
                       "titre": r.get("Titre") or r.get("titre"), "doublon_tag": False}
@@ -43,7 +49,7 @@ def decide(candidates, crm_rows, inbox_rows=None):
     seen_in_batch = {}
     out = []
     for c in candidates:
-        k = c.get("cle") or business_key(c.get("entreprise", ""), c.get("titre", ""))
+        k = _clean_key(c.get("cle")) or business_key(c.get("entreprise", ""), c.get("titre", ""))
         c = dict(c, cle=k)
         if not k:
             c.update(decision="cle_invalide", existant=None)
@@ -66,7 +72,7 @@ def find_duplicates(crm_rows):
         title = str(r.get("Opportunité", ""))
         if title.startswith("🗑️"):
             continue
-        k = (r.get("Clé") or key_from_opportunite(title)).strip()
+        k = _clean_key(r.get("Clé") or key_from_opportunite(title))
         if k:
             groups.setdefault(k, []).append(r)
     return {k: v for k, v in groups.items() if len(v) > 1}

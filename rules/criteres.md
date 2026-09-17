@@ -176,6 +176,11 @@ Ne jamais rédiger de CV ni de lettre.
   fit ; **doute = l'offre passe** (« [DOUTE] ») ; Deal Desk et Pricing comptent comme opérations. **R25** : Léa
   consulte **tous** les sites carrière de la liste « Grands groupes cotés » (rules/entreprises.md) à chaque run de
   production et remonte les offres compatibles dans une section « Grands groupes » de son résumé.
+- **R26 (17/09/2026, consigne de Tom)** : **objectif de 30 offres pertinentes par jour envoyées à Hugo.** C'est un
+  objectif, pas un plafond : Léa continue de chercher (grands groupes, puis LinkedIn, ATS, agrégateurs, puis
+  requêtes élargies) tant qu'elle n'a pas 30 offres « À noter » dans le jour, dans la limite de 90 minutes de run. Elle
+  ne baisse jamais les filtres sans appel pour y arriver ; en dessous de 30, elle dit pourquoi (sources épuisées,
+  budget atteint) et quelles sources restaient.
 - **R23 (16/09/2026)** : **pas de plafond de sourcing.** Léa envoie à Hugo toutes les offres qu'elle juge
   pertinentes (Paramètres : « Plafond offres par run » = aucun).
 - **Leçon des refus sans motif** (Insight, YOOBIC, Revolut, NVIDIA, SNCF Connect & Tech, Alan, Alma, Kolecto

@@ -46,6 +46,14 @@ Accor, Bureau Veritas, Worldline, Ubisoft, Elis, SEB, BIC (Clichy), Imerys, Nexa
 Sopra Steria, Atos, Amundi, Covivio, Klépierre. Cotées étrangères à Paris : Amazon, Google (Alphabet), Microsoft,
 Meta, Apple, Salesforce, Oracle, SAP, IBM, Adobe, ServiceNow, Workday, Uber, Booking, Airbnb, Datadog, HubSpot,
 NVIDIA, Accenture, Siemens Energy, Canonical (non cotée : à vérifier), Mirakl (non cotée : scale-up).
+Grands groupes non cotés à consulter au même titre (consigne de Tom, 17/09/2026 : « que les grands groupes ») :
+Decathlon, Groupe Adeo (Leroy Merlin), Chanel, Lactalis, Auchan, Groupe Galeries Lafayette, Fnac Darty (cotée).
+Accès connus au 17/09/2026 : L'Oréal et TotalEnergies (Avature, `careers.loreal.com/en_US/jobs/SearchJobs/<mot>`,
+`jobs.totalenergies.com/fr_FR/careers/SearchJobs/<mot>`, filtrer le lieu sur la page de détail) ; Workday
+(nvidia wd5, salesforce wd12, adobe wd5, thales wd3 Careers, pernodricard wd3, ag wd3 Airbus, accenture wd103,
+michelinhr wd3, mastercard wd1, hp wd5, sanofi wd3, teleperformance wd1) ; Amazon (JSON). Bloqués pour le code
+(403 ou rendu JavaScript) : Schneider Electric, BNP Paribas, Société Générale, Orange, Capgemini, Danone, Decathlon
+(joinus.decathlon.fr) : passer par les alertes LinkedIn de Tom et par Indeed.
 Hugo cite la source (bourse, site investisseurs) au premier usage et passe la ligne dans « Prouvées ».
 
 ## Présumées (sources ATS de `rules/sources.md`) : à confirmer au premier usage par une recherche web, source citée
