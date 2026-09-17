@@ -62,7 +62,7 @@ def main(argv=None):
     s = sub.add_parser("hygiene"); s.add_argument("crm"); s.add_argument("--inbox"); s.add_argument("--runs"); s.add_argument("--md", action="store_true"); s.add_argument("--today")
     s = sub.add_parser("relances"); s.add_argument("crm"); s.add_argument("--today")
     s = sub.add_parser("report"); s.add_argument("crm"); s.add_argument("--mode", default="soir", choices=["soir", "pipeline"]); s.add_argument("--inbox"); s.add_argument("--runs"); s.add_argument("--pdf"); s.add_argument("--html"); s.add_argument("--today")
-    s = sub.add_parser("funnel"); s.add_argument("inbox"); s.add_argument("--jours", type=int); s.add_argument("--du"); s.add_argument("--au"); s.add_argument("--reperees", type=int); s.add_argument("--md", action="store_true"); s.add_argument("--today")
+    s = sub.add_parser("funnel"); s.add_argument("inbox"); s.add_argument("--jours", type=int); s.add_argument("--du"); s.add_argument("--au"); s.add_argument("--reperees", type=int); s.add_argument("--run", help="Run sourcing du run à contrôler (AAAA-MM-JJ HH:MM) : l'invariant ne compte que ses lignes"); s.add_argument("--md", action="store_true"); s.add_argument("--today")
     s = sub.add_parser("runlog")
     for a in ("agent", "mode", "resume", "controles"):
         s.add_argument(f"--{a}", required=True)
@@ -144,7 +144,15 @@ def main(argv=None):
         since = date.fromisoformat(a.du) if a.du else (funnel.since_days(a.jours, today) if a.jours is not None else None)
         until = date.fromisoformat(a.au) if a.au else None
         rep = funnel.build(_load(a.inbox), since=since, until=until)
-        inv = funnel.check_invariant(a.reperees, rep) if a.reperees is not None else None
+        inv = None
+        if a.reperees is not None:
+            # 17/09/2026 : sans --run, l'invariant comptait les lignes de toute la journée (plusieurs runs)
+            rows = _load(a.inbox)
+            if a.run:
+                rows = [r for r in rows if str(r.get("Run sourcing") or r.get("run") or "").startswith(a.run)]
+                inv = funnel.check_invariant(a.reperees, funnel.build(rows))
+            else:
+                inv = funnel.check_invariant(a.reperees, rep)
         if inv:
             rep["invariant_zero_perte"] = inv
         if a.md:

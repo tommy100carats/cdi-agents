@@ -28,3 +28,13 @@ def test_invariant_zero_perte():
     r = funnel.build(ROWS, since=date(2026, 9, 15))
     assert funnel.check_invariant(3, r)["ok"]
     assert funnel.check_invariant(5, r)["manquantes"] == 2
+
+
+def test_invariant_filtre_par_run(tmp_path):
+    import json, subprocess, sys
+    rows = [{"Titre": "A", "Étape": "À noter", "Run sourcing": "2026-09-17 09:46", "Créé le": "2026-09-17"},
+            {"Titre": "B", "Étape": "Écartée", "Run sourcing": "2026-09-17 17:04", "Créé le": "2026-09-17", "Raison": "séniorité"},
+            {"Titre": "C", "Étape": "À noter", "Run sourcing": "2026-09-17 17:04", "Créé le": "2026-09-17"}]
+    f = tmp_path / "inbox.json"; f.write_text(json.dumps(rows), encoding="utf-8")
+    r = subprocess.run([sys.executable, "-m", "pipeline.cli", "funnel", str(f), "--reperees", "2", "--run", "2026-09-17 17:04"], capture_output=True, text=True)
+    assert r.returncode == 0, r.stdout + r.stderr

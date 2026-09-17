@@ -46,6 +46,8 @@ Accor, Bureau Veritas, Worldline, Ubisoft, Elis, SEB, BIC (Clichy), Imerys, Nexa
 Sopra Steria, Atos, Amundi, Covivio, Klépierre. Cotées étrangères à Paris : Amazon, Google (Alphabet), Microsoft,
 Meta, Apple, Salesforce, Oracle, SAP, IBM, Adobe, ServiceNow, Workday, Uber, Booking, Airbnb, Datadog, HubSpot,
 NVIDIA, Accenture, Siemens Energy, Canonical (non cotée : à vérifier), Mirakl (non cotée : scale-up).
+Ajouts du 17/09/2026 (runs de Léa) : RELX (LexisNexis), CANAL+ (groupe Vivendi puis Canal+ coté), Nestlé,
+Roche, JCDecaux, VINCI (VINCI Energies, Cegelec). Hugo cite la source au premier usage.
 Grands groupes non cotés à consulter au même titre (consigne de Tom, 17/09/2026 : « que les grands groupes ») :
 Decathlon, Groupe Adeo (Leroy Merlin), Chanel, Lactalis, Auchan, Groupe Galeries Lafayette, Fnac Darty (cotée).
 Accès connus au 17/09/2026 : L'Oréal et TotalEnergies (Avature, `careers.loreal.com/en_US/jobs/SearchJobs/<mot>`,

@@ -70,6 +70,7 @@ Accès vérifiés le 17/09/2026 (recherche POST Workday `https://<tenant>.<wdN>.
 corps `{"searchText": "...", "limit": 20, "offset": 0, "appliedFacets": {}}`) : nvidia wd5, salesforce wd12,
 adobe wd5 (external_experienced), thales wd3 (Careers), pernodricard wd3 (pernod-ricard), ag wd3 (Airbus),
 accenture wd103, michelinhr wd3, mastercard wd1, hp wd5, sanofi wd3 (SanofiCareers), teleperformance wd1.
+Ajouts du 17/09/2026 : pluxee wd3 (Pluxee_Career_Site), roche wd3 (roche-ext), kering wd3 (kering, souvent vide), workday wd5 (workday). Microsoft : l'API JSON ne répond plus. Google : page HTML careers/applications/jobs/results. VINCI : jobs.vinci.com (HTML).
 Tenant existant, nom de site à trouver sur la page carrière (réponse 422) : schneiderelectric wd3, danone wd3,
 engie wd3. Capgemini : JSON `https://www.capgemini.com/wp-json/macs/v1/jobs?country_code=fr-fr&search=<mot>&size=50`.
 L'Oréal et TotalEnergies : Avature (voir rules/entreprises.md). BNP Paribas, Société Générale, Orange, Decathlon :
