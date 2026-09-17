@@ -78,3 +78,9 @@ def test_stretch_plafonne_sauf_grand_groupe():
     assert verdict(16, bande="stretch")["verdict"] == "veille"
     assert verdict(16, bande="stretch", grand_groupe=True)["verdict"] == "go_prioritaire"
     assert verdict(16, bande="coeur")["verdict"] == "go_prioritaire"
+
+
+def test_titre_neutre_cinq_ans_plafonne():
+    from pipeline.verdicts import verdict
+    v = verdict(16, titre="Assistant ADV", annees_min=5)
+    assert v["verdict"] != "go_prioritaire"

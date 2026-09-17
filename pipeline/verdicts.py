@@ -62,6 +62,9 @@ def verdict(note: int, *, dossier_ouvert: bool = False, titre: str = "", annees_
         seuil_go = min(seuil_go, SEUIL_GO_GRAND_GROUPE)
     if senior_cap(titre, annees_min):
         plafonds.append(f"R17 : titre senior ({'durée non écrite' if annees_min is None else str(annees_min) + ' ans demandés'})")
+    elif annees_min is not None and annees_min >= 5:
+        # 17/09/2026 : un titre neutre qui demande 5 ans et plus n'était pas plafonné
+        plafonds.append(f"R17 : {annees_min} ans demandés")
     if bande == "stretch" and not grand_groupe:
         plafonds.append("R17 : bande stretch (4 ans demandés) hors grand groupe coté")
     if crm_admin:

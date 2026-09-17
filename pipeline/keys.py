@@ -66,7 +66,9 @@ _TITLE_LOCATION = re.compile(
 def normalize_title(title: str) -> str:
     # Incident du 07/09/2026 : « Customer Enablement Manager (Paris, France) », « Revenue Operations Analyst, Paris »
     # et « Chief of Staff GTM - France » ne rejoignaient pas leur original au CRM. On retire lieu et sous-titre.
-    s = _TITLE_LOCATION.sub(" ", title or "")
+    # Incident du 17/09/2026 (Roche) : « Sales Analyst (d/f/m) » donnait « sales analyst d ». Mentions de genre retirées.
+    s = re.sub(r"\((?:\s*[a-z]{1,2}\s*[/|,]\s*){1,3}[a-z]{1,2}\s*\)|\b(?:h|f|m|x|n|w|d)\s*/\s*(?:h|f|m|x|n|w|d)(?:\s*/\s*(?:h|f|m|x|n|w|d))?\b", " ", title or "", flags=re.IGNORECASE)
+    s = _TITLE_LOCATION.sub(" ", s)
     s = _TITLE_NOISE.sub(" ", s)
     s = _clean(s)
     # « senior » et « junior » restent : ce ne sont pas les mêmes postes

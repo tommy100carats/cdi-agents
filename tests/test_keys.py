@@ -48,3 +48,11 @@ def test_region_en_fin_de_titre_sans_virgule():
     a = business_key("Aircall", "Senior Revenue Operations Business Partner, EMEA")
     b = business_key("Aircall", "Senior Revenue Operations Business Partner EMEA")
     assert a == b and a.endswith("business partner")
+
+
+def test_mentions_de_genre_retirees():
+    from pipeline.keys import business_key
+    k = business_key("Roche", "Sales Analyst")
+    assert business_key("Roche", "Sales Analyst (d/f/m)") == k
+    assert business_key("Roche", "Sales Analyst H/F") == k
+    assert business_key("Roche", "Sales Analyst (F/H/N)") == k
