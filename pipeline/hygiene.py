@@ -11,7 +11,7 @@ from datetime import date, datetime
 
 from .dedup import find_duplicates
 from .keys import key_from_opportunite
-from .precedence import ALL_STATUSES, ORDER, PARKED, TERMINAL
+from .precedence import ALL_STATUSES, ORDER, PARKED, POINT_MORT, TERMINAL
 
 OPEN = {"Candidature envoyée", "Entretien", "Test / Étude de cas", "Offre reçue"}
 UNVERIFIABLE = ("linkedin.com", "welcometothejungle.com")
@@ -49,7 +49,40 @@ def norm_row(r):
         "ecrit_par": g("Écrit par"),
         "notes": g("notes160", "Notes") or "",
         "doublon_tag": str(g("Opportunité") or "").startswith("🗑️"),
+        "top5": g("Top 5") or "",
+        "priorite": g("Priorité") or "",
     }
+
+
+POINT_MORT_JOURS = 21
+TOP5_TAG = "⭐ Top 5"
+
+
+def top5_selection(rows):
+    """Les 5 meilleures fiches « À contacter » notées de chaque Rôle cible.
+    Départage (R24) : score, puis priorité Haute, puis la plus récente."""
+    prio = {"Haute": 0, "Moyenne": 1, "Basse": 2}
+    groups = {}
+    for r in rows:
+        if r["statut"] == "À contacter" and not r["doublon_tag"] and r["score"] is not None and r["role"]:
+            groups.setdefault(r["role"], []).append(r)
+    keep = set()
+    for role, grp in groups.items():
+        grp.sort(key=lambda x: (-float(x["score"]), prio.get(x["priorite"], 3), -(x["cree"].toordinal() if x["cree"] else 0)))
+        keep.update(x["url"] for x in grp[:5])
+    return keep
+
+
+def top5_changes(rows):
+    keep = top5_selection(rows)
+    out = []
+    for r in rows:
+        tagged = r["top5"] == TOP5_TAG
+        if r["url"] in keep and not tagged:
+            out.append(("top5_poser", r))
+        elif tagged and r["url"] not in keep:
+            out.append(("top5_retirer", r))
+    return out
 
 
 def run(crm_rows, today=None, inbox_rows=None, runs_rows=None):
@@ -112,6 +145,22 @@ def run(crm_rows, today=None, inbox_rows=None, runs_rows=None):
             elif any(h in r["lien"] for h in UNVERIFIABLE):
                 add("mineur", "lien_non_verifiable", r, "lien LinkedIn / WTTJ, non vérifiable par du code",
                     "chercher le lien ATS ou carrière")
+
+    # 6 bis. Point mort (17/09/2026) : candidature sans réponse depuis POINT_MORT_JOURS jours
+    for r in rows:
+        if r["statut"] == "Candidature envoyée" and not r["doublon_tag"] and r["date_cand"]:
+            silence = (today - r["date_cand"]).days
+            if silence >= POINT_MORT_JOURS and not (r["relance"] and r["relance"] > today):
+                add("action", "point_mort_a_poser", r, f"sans réponse depuis {silence} jours",
+                    "Statut « Point mort », Prochaine relance vidée")
+
+    # 6 ter. Top 5 par Rôle cible parmi les fiches « À contacter » notées (17/09/2026)
+    for code, r in top5_changes(rows):
+        if code == "top5_poser":
+            add("action", code, r, f"dans les 5 meilleures « {r['role']} » ({r['score']}/20)", "Top 5 = « ⭐ Top 5 »")
+        else:
+            add("action", code, r, "n'est plus dans les 5 meilleures de sa catégorie ou n'est plus à contacter",
+                "Top 5 vidé")
 
     # 7. lignes taguées doublon mais toujours dans un statut actif
     for r in rows:

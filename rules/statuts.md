@@ -15,9 +15,18 @@ incident détecté par Noé (`inbox_bloquee`).
 
 ## Statuts du CRM (options exactes)
 
-`À contacter` < `Candidature envoyée` < `Entretien` < `Test / Étude de cas` < `Offre reçue` < `Accepté`.
+`À contacter` < `Candidature envoyée` < `Point mort` < `Entretien` < `Test / Étude de cas` < `Offre reçue` < `Accepté`.
 `Refusé / Clos` peut succéder à n'importe quel statut. `En veille` n'est pas un rang : c'est l'état de
 l'incertitude, toujours avec un motif daté dans Notes.
+
+`Point mort` (17/09/2026, consigne de Tom) : candidature envoyée sans aucune réponse depuis 21 jours et plus.
+Posé par Scribe (code `point_mort_a_poser` du rapport d'hygiène), Prochaine relance vidée : on ne relance plus.
+Noé continue de surveiller ces dossiers dans Gmail : un refus les ferme, un entretien ou un test les réveille.
+Vue Notion « ⏸️ Point mort ».
+
+Colonne `Top 5` (17/09/2026) : « ⭐ Top 5 » sur les 5 meilleures fiches `À contacter` notées de chaque Rôle cible
+(départage : score, priorité, date). Recalculée par le code (`top5_poser`, `top5_retirer`) et appliquée par Scribe
+chaque matin. Vue Notion « ⭐ Top 5 par catégorie ».
 
 ## Précédence
 

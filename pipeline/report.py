@@ -56,7 +56,7 @@ def build(crm_rows, mode="soir", today=None, inbox_rows=None, runs_rows=None, ti
     created_week = [r for r in rows if r["cree"] and r["cree"] >= week_ago and not r["doublon_tag"]]
     applied_week = [r for r in rows if r["date_cand"] and r["date_cand"] >= week_ago]
     fun = _funnel(rows)
-    n_sent = sum(v for s, v in fun if s in ("Candidature envoyée", "Entretien", "Test / Étude de cas", "Offre reçue", "Accepté"))
+    n_sent = sum(v for s, v in fun if s in ("Candidature envoyée", "Point mort", "Entretien", "Test / Étude de cas", "Offre reçue", "Accepté"))
     n_int = sum(v for s, v in fun if s in ("Entretien", "Test / Étude de cas", "Offre reçue", "Accepté"))
 
     title = title or ("État des candidatures" if mode == "soir" else "Pipeline d'offres")

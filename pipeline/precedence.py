@@ -8,7 +8,10 @@ heure confirmées), une proposition de créneau ne suffit pas.
 import re
 from dataclasses import dataclass
 
-ORDER = ["À contacter", "Candidature envoyée", "Entretien", "Test / Étude de cas", "Offre reçue", "Accepté"]
+# « Point mort » (17/09/2026, consigne de Tom) : candidature sans réponse depuis 21 jours et plus. Rang au-dessus
+# de « Candidature envoyée » (un accusé tardif ne la fait pas reculer), sous « Entretien » (une vraie réponse la réveille).
+POINT_MORT = "Point mort"
+ORDER = ["À contacter", "Candidature envoyée", POINT_MORT, "Entretien", "Test / Étude de cas", "Offre reçue", "Accepté"]
 TERMINAL = "Refusé / Clos"
 PARKED = "En veille"
 ALL_STATUSES = ORDER + [TERMINAL, PARKED]

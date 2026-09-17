@@ -80,3 +80,21 @@ def test_cle_echappee_par_notion_detectee():
     from pipeline.dedup import index_existing
     idx = index_existing([], [{"Clé": "joko\\|operations manager", "url": "u", "Étape": "À noter", "Titre": "t"}])
     assert "joko|operations manager" in idx
+
+
+def test_point_mort_et_top5():
+    from datetime import date
+    from pipeline.hygiene import run
+    from pipeline.precedence import advance
+    rows = [{"url": "a", "Opportunité": "A — X", "Statut": "Candidature envoyée", "date:Date candidature:start": "2026-08-01"},
+            {"url": "b", "Opportunité": "B — Y", "Statut": "Candidature envoyée", "date:Date candidature:start": "2026-09-10"}]
+    for i in range(7):
+        rows.append({"url": f"s{i}", "Opportunité": f"S{i} — Z{i}", "Statut": "À contacter", "Score /20": 10 + i,
+                     "Rôle cible": "Sales Ops", "Top 5": "⭐ Top 5" if i == 0 else None})
+    codes = {(p["code"], p["url"]) for p in run(rows, today=date(2026, 9, 17))["problemes"]}
+    assert ("point_mort_a_poser", "a") in codes and ("point_mort_a_poser", "b") not in codes
+    assert {u for c, u in codes if c == "top5_poser"} == {"s2", "s3", "s4", "s5", "s6"}
+    assert ("top5_retirer", "s0") in codes
+    # un point mort ne recule pas sur un accusé tardif, avance sur un entretien
+    assert advance("Point mort", "accuse_reception")[1] is False
+    assert advance("Point mort", "entretien_confirme")[0] == "Entretien"
