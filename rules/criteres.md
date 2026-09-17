@@ -82,8 +82,8 @@ prendre la basse et l'écrire dans le détail. **Texte partiel** : A plafonné �
 
 | Note | Verdict | Effet dans la chaîne |
 |---|---|---|
-| 15 à 20 (13 à 20 en grand groupe coté, R19) | go_prioritaire | Camille rédige le brief, Scribe crée la fiche CRM « À contacter », priorité Haute (famille 1) ou Moyenne |
-| 12 à 14 | veille | Reste dans Inbox « En veille » ; visible dans le pipeline du mardi et du vendredi ; pas de brief |
+| 13 à 20 (R27, depuis le 17/09/2026 ; était 15) | go_prioritaire | Camille rédige le brief, Scribe crée la fiche CRM « À contacter », priorité selon R24 |
+| 12 | veille | Reste dans Inbox « En veille » ; visible dans le pipeline du mardi et du vendredi ; pas de brief |
 | 0 à 11 | no_go | Inbox « Écartée », raison écrite ; rien ne va au CRM |
 | toute note | dossier_ouvert | Un dossier est déjà ouvert chez cette entreprise : verdict rendu, note calculée, mais Scribe ne crée rien et écrit l'avertissement |
 
@@ -93,8 +93,8 @@ s'écrit dans le détail.
 **Plafonds de verdict** (calculés par `pipeline/verdicts.py`, la note n'est jamais modifiée, R7) : un verdict
 go_prioritaire devient **veille** quand le titre est senior sans « 3 ans ou moins » écrit (R17), quand le poste est
 hors opérations (R14), quand le texte est partiel (R15) ou quand l'administration d'un CRM en production est une
-exigence centrale (R18). Un salaire affiché sous 40 k€ donne no_go (R20). Le seuil go descend à 13 en grand groupe
-coté (R19). La ligne reste visible dans le pipeline du mardi et du
+exigence centrale (R18). Un salaire affiché sous 40 k€ donne no_go (R20). Le seuil go est à 13 pour toutes les offres (R27) ;
+le grand groupe coté reste prioritaire au départage et dans la priorité CRM (R19, R24). La ligne reste visible dans le pipeline du mardi et du
 vendredi : Tom décide. Commande : `python3 -m pipeline.cli verdict 16 --titre "Senior Revenue Ops" --annees 5 [--grand-groupe] [--crm-admin] [--salaire-max 45000]`.
 
 ## 5. Sortie attendue de Hugo (validée par `schemas/verdict.json`)
@@ -181,6 +181,17 @@ Ne jamais rédiger de CV ni de lettre.
   requêtes élargies) tant qu'elle n'a pas 30 offres « À noter » dans le jour, dans la limite de 90 minutes de run. Elle
   ne baisse jamais les filtres sans appel pour y arriver ; en dessous de 30, elle dit pourquoi (sources épuisées,
   budget atteint) et quelles sources restaient.
+- **R27 (17/09/2026, consigne de Tom)** : **13/20 et plus = fiche CRM.** Le seuil go passe de 15 à 13 pour toutes
+  les offres ; les plafonds (R14, R15, R17, R18, R20) s'appliquent toujours.
+- **R28 (17/09/2026, consigne de Tom)** : **une information manquante se cherche.** Quand le texte d'une offre est
+  partiel ou qu'il manque une donnée (expérience, salaire, lieu, contrat, missions), Léa puis Hugo font une recherche
+  web (WebSearch : « <intitulé> <entreprise> », puis « <intitulé> <entreprise> site:<ATS ou site carrière> ») et
+  lisent les pages trouvées (WebFetch) : site carrière, ATS, Indeed, APEC, HelloWork, Welcome to the Jungle en
+  cache de recherche. Le texte trouvé complète la ligne avec sa source citée. Une page protégée (robots.txt,
+  connexion) n'est jamais contournée. Ce n'est qu'après cette recherche qu'une donnée reste « inconnue ».
+- **Chiffres quotidiens (17/09/2026)** : le mail du soir de Noé commence par la phrase de
+  `pipeline.cli funnel --phrase` : « Léa a analysé X annonces, en a remonté Y à Hugo, qui en a noté Z, dont W à
+  13/20 ou plus (mises dans le CRM). »
 - **R23 (16/09/2026)** : **pas de plafond de sourcing.** Léa envoie à Hugo toutes les offres qu'elle juge
   pertinentes (Paramètres : « Plafond offres par run » = aucun).
 - **Leçon des refus sans motif** (Insight, YOOBIC, Revolut, NVIDIA, SNCF Connect & Tech, Alan, Alma, Kolecto

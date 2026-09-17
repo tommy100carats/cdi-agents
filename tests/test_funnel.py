@@ -38,3 +38,14 @@ def test_invariant_filtre_par_run(tmp_path):
     f = tmp_path / "inbox.json"; f.write_text(json.dumps(rows), encoding="utf-8")
     r = subprocess.run([sys.executable, "-m", "pipeline.cli", "funnel", str(f), "--reperees", "2", "--run", "2026-09-17 17:04"], capture_output=True, text=True)
     assert r.returncode == 0, r.stdout + r.stderr
+
+
+def test_phrase_du_jour():
+    from pipeline.funnel import build, phrase_du_jour
+    rows = [{"Étape": "Écartée", "Raison": "séniorité", "Créé le": "2026-09-18"},
+            {"Étape": "À briefer", "Verdict": "go_prioritaire", "Score agent": 14, "Créé le": "2026-09-18"},
+            {"Étape": "En veille", "Verdict": "veille", "Score agent": 12, "Créé le": "2026-09-18"},
+            {"Étape": "À noter", "Créé le": "2026-09-18"}]
+    p = phrase_du_jour(build(rows), analysees=40)
+    assert p == ("Léa a analysé 40 annonces, en a remonté 3 à Hugo, qui en a noté 2, "
+                 "dont 1 à 13/20 ou plus (mises dans le CRM).")

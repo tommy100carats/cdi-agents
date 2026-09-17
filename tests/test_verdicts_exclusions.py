@@ -4,7 +4,7 @@ from pipeline.verdicts import hors_operations, senior_cap, verdict
 
 def test_thresholds_from_tom():
     assert verdict(15)["verdict"] == "go_prioritaire"
-    assert verdict(14)["verdict"] == "veille"
+    assert verdict(13)["verdict"] == "go_prioritaire"   # R27 (17/09/2026)
     assert verdict(12)["verdict"] == "veille"
     assert verdict(11)["verdict"] == "no_go"
     assert verdict(16, dossier_ouvert=True)["verdict"] == "dossier_ouvert"
@@ -64,7 +64,6 @@ def test_code_core_exclusion():
 
 def test_regles_du_16_09():
     # R19 : grand groupe coté, seuil go à 13
-    assert verdict(13)["verdict"] == "veille"
     assert verdict(13, grand_groupe=True)["verdict"] == "go_prioritaire"
     # R18 : administration CRM en production exigée
     v = verdict(17, crm_admin=True)

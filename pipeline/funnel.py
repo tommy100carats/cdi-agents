@@ -7,6 +7,8 @@ Source unique : l'export de l'Inbox. La règle zéro perte de Léa garantit qu'u
 encore, ou elle porte un verdict / une note, ou elle attend en veille au-delà du plafond.
 """
 import re
+
+SEUIL_CRM = 13  # R27 : 13/20 et plus = fiche CRM
 from collections import Counter, defaultdict
 from datetime import date, datetime, timedelta
 
@@ -98,6 +100,14 @@ def build(inbox_rows, since=None, until=None):
         familles[fam]["etudiees"] += 1; sources[src]["etudiees"] += 1
         if sort_lea == "envoyee":
             hugo[issue] += 1
+            try:
+                sc = float(_g(r, "Score agent", "score_agent"))
+            except (TypeError, ValueError):
+                sc = None
+            if sc is not None:
+                tot["notees"] += 1
+                if sc >= SEUIL_CRM:
+                    tot["notees_13_plus"] += 1
             familles[fam]["envoyees"] += 1; sources[src]["envoyees"] += 1
             if issue == "go_prioritaire":
                 par_jour[jour]["go"] += 1
@@ -115,6 +125,8 @@ def build(inbox_rows, since=None, until=None):
         "erreurs": tot["erreur"],
         "calibration": tot["calibration"],
         "taux_envoi": round(env / tot["etudiees"], 3) if tot["etudiees"] else None,
+        "notees_par_hugo": tot["notees"],
+        "notees_13_plus": tot["notees_13_plus"],
         "motifs_ecart": dict(motifs.most_common()),
         "issue_chez_hugo": dict(hugo),
         "precision_lea": round(go / notees, 3) if notees else None,
@@ -122,6 +134,14 @@ def build(inbox_rows, since=None, until=None):
         "par_famille": {k: dict(v) for k, v in familles.items()},
         "par_source": {k: dict(v) for k, v in sources.items()},
     }
+
+
+def phrase_du_jour(rep, analysees=None):
+    """Ligne chiffrée du mail quotidien (consigne de Tom, 17/09/2026).
+    `analysees` = annonces lues par Léa (colonne Repérées des lignes Runs du jour), à défaut les lignes Inbox."""
+    n = rep["etudiees"] if analysees is None else analysees
+    return (f"Léa a analysé {n} annonces, en a remonté {rep['envoyees_a_hugo']} à Hugo, "
+            f"qui en a noté {rep['notees_par_hugo']}, dont {rep['notees_13_plus']} à 13/20 ou plus (mises dans le CRM).")
 
 
 def check_invariant(reperees, report):

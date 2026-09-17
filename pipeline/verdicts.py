@@ -20,7 +20,7 @@ Règles du 16/09/2026 (motifs des refus reçus et consignes de Tom) :
 """
 import re
 
-SEUIL_GO = 15
+SEUIL_GO = 13  # R27 (17/09/2026, consigne de Tom) : 13 et plus = CRM ; était 15
 SEUIL_VEILLE = 12
 
 _SENIOR_TITLE = re.compile(r"(?<![a-zà-ÿ])(senior|lead|head of|head|director|directeur|directrice|vp|principal)(?![a-zà-ÿ])", re.IGNORECASE)

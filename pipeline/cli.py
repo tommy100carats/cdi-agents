@@ -62,7 +62,7 @@ def main(argv=None):
     s = sub.add_parser("hygiene"); s.add_argument("crm"); s.add_argument("--inbox"); s.add_argument("--runs"); s.add_argument("--md", action="store_true"); s.add_argument("--today")
     s = sub.add_parser("relances"); s.add_argument("crm"); s.add_argument("--today")
     s = sub.add_parser("report"); s.add_argument("crm"); s.add_argument("--mode", default="soir", choices=["soir", "pipeline"]); s.add_argument("--inbox"); s.add_argument("--runs"); s.add_argument("--pdf"); s.add_argument("--html"); s.add_argument("--today")
-    s = sub.add_parser("funnel"); s.add_argument("inbox"); s.add_argument("--jours", type=int); s.add_argument("--du"); s.add_argument("--au"); s.add_argument("--reperees", type=int); s.add_argument("--run", help="Run sourcing du run à contrôler (AAAA-MM-JJ HH:MM) : l'invariant ne compte que ses lignes"); s.add_argument("--md", action="store_true"); s.add_argument("--today")
+    s = sub.add_parser("funnel"); s.add_argument("inbox"); s.add_argument("--jours", type=int); s.add_argument("--du"); s.add_argument("--au"); s.add_argument("--reperees", type=int); s.add_argument("--run", help="Run sourcing du run à contrôler (AAAA-MM-JJ HH:MM) : l'invariant ne compte que ses lignes"); s.add_argument("--md", action="store_true"); s.add_argument("--phrase", action="store_true", help="ligne chiffrée du mail quotidien"); s.add_argument("--analysees", type=int, help="somme de Repérées des runs Léa du jour"); s.add_argument("--today")
     s = sub.add_parser("runlog")
     for a in ("agent", "mode", "resume", "controles"):
         s.add_argument(f"--{a}", required=True)
@@ -155,7 +155,9 @@ def main(argv=None):
                 inv = funnel.check_invariant(a.reperees, rep)
         if inv:
             rep["invariant_zero_perte"] = inv
-        if a.md:
+        if a.phrase:
+            print(funnel.phrase_du_jour(rep, a.analysees))
+        elif a.md:
             print(funnel.to_markdown(rep))
         else:
             _print(rep)
