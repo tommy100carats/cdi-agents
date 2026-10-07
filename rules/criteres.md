@@ -1,4 +1,4 @@
-# Critères de recherche et grille de notation, v4 (16/09/2026, après les refus de juillet à septembre)
+# Critères de recherche et grille de notation, v4 (16/09/2026)
 
 Source de vérité unique pour Léa (sourcing) et Hugo (notation). Modifier ici, jamais dans un prompt.
 Toute correction de Tom devient une règle numérotée en fin de document (registre), datée, jamais rediscutée.
@@ -23,15 +23,16 @@ Toute correction de Tom devient une règle numérotée en fin de document (regis
   demandés (« coeur ») ; **4 ans** = « stretch », signalé ; **5 ans et plus** = « hors », écarté. Un titre Senior,
   Lead, Head, Director, VP ou « Confirmé » sans durée écrite est « hors ». Aucune durée écrite et titre neutre :
   « inconnu », retenu et signalé. Calcul fait par `pipeline/seniority.py`, pas par le modèle.
-- **Salaire (R20)** : minimum 40 k€ brut annuel, idéal 50 à 55 k€. Un salaire affiché dont le haut de fourchette est
-  inférieur à 40 k€ : Écartée. Un salaire absent passe (on n'estime jamais).
+- **Salaire (R20)** : seuil minimum lu dans la base Notion « Paramètres système » (paramètre « Salaire minimum »,
+  volontairement absent de ce dépôt public). Un salaire affiché dont le haut de fourchette est inférieur à ce seuil :
+  Écartée. Un salaire absent passe (on n'estime jamais).
 - **Grands groupes (R19)** : Léa cherche activement dans les groupes du **CAC 40, du SBF 120 et les grandes
   entreprises cotées** (Amazon, Google, Microsoft, Salesforce, Oracle, SAP, IBM, Adobe, Meta, Uber...), y compris
-  pour des postes moins sur mesure : Tom accepte d'entrer plus bas dans un grand groupe pour monter ensuite.
+  pour des postes moins sur mesure (consigne de Tom).
 - **Priorités de Tom (R24, 16/09/2026)**, dans l'ordre : (1) **un poste en opérations** ; (2) **un grand groupe** ;
-  (3) **le fit avec son profil**. Tom accepte des concessions : **en cas de doute, l'offre passe** chez Hugo avec
+  (3) **le fit avec son profil**. **En cas de doute, l'offre passe** chez Hugo avec
   « [DOUTE] <sur quoi> » dans Raison, au lieu d'être écartée. Les seuls écarts sans appel restent : CDD, 5 ans et
-  plus, salaire affiché < 40 k€, trajet > 50 min, exclusions fermes ci-dessous.
+  plus, salaire affiché sous le seuil (Paramètres), trajet > 50 min, exclusions fermes ci-dessous.
 - **Exclusions fermes** (Écartée, jamais notée) : quotidien fait de prospection outbound à froid ; code de
   production, pipelines de données, profil Data Scientist / ML Engineer / Software Engineer, diplôme
   d'ingénieur exigé, LangChain, LangGraph, CI-CD, AWS. Tom ne code pas, par choix. Les deux premières exclusions
@@ -69,7 +70,7 @@ absente du registre se cherche une fois sur le web, source citée, sinon C vaut 
 | Bloc | Points | Comment |
 |---|---|---|
 | **A. Couverture des exigences écrites** | /10 | Chaque exigence de l'annonce : couvert 1, partiel 0,5, absent 0. Total ramené sur 10. Quand l'annonce publie ses indicateurs de succès, ce sont eux la liste, pas les compétences. |
-| **B. Conditions** | /3 | +1 CDI · +1 lieu compatible (Paris ou 30 min de la Mairie de Clichy, ou full remote France, R21 ; 45 à 50 min : point non acquis) · +1 salaire : point acquis si le salaire est absent ou si le haut de fourchette atteint 40 k€ (R20 ; sous 40 k€ l'offre est écartée). Le télétravail est affiché dans le détail, sans effet sur la note (R12). |
+| **B. Conditions** | /3 | +1 CDI · +1 lieu compatible (Paris ou 30 min de la Mairie de Clichy, ou full remote France, R21 ; 45 à 50 min : point non acquis) · +1 salaire : point acquis si le salaire est absent ou si le haut de fourchette atteint le seuil des Paramètres (R20 ; en dessous, l'offre est écartée). Le télétravail est affiché dans le détail, sans effet sur la note (R12). |
 | **C. Entreprise** | /4 | **Le type d'entreprise fait la note (R11)**, prouvé par `rules/entreprises.md` ou par l'annonce : **4** groupe du CAC 40 / SBF 120, grande entreprise cotée (Amazon, Google...), scale-up financée (levée VC publique datée, Next40 / FT120, licorne) ou grand groupe privé (≥ 1 000 salariés, groupe international) · **3** ETI en croissance (250 à 999 salariés, adossement ou croissance documentés) · **2** ETI ou PME établie, organisme public ou parapublic, cabinet / ESN (client masqué, R6), filiale française sans preuve d'effectif local · **1** petite structure identifiée (< 100 salariés) sans levée · **0** entreprise non identifiable. |
 | **D. Différenciateurs demandés** | /3 | +1 chacun, seulement si l'annonce le demande explicitement ET que Tom l'a : agents IA / automatisation en opérations · formation ou enablement d'adultes · outil nommé que Tom pratique (n8n, Make, Zapier, HubSpot, Dust, Notion, Airtable, Process Street). |
 
@@ -93,9 +94,9 @@ s'écrit dans le détail.
 **Plafonds de verdict** (calculés par `pipeline/verdicts.py`, la note n'est jamais modifiée, R7) : un verdict
 go_prioritaire devient **veille** quand le titre est senior sans « 3 ans ou moins » écrit (R17), quand le poste est
 hors opérations (R14), quand le texte est partiel (R15) ou quand l'administration d'un CRM en production est une
-exigence centrale (R18). Un salaire affiché sous 40 k€ donne no_go (R20). Le seuil go est à 13 pour toutes les offres (R27) ;
+exigence centrale (R18). Un salaire affiché sous le seuil des Paramètres donne no_go (R20). Le seuil go est à 13 pour toutes les offres (R27) ;
 le grand groupe coté reste prioritaire au départage et dans la priorité CRM (R19, R24). La ligne reste visible dans le pipeline du mardi et du
-vendredi : Tom décide. Commande : `python3 -m pipeline.cli verdict 16 --titre "Senior Revenue Ops" --annees 5 [--grand-groupe] [--crm-admin] [--salaire-max 45000]`.
+vendredi : Tom décide. Commande : `python3 -m pipeline.cli verdict 16 --titre "Senior Revenue Ops" --annees 5 [--grand-groupe] [--crm-admin] [--salaire-max 45000 --salaire-min <Salaire minimum des Paramètres>]`.
 
 ## 5. Sortie attendue de Hugo (validée par `schemas/verdict.json`)
 
@@ -130,45 +131,37 @@ Ne jamais rédiger de CV ni de lettre.
   restent affichées mais ne trient plus : les deux passent.
 
 - **R11 (07/09/2026, calibration de Tom)** : **l'entreprise fait la note.** Mot de Tom : « les top postes sont
-  dans les opérations d'une scale-up ou d'un grand groupe, même si le poste est plus junior ou sans télétravail ;
-  Dust c'est top ». Scale-up financée ou grand groupe privé = C 4/4 d'office ; le type se prouve par
-  `rules/entreprises.md` (faits publics sourcés : effectif, levée, label) ou par l'annonce ; entreprise absente du
+  dans les opérations d'une scale-up ou d'un grand groupe, même si le poste est plus junior ou sans télétravail ».
+  Scale-up financée ou grand groupe privé = C 4/4 d'office ; le type se prouve par `rules/entreprises.md` (faits publics sourcés : effectif, levée, label) ou par l'annonce ; entreprise absente du
   registre : une recherche web unique, source citée dans le détail, sinon 0 et « entreprise à qualifier » dans le
   résumé du run. Remplace les quatre sous-points de C (la note Glassdoor n'était citée par aucune annonce).
 - **R12 (07/09/2026)** : **ni l'absence de télétravail ni l'absence de salaire ne pénalisent.** B = CDI + lieu +
   salaire non contredit. Résout la contradiction de l'ancien B3 (« fourchette de marché plausible » contre « on
   n'estime jamais »).
 - **R13 (07/09/2026)** : **titre senior (Senior, Lead, Head, Director) avec 5 ans et plus demandés = au mieux
-  veille.** Note calculée, jamais de brief. Alan Senior Revenue Ops : agent 15, Tom 13 « pas assez d'expérience » ;
-  Mistral Enablement Lead (5 à 8 ans) : Tom 14 « un peu junior ». Un « Senior » sans années écrites n'est pas
-  plafonné (Cegid : Tom a dit oui).
+  veille.** Note calculée, jamais de brief. Constaté sur deux offres de la calibration où Tom notait plus bas que
+  l'agent. Un « Senior » sans années écrites n'est pas plafonné (une offre de ce type acceptée par Tom).
 - **R14 (07/09/2026)** : **hors opérations = au mieux veille** : produit (PM, PO), ingénierie, conseil IA, business
-  analyst IA, data. Tom a dit non à 13/20 ou moins à Bpifrance (PM), CNAM (BA IA), Thales (PO), DFM (consultant),
-  même en grand groupe. Lu dans le titre seulement, par le code.
+  analyst IA, data. Tom a dit non à 13/20 ou moins à quatre offres de ce type (PM, BA IA, PO, consultant), même en
+  grand groupe. Lu dans le titre seulement, par le code.
 - **R15 (07/09/2026)** : **texte partiel** : A plafonné à 6/10 (une couverture ne se mesure pas sur un titre), B et
-  C sur les faits publics, verdict au mieux veille (Camille ne briefe pas sans l'annonce). Thales, DFM, Esri,
-  ElevenLabs : agent 7 à 9, Tom 10 à 11.
+  C sur les faits publics, verdict au mieux veille (Camille ne briefe pas sans l'annonce). Sur quatre offres à texte
+  partiel : agent 7 à 9, Tom 10 à 11.
 - **R16 (07/09/2026)** : **exclusions lisibles par le code** : `pipeline/exclusions.py` cite la phrase qui exige un
   diplôme d'ingénieur ou d'informatique sans alternative commerce, ou du code au coeur du poste ; Léa l'appelle avant
-  de retenir. Meilleurtaux (« Bac +5 École d'Ingénieurs ou Master Informatique ») avait été noté au lieu d'être écarté.
+  de retenir. Une offre exigeant « Bac +5 École d'Ingénieurs ou Master Informatique » avait été notée au lieu d'être écartée.
 
-- **R17 (16/09/2026, motifs des refus)** : **la séniorité bloque, pas les compétences.** Tom a 2 à 3 ans en
-  opérations. Refus qui le montrent : Kolecto Senior RevOps (25/08, « le niveau de complexité recherché ne
-  correspond pas à ton expérience actuelle », « process d'une startup de 10 personnes non comparables ») ;
-  Pennylane Associate Team Lead SDR (10/08, après entretien, « expérience opérationnelle et managériale en SaaS ») ;
-  Dust Revenue Operations (11/09, après entretien, « more extensive experience in classical B2B SaaS environments »
-  et « large-scale systems structuring ») ; Walter Learning Senior Sales Ops Manager (04/08) ; Believe Senior
-  Automation Lead, 6 à 7 ans (17/08 et 21/08). Effet : coeur ≤ 3 ans, stretch = 4 ans, hors ≥ 5 ans ; titre senior
-  plafonné à veille sauf « 3 ans ou moins » écrit. Remplace R8, R10 et R13 sur la séniorité.
-- **R18 (16/09/2026)** : **administration CRM en production exigée = au mieux veille.** Mirakl RevOps Analyst
-  (15/09, après entretien) : « candidates whose experience and skills with Salesforce are more closely aligned ».
-  Salesforce et HubSpot restent des notions et certifications chez Tom (rules/profil.md). Hugo passe `--crm-admin`
+- **R17 (16/09/2026)** : **cibler la séniorité demandée.** Tom a 2 à 3 ans en opérations (7 ans au total). Effet :
+  coeur ≤ 3 ans, stretch = 4 ans, hors ≥ 5 ans ; titre senior plafonné à veille sauf « 3 ans ou moins » écrit.
+  Remplace R8, R10 et R13 sur la séniorité.
+- **R18 (16/09/2026)** : **administration CRM en production exigée = au mieux veille.** Salesforce et HubSpot restent des notions et certifications chez Tom (rules/profil.md). Hugo passe `--crm-admin`
   quand l'annonce écrit « administer Salesforce », « Salesforce admin », « HubSpot admin », ou en fait une
   exigence centrale.
-- **R19 (16/09/2026, consigne de Tom)** : **grand groupe coté = seuil go à 13.** « Je peux prendre un poste moins
-  sur mesure dans un grand groupe, pour monter ensuite. » CAC 40, SBF 120, grandes entreprises cotées (Amazon...).
+- **R19 (16/09/2026, consigne de Tom)** : **grand groupe coté = seuil go à 13.** CAC 40, SBF 120, grandes
+  entreprises cotées (Amazon...).
   Hugo passe `--grand-groupe` si le registre ou une source citée le prouve.
-- **R20 (16/09/2026)** : **salaire** : minimum 40 k€, idéal 50 à 55 k€. Sous 40 k€ affichés : écartée ou no_go.
+- **R20 (16/09/2026, seuil déplacé le 07/10/2026)** : **salaire** : sous le seuil « Salaire minimum » de la base
+  Paramètres système (non publié ici) : écartée ou no_go. Hugo passe `--salaire-min <valeur>` au verdict.
 - **R21 (16/09/2026, élargie le jour même)** : **lieu** : Paris ou 30 minutes environ de la Mairie de Clichy ;
   jusqu'à 45 à 50 min accepté si le poste est bon (go exigé) ; au-delà écarté. Liste au § 1.
 - **R22 (16/09/2026)** : **familles** : Sales Ops, AI Ops, RevOps junior. Customer Success et commercial sortent.
@@ -194,8 +187,7 @@ Ne jamais rédiger de CV ni de lettre.
   13/20 ou plus (mises dans le CRM). »
 - **R23 (16/09/2026)** : **pas de plafond de sourcing.** Léa envoie à Hugo toutes les offres qu'elle juge
   pertinentes (Paramètres : « Plafond offres par run » = aucun).
-- **Leçon des refus sans motif** (Insight, YOOBIC, Revolut, NVIDIA, SNCF Connect & Tech, Alan, Alma, Kolecto
-  Knowledge & Bot, Edflex, leboncoin) : 10 refus sur CV sur 19. Quand un refus sur CV arrive, Noé l'écrit dans la
+- **Refus sans motif** : quand un refus sur CV arrive, Noé l'écrit dans la
   colonne Refus du CRM ; au-delà de 3 refus sur CV pour une même famille dans le mois, Tom et Claude recalibrent
   ensemble sur 10 offres (séance de notation commune).
 
@@ -204,11 +196,8 @@ Ne jamais rédiger de CV ni de lettre.
 Tom a noté les 20 offres sur l'artefact « Calibration Léa ». Écart moyen absolu avant les règles R11 à R16 :
 **2,1 points** (l'agent notait plus bas, 1,6 point en moyenne) ; après recalcul avec les mêmes tableaux de
 couverture : **1,4 point**, objectif ≤ 1,5 atteint. Accord de verdict : les huit offres que l'agent recalculé met à
-15 et plus sans plafond (Pennylane, Alan Compliance Ops, ILLUIN, Mirakl, Veepee, Moments Lab, Cegid, Sorare) sont
-toutes des « oui » de Tom ; aucun « non » de Tom n'est en go. Détail par offre dans
+15 et plus sans plafond sont toutes des « oui » de Tom ; aucun « non » de Tom n'est en go. Détail par offre dans
 `data/runs/2026-09-07_test/calibration_tom_vs_agent.md`.
 
-Ce que Tom a dit et qui a produit les règles : « 15/20 car je suis un peu junior » (Pennylane), « le secteur, si
-c'est scale-up c'est tous les points » (Alan Compliance Ops, 18), « pas Salesforce mais sinon le poste et
-l'entreprise sont top » (Mirakl, 17), « pas assez d'expérience » (Alan Senior, non), « profil trop ingénieur »
-(Meilleurtaux, non).
+Les commentaires de Tom sur chaque offre ont produit les règles R11 à R16 ci-dessus (entreprises anonymisées dans le
+tableau de calibration).

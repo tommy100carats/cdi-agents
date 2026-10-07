@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Expérience demandée par une annonce, et sa lecture pour le profil de Tom.
 
-Règle R17 (16/09/2026, après les refus de Kolecto, Walter Learning, Believe, Dust, Pennylane) : Tom a 2 à 3 ans
+Règle R17 (16/09/2026) : Tom a 2 à 3 ans
 en opérations (7 ans au total). Cible = postes demandant 3 ans ou moins (« coeur ») ; 4 ans = « stretch », signalé ;
 5 ans et plus = « hors », écarté au sourcing. Un « Senior », « Lead », « Head » sans durée écrite = hors.
 Aucune donnée → inconnu, accepté et signalé (un vide n'est pas un zéro).

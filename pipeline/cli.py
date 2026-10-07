@@ -7,7 +7,7 @@
     python -m pipeline.cli dedup candidates.json crm.json [inbox.json]
     python -m pipeline.cli validate fichier.json offre|verdict|brief|crm_row|run|evenement_gmail
     python -m pipeline.cli exclusions annonce.txt                       # diplôme d'ingénieur / code exigés (R5, § 1)
-    python -m pipeline.cli verdict 16 --titre "Senior Revenue Ops" --annees 5 [--partiel] [--dossier-ouvert] [--grand-groupe] [--crm-admin] [--salaire-max 38000] [--bande stretch]
+    python -m pipeline.cli verdict 16 --titre "Senior Revenue Ops" --annees 5 [--partiel] [--dossier-ouvert] [--grand-groupe] [--crm-admin] [--salaire-max 38000 --salaire-min <Paramètres>] [--bande stretch]
     python -m pipeline.cli dust-schema verdict                          # Structured Response Format Dust
     python -m pipeline.cli classify sujet.txt corps.txt
     python -m pipeline.cli hygiene crm.json [--inbox inbox.json] [--runs runs.json] [--md]
@@ -58,6 +58,7 @@ def main(argv=None):
     s.add_argument("--annees", type=int, default=None); s.add_argument("--partiel", action="store_true")
     s.add_argument("--dossier-ouvert", action="store_true"); s.add_argument("--grand-groupe", action="store_true")
     s.add_argument("--crm-admin", action="store_true"); s.add_argument("--salaire-max", type=int, default=None)
+    s.add_argument("--salaire-min", type=int, default=None)
     s.add_argument("--bande", choices=["coeur", "stretch", "inconnu"], default=None)
     s = sub.add_parser("hygiene"); s.add_argument("crm"); s.add_argument("--inbox"); s.add_argument("--runs"); s.add_argument("--md", action="store_true"); s.add_argument("--today")
     s = sub.add_parser("relances"); s.add_argument("crm"); s.add_argument("--today")
@@ -115,7 +116,7 @@ def main(argv=None):
         from .verdicts import verdict
         _print(verdict(a.note, dossier_ouvert=a.dossier_ouvert, titre=a.titre, annees_min=a.annees,
                        texte_partiel=a.partiel, grand_groupe=a.grand_groupe, crm_admin=a.crm_admin,
-                       salaire_max=a.salaire_max, bande=a.bande)); return 0
+                       salaire_max=a.salaire_max, salaire_min=a.salaire_min, bande=a.bande)); return 0
     today = date.fromisoformat(a.today) if getattr(a, "today", None) else date.today()
     if a.cmd == "hygiene":
         from . import hygiene

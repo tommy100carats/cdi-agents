@@ -76,4 +76,4 @@ J+1 / J+2, relance J+7. Offre : réponse sous 48 h. La date `Prochaine relance` 
 Avant toute création, interroger la propriété `Clé` (égalité stricte, calculée par `pipeline/keys.py`). Une
 ligne existante pour le même couple entreprise + poste, quel que soit son statut, se met à jour ; on ne crée
 jamais une seconde fiche. Un refus clôt le dossier et libère l'entreprise pour un autre poste ; le même poste
-reste bloqué 365 jours dans certains ATS (constaté chez Alan).
+reste bloqué 365 jours dans certains ATS (constaté).

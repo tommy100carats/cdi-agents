@@ -21,7 +21,7 @@ def test_real_export_loads():
 
 def test_dedup_against_real_base():
     cands = [
-        {"titre": "Revenue Operations", "entreprise": "Dust", "lien_direct": "https://x/1"},
+        {"titre": "Revenue Operations", "entreprise": "Entreprise 056", "lien_direct": "https://x/1"},
         {"titre": "Growth Ops Analyst", "entreprise": "Entreprise Inconnue XYZ", "lien_direct": "https://x/2"},
         {"titre": "Growth Ops Analyst (H/F)", "entreprise": "Entreprise Inconnue XYZ SAS", "lien_direct": "https://x/3"},
     ]

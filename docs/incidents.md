@@ -5,19 +5,19 @@
 | 2026-08-05 | veille v1 | offres pertinentes jamais remontées | filtre hérité trop strict | auditer les rejets, pas seulement les acceptés | `docs/zero-perte.md` |
 | 2026-08-10 | notation v1 | note moyenne qui monte chaque semaine | pas de règle d'arbitrage | hésitation = note basse | `rules/criteres.md` § 3 |
 | 2026-08-14 | sync v1 | taux de réponse flatteur | accusés automatiques comptés comme réponses | accusé ≠ premier retour | `rules/statuts.md` |
-| 2026-08-17 | sync v2 | refus Alan raté | requête FR unique | double requête + réconciliation par dossier | `prompts/05_noe_controle.md` |
-| 2026-08-20 | veille v1 | deux fiches Dust le même jour | deux tâches à la même minute, anti-doublon sur URL | clé métier, horaires décalés, Inbox tampon | `pipeline/keys.py` |
-| 2026-08-25 | sync v2 | refus Kolecto raté | idem 17/08 | idem | idem |
+| 2026-08-17 | sync v2 | refus d'une candidature raté | requête FR unique | double requête + réconciliation par dossier | `prompts/05_noe_controle.md` |
+| 2026-08-20 | veille v1 | deux fiches pour la même offre le même jour | deux tâches à la même minute, anti-doublon sur URL | clé métier, horaires décalés, Inbox tampon | `pipeline/keys.py` |
+| 2026-08-25 | sync v2 | second refus raté | idem 17/08 | idem | idem |
 | 2026-09-02 | audit | 33 fiches sans score, 13 doublons | pas de schéma, dédup sur URL | `crm_row.json`, `dedup.py` | `schemas/` |
 | 2026-09-02 | sync v3 | fiches Rivalis, Thoo Owen hors périmètre | création libre depuis Gmail | Noé propose, Tom valide | `prompts/05_noe_controle.md` |
 | 2026-09-06 | skill Dust | « pas de malus » et « malus −4 » dans la même skill | correction écrite par-dessus l'ancienne règle | registre numéroté, abrogation explicite (R7) | `rules/criteres.md` § 6 |
-| 2026-09-07 | hygiène v3 | 3 nouveaux doublons (Kolecto, Pennylane, Rothschild) sur l'export réel | l'ancienne veille tourne encore sans clé | Scribe les tague ; bascule après calibration | `out/hygiene_2026-09-07.md` |
+| 2026-09-07 | hygiène v3 | 3 nouveaux doublons sur l'export réel | l'ancienne veille tourne encore sans clé | Scribe les tague ; bascule après calibration | `out/hygiene_2026-09-07.md` |
 | 2026-09-07 | test Léa (run à la main) | les agents auraient lu `Base Inbox`, `Base CRM`, `Base Runs` = null | valeurs stockées comme mentions Notion, invisibles en SQL | identifiants bruts dans « Valeur », description qui dit comment les utiliser | base Paramètres système |
 | 2026-09-07 | test Léa | toute offre Ashby sortait « non vérifiable » | réponse API tronquée à 400 Ko, JSON illisible | lecture à 6 Mo + recherche textuelle de l'id en secours | `pipeline/link_check.py` |
 | 2026-09-07 | test Léa | « Junior Sales Operations Analyst » classé hors (> 5 ans) | « lead » lu dans le corps (« leadership ») | mots de niveau lus dans le titre seulement, mot entier ; junior gagne ; senior = 5 (stretch) | `pipeline/seniority.py` |
-| 2026-09-07 | test Léa | Pennylane Strat & Ops noté coeur alors que 5+ ans écrits | « conservées 2 ans » (RGPD) et « 6 ans d'existence » lus comme expérience | une durée ne compte qu'en contexte d'expérience ; faux amis exclus | `pipeline/seniority.py` |
+| 2026-09-07 | test Léa | une offre Strat & Ops notée coeur alors que 5+ ans écrits | « conservées 2 ans » (RGPD) et « 6 ans d'existence » lus comme expérience | une durée ne compte qu'en contexte d'expérience ; faux amis exclus | `pipeline/seniority.py` |
 | 2026-09-07 | test Léa | run daté 11:34 pour 13:34 | conteneur en UTC | horodatage Europe/Paris dans `runlog` | `pipeline/cli.py` |
-| 2026-09-07 | test Léa | Figma, Mirakl, ElevenLabs, EasyVista non reconnus comme doublons | lieu ou sous-titre dans l'intitulé (« (Paris, France) », « , Paris », « : Sales Programs… ») | clé métier : lieu et sous-titre retirés du titre | `pipeline/keys.py` |
+| 2026-09-07 | test Léa | 4 offres non reconnues comme doublons | lieu ou sous-titre dans l'intitulé (« (Paris, France) », « , Paris », « : Sales Programs… ») | clé métier : lieu et sous-titre retirés du titre | `pipeline/keys.py` |
 | 2026-09-07 | test Léa | 5 offres LinkedIn / Indeed refusées par le schéma (texte < 200 caractères) | règle LinkedIn du 07/09 : le texte partiel doit passer | `texte_annonce` ≥ 40, champ `texte_partiel` | `schemas/offre.json` |
 | 2026-09-07 | test Hugo | B3 (salaire) à 0 sur 19 offres, C souvent 0 : moyenne 11,9 contre 15,8 avant | contradiction interne (« fourchette plausible » contre « on n'estime jamais ») ; R9 exige une preuve écrite dans l'annonce | tranché par la calibration de Tom : R11 (l'entreprise fait la note, registre `rules/entreprises.md`) et R12 (salaire absent et télétravail sans effet) | `rules/criteres.md` § 3 et § 6 |
 | 2026-09-07 | test Hugo | Meilleurtaux noté alors que « diplôme d'ingénieur ou master informatique » exigé | l'exclusion ferme n'est pas vérifiée par du code au sourcing | `pipeline/exclusions.py` cite la phrase (diplôme d'ingénieur / informatique, code au coeur du poste) ; Léa l'appelle (R16) | `pipeline/exclusions.py` |

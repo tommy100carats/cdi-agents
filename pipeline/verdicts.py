@@ -10,14 +10,15 @@ plafonds qui ne touchent jamais à la note (R7, pas de malus) mais empêchent un
 
 Un dossier déjà ouvert chez l'entreprise donne « dossier_ouvert », note calculée quand même.
 
-Règles du 16/09/2026 (motifs des refus reçus et consignes de Tom) :
+Règles du 16/09/2026 :
 - R17 : titre Senior / Lead / Head / Director → au mieux « veille », sauf si 3 ans ou moins sont écrits ;
-- R18 : administration CRM en production (Salesforce, HubSpot) exigée comme exigence centrale → au mieux « veille »
-  (refus Mirakl du 15/09 après entretien, Dust du 11/09) ;
-- R19 : grand groupe coté (CAC 40, SBF 120, big tech cotée type Amazon) → seuil go abaissé à 13 : Tom accepte un
-  poste moins sur mesure dans un grand groupe pour monter ensuite ;
-- R20 : salaire affiché (haut de fourchette) inférieur à 40 k€ → no_go.
+- R18 : administration CRM en production (Salesforce, HubSpot) exigée comme exigence centrale → au mieux « veille » ;
+- R19 : grand groupe coté (CAC 40, SBF 120, grande entreprise cotée) → seuil go abaissé à 13 ;
+- R20 : salaire affiché (haut de fourchette) inférieur au seuil personnel → no_go. Le seuil n'est pas dans ce dépôt
+  public : il est lu dans la base Notion « Paramètres système » (paramètre « Salaire minimum ») et passé par
+  `--salaire-min`, ou par la variable d'environnement CDI_SALAIRE_MIN. Sans seuil, R20 ne s'applique pas.
 """
+import os
 import re
 
 SEUIL_GO = 13  # R27 (17/09/2026, consigne de Tom) : 13 et plus = CRM ; était 15
@@ -25,8 +26,8 @@ SEUIL_VEILLE = 12
 
 _SENIOR_TITLE = re.compile(r"(?<![a-zà-ÿ])(senior|lead|head of|head|director|directeur|directrice|vp|principal)(?![a-zà-ÿ])", re.IGNORECASE)
 
-# Titres hors opérations : ce que Tom a refusé à 13/20 ou moins même en grand groupe (Bpifrance, CNAM, Thales,
-# Meilleurtaux, DFM). Lu dans le TITRE seulement, jamais dans le corps.
+# Titres hors opérations : refusés par Tom à 13/20 ou moins même en grand groupe lors de la calibration du 07/09.
+# Lu dans le TITRE seulement, jamais dans le corps.
 _HORS_OPS = re.compile(
     r"product (owner|manager)|(?<![a-z])p\.?o\.?(?![a-z])|product officer|consultant|engineer|ingénieur|ingenieur|"
     r"business analyst|data (scientist|analyst|engineer)|scientist|développeur|developer|architect|"
@@ -49,12 +50,16 @@ def senior_cap(title: str, years_min) -> bool:
 
 
 SEUIL_GO_GRAND_GROUPE = 13
-SALAIRE_MIN = 40000
+
+
+def _salaire_min_env():
+    v = os.environ.get("CDI_SALAIRE_MIN", "").strip()
+    return int(v) if v.isdigit() else None
 
 
 def verdict(note: int, *, dossier_ouvert: bool = False, titre: str = "", annees_min=None,
             texte_partiel: bool = False, grand_groupe: bool = False, crm_admin: bool = False,
-            salaire_max=None, bande=None, seuil_go: int = SEUIL_GO, seuil_veille: int = SEUIL_VEILLE) -> dict:
+            salaire_max=None, salaire_min=None, bande=None, seuil_go: int = SEUIL_GO, seuil_veille: int = SEUIL_VEILLE) -> dict:
     """Verdict et plafond éventuel. La note n'est jamais modifiée."""
     note = int(note)
     plafonds = []
@@ -75,8 +80,9 @@ def verdict(note: int, *, dossier_ouvert: bool = False, titre: str = "", annees_
     if texte_partiel:
         plafonds.append("R15 : texte partiel, pas de brief possible")
 
-    if salaire_max is not None and salaire_max < SALAIRE_MIN:
-        return {"note": note, "verdict": "no_go", "plafonds": [f"R20 : salaire affiché {salaire_max} € < 40 k€"],
+    seuil_salaire = salaire_min if salaire_min is not None else _salaire_min_env()
+    if salaire_max is not None and seuil_salaire is not None and salaire_max < seuil_salaire:
+        return {"note": note, "verdict": "no_go", "plafonds": ["R20 : salaire affiché sous le seuil (Paramètres)"],
                 "plafonne": True, "seuil_go": seuil_go}
     if dossier_ouvert:
         v = "dossier_ouvert"

@@ -22,7 +22,7 @@ la tête du modèle ; on trie dans une base, avec un motif.
 | Offres pertinentes jamais vues | filtre trop strict dans un seul prompt ; les rejets n'étaient écrits nulle part | tout rejet est une ligne Inbox « Écartée » avec raison ; audit des rejets possible |
 | 33 fiches sans score | pas de schéma | `crm_row.json` exige un entier 0–20 ; Notion refuse une chaîne |
 | 13 doublons | anti-doublon sur l'URL | clé métier calculée par code, vérifiée contre CRM et Inbox, y compris dans le lot du jour |
-| Refus Alan, Kolecto ratés ; candidature Numberly manquée | une seule requête Gmail en français | deux requêtes + réconciliation par dossier ouvert + lexique FR/EN en code |
+| Deux refus ratés ; une candidature manquée | une seule requête Gmail en français | deux requêtes + réconciliation par dossier ouvert + lexique FR/EN en code |
 | Fiches créées hors périmètre (Rivalis, Thoo Owen) | création libre depuis Gmail | Noé ne crée jamais ; il propose, Tom valide |
 | Champs « Effectif » et « Cold call » écrits dans le vide | le prompt écrivait des propriétés qui n'existaient pas dans la base | schéma aligné sur la base ; `Effectif` créé ; propriétés inconnues refusées par `additionalProperties: false` |
 | Deux tâches à la même minute sur la même base | crons identiques | horaires décalés, un agent par étape, Inbox comme tampon |

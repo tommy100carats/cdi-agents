@@ -68,9 +68,11 @@ def test_regles_du_16_09():
     # R18 : administration CRM en production exigée
     v = verdict(17, crm_admin=True)
     assert v["verdict"] == "veille" and v["plafonne"]
-    # R20 : salaire affiché sous 40 k€
-    assert verdict(18, salaire_max=38000)["verdict"] == "no_go"
-    assert verdict(15, salaire_max=45000)["verdict"] == "go_prioritaire"
+    # R20 : salaire affiché sous le seuil passé en paramètre (valeurs de test, pas le seuil réel)
+    assert verdict(18, salaire_max=38000, salaire_min=42000)["verdict"] == "no_go"
+    assert verdict(15, salaire_max=45000, salaire_min=42000)["verdict"] == "go_prioritaire"
+    # sans seuil fourni, R20 ne s'applique pas
+    assert verdict(15, salaire_max=38000)["verdict"] == "go_prioritaire"
 
 
 def test_stretch_plafonne_sauf_grand_groupe():
